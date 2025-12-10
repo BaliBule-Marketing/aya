@@ -143,6 +143,22 @@
 
 <!-- CSS ================================================================== -->
 {% style %}
+  @font-face {
+    font-family: 'TT Ricordi Allegria Trl';
+    src: url('{{ "tt-ricordi-allegria-trl.woff2" | asset_url }}') format('woff2');
+    font-display: swap;
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('{{ "Urbanist.woff2" | asset_url }}') format('woff2');
+    font-display: swap;
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
   {{ heading_font | font_face: font_display: 'swap' }}
   {{ base_font | font_face: font_display: 'swap' }}
   {{ nav_font | font_face: font_display: 'swap' }}
@@ -446,14 +462,14 @@
     --FONT-HEADING-LARGE-MOBILE: {{ settings.heading_large_mobile | append: 'px' }};
     --FONT-HEADING-X-LARGE-MOBILE: {{ settings.heading_x_large_mobile | append: 'px' }};
 
-    --FONT-STACK-BODY: {{ base_font.family }}, {{ base_font.fallback_families }};
+    --FONT-STACK-BODY: 'Urbanist', {{ base_font.family }}, {{ base_font.fallback_families }};
     --FONT-STYLE-BODY: {{ base_font.style }};
     --FONT-WEIGHT-BODY: {{ base_font.weight }};
     --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
 
     --LETTER-SPACING-BODY: {{ settings.body_letter_spacing | divided_by: 1000.0 | append: 'em' }};
 
-    --FONT-STACK-HEADING: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+    --FONT-STACK-HEADING: 'TT Ricordi Allegria Trl', {{ heading_font.family }}, {{ heading_font.fallback_families }};
     --FONT-WEIGHT-HEADING: {{ heading_font.weight }};
     --FONT-STYLE-HEADING: {{ heading_font.style }};
 
@@ -615,12 +631,15 @@
   }
 {% endstyle %}
 
-{%- unless settings.type_base_font.system? -%}
+<link rel="preload" as="font" href="{{ 'tt-ricordi-allegria-trl.woff2' | asset_url }}" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="{{ 'Urbanist.woff2' | asset_url }}" type="font/woff2" crossorigin>
+
+{% comment %} {%- unless settings.type_base_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_base_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 {%- unless settings.type_header_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-{%- endunless -%}
+{%- endunless -%} {% endcomment %}
 {%- unless settings.type_nav_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_nav_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
