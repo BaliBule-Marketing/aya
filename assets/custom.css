@@ -3,6 +3,10 @@
   --btn-left: calc(var(--BTN-SIZE-MEDIUM) * 2);
   --font-heading-large: 64px;
   --font-body-large: 20px;
+  --PARALLAX-STRENGTH-MAX: 100%;
+  --PARALLAX-STRENGTH-MIN: 100%;
+  --BTN-FONT-SIZE: 18px;
+  --announcement-height: 46px;
 }
 
 :root .color-scheme-1 {
@@ -10,11 +14,25 @@
   --BTN-SECONDARY-BORDER: #fffcf3;
   --BTN-PRIMARY-TEXT: #24201c;
   --BTN-PRIMARY-BG-BRIGHTER: #ffffff;
+  --COLOR-TEXT: #24201c;
 }
 
 /*
  * Custom CSS 
  */
+
+.announcement__wrapper {
+  background: #f5eee4;
+  .body-small {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.header__logo__text span {
+  font-family: var(--FONT-STACK-HEADING);
+  font-size: 24px;
+}
 
 .slideshow .hero__content--transparent {
   padding: 0 0 50px 50px;
@@ -24,6 +42,9 @@
   text-transform: none;
 }
 
+.hero__button-group {
+  margin: 0;
+}
 .hero__button-group .hero__button {
   margin: 0;
   margin-right: 20px;

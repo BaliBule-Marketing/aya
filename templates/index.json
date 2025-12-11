@@ -38,7 +38,7 @@
             "text": {
               "type": "text",
               "settings": {
-                "text": "Beautiful pieces to pass down for generations",
+                "text": "Beautiful pieces  to feel your most magical self",
                 "text_font_size": "body-large",
                 "padding_bottom": 32
               },
@@ -48,13 +48,13 @@
               "type": "_group-buttons",
               "name": "Side by side buttons",
               "settings": {
-                "button_text": "Campaign Edit",
+                "button_text": "Shop the Collection",
                 "button_url": "shopify://collections/all",
                 "button_type": "btn--primary",
                 "button_size": "",
                 "button_style": "btn--solid",
                 "show_arrow": false,
-                "button_secondary_text": "Shop sale",
+                "button_secondary_text": "Campaign Edit",
                 "button_secondary_url": "shopify://collections/all",
                 "button_secondary_type": "btn--secondary",
                 "button_secondary_size": "",
