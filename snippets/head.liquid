@@ -651,6 +651,7 @@
 {%- endunless -%}
 
 {{ 'theme.css' | asset_url | stylesheet_tag }}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
 
 {%- if settings.show_siblings or settings.enable_swatches -%}
   {{ 'swatches.css' | asset_url | stylesheet_tag }}

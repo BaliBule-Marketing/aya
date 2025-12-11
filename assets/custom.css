@@ -1,0 +1,47 @@
+/* Rewriting variables */
+:root {
+  --btn-left: calc(var(--BTN-SIZE-MEDIUM) * 2);
+  --font-heading-large: 64px;
+  --font-body-large: 20px;
+}
+
+:root .color-scheme-1 {
+  --BTN-PRIMARY-BG: #fffcf3;
+  --BTN-SECONDARY-BORDER: #fffcf3;
+  --BTN-PRIMARY-TEXT: #24201c;
+  --BTN-PRIMARY-BG-BRIGHTER: #ffffff;
+}
+
+/*
+ * Custom CSS 
+ */
+
+.slideshow .hero__content--transparent {
+  padding: 0 0 50px 50px;
+}
+
+.btn {
+  text-transform: none;
+}
+
+.hero__button-group .hero__button {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.article__author-bio h3,
+.blog-section .article__image .article__tags {
+  line-height: 1.15;
+}
