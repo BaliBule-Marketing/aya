@@ -30,7 +30,7 @@
               "settings": {
                 "text": "muse COLLECTION",
                 "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
+                "heading_tag": "h1",
                 "padding_bottom": 8
               },
               "blocks": {}
@@ -40,7 +40,7 @@
               "settings": {
                 "text": "Beautiful pieces to pass down for generations",
                 "text_font_size": "body-large",
-                "padding_bottom": 8
+                "padding_bottom": 32
               },
               "blocks": {}
             },
@@ -50,7 +50,7 @@
               "settings": {
                 "button_text": "Campaign Edit",
                 "button_url": "shopify://collections/all",
-                "button_type": "btn--black",
+                "button_type": "btn--primary",
                 "button_size": "",
                 "button_style": "btn--solid",
                 "show_arrow": false,
@@ -60,7 +60,7 @@
                 "button_secondary_size": "",
                 "button_secondary_style": "btn--outline",
                 "show_secondary_arrow": false,
-                "padding_bottom": 8
+                "padding_bottom": 0
               },
               "blocks": {}
             }
@@ -79,7 +79,7 @@
       "settings": {
         "transition": "slide",
         "show_arrows": true,
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 4,
         "width": "wrapper--full",
         "height": "screen-height-full",
