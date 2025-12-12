@@ -29,9 +29,19 @@
   }
 }
 
-.header__logo__text span {
-  font-family: var(--FONT-STACK-HEADING);
-  font-size: 24px;
+.header__mobile {
+  min-height: fit-content;
+}
+
+.header__logo__text {
+  height: fit-content;
+  padding: 0;
+
+  span {
+    font-family: var(--FONT-STACK-HEADING);
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 
 .slideshow .hero__content--transparent {
