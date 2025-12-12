@@ -76,3 +76,10 @@ h6,
 .blog-section .article__image .article__tags {
   line-height: 1.15;
 }
+
+
+.dropdown__family {
+  .sup {
+    display: none;
+  }
+}
