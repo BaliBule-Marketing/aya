@@ -68,10 +68,42 @@
             "padding_top": 5,
             "padding_bottom": 5
           }
+        },
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "aspect_ratio": 1,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-small",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "",
+            "text_color": "#fcfbf9"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "aspect_ratio": 1,
+            "wide_image": false,
+            "overlay_type": "text",
+            "title": "Shop Gemstone Collection",
+            "heading_font_size": "heading-mini",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "",
+            "text_color": "#fcfbf9"
+          }
         }
       },
       "block_order": [
-        "toolbar"
+        "toolbar",
+        "image_1",
+        "image_2"
       ],
       "settings": {
         "header_sticky": false,
@@ -91,7 +123,7 @@
         "button_link": "",
         "button_type": "btn--primary",
         "show_social_icons": false,
-        "secondary_menu_linklist": "main-menu-1",
+        "secondary_menu_linklist": "",
         "show_locale_selector": false,
         "show_locale_code": false,
         "show_globe_icon": true,
