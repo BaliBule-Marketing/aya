@@ -30,7 +30,7 @@
 }
 
 .header__mobile {
-  /* min-height: fit-content; */
+  min-height: fit-content;
 }
 
 .header__logo__text {

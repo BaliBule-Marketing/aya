@@ -117,7 +117,7 @@
         "cart_icon_family": "bag",
         "logo_max_limit": 120,
         "logo_max_limit_mobile": 120,
-        "main_menu_linklist": "",
+        "main_menu_linklist": "compact-main-menu",
         "enable_call_to_action": false,
         "button_text": "",
         "button_link": "",
