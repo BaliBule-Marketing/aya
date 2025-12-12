@@ -73,6 +73,7 @@
           "type": "image",
           "settings": {
             "position": "1",
+            "image": "shopify://shop_images/powder_pink_small_bells_dress_organic_cocktail_dress_ombre_minimalist_dress_by_aya_sacred_wear_26.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "text",
@@ -88,10 +89,11 @@
           "type": "image",
           "settings": {
             "position": "1",
+            "image": "shopify://shop_images/Bridal_Boho_Cape_Poncho_Hand_loomed_by_AYA_Sacred_Wear_7.jpg",
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "text",
-            "title": "Shop Gemstone Collection",
+            "title": "",
             "heading_font_size": "heading-mini",
             "link_text": "",
             "text_font_size": "body-medium",
