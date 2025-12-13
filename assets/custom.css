@@ -9,6 +9,13 @@
   --announcement-height: 46px;
 }
 
+@media (max-width: 479px) {
+  :root {
+    --font-heading-large: 48px;
+    --font-body-large: 16px;
+  }
+}
+
 :root .color-scheme-1 {
   --BTN-PRIMARY-BG: #fffcf3;
   --BTN-SECONDARY-BORDER: #fffcf3;
