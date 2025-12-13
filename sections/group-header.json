@@ -17,7 +17,7 @@
         "text_discount": {
           "type": "text",
           "settings": {
-            "text": "<p>Free shipping on orders over US$300</p>",
+            "text": "<p>Get 3 items - 15%off + free delivery from 500 USD</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
