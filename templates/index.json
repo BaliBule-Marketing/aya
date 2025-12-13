@@ -255,83 +255,6 @@
         "show_placeholder": true
       }
     },
-    "announcement-2": {
-      "type": "section-announcement",
-      "blocks": {
-        "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading_1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Timeless pieces to treasure forever",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text_2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading_2": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ethical sourcing and manufacturing",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text_3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading_3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainable heirlooms",
-            "heading_font_size": "heading-x-small"
-          }
-        }
-      },
-      "block_order": [
-        "text_1",
-        "heading_1",
-        "text_2",
-        "heading_2",
-        "text_3",
-        "heading_3"
-      ],
-      "disabled": true,
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "section-tab-collections": {
       "type": "section-tab-collections",
       "blocks": {
@@ -443,6 +366,130 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
+      }
+    },
+    "look": {
+      "type": "section-look",
+      "blocks": {
+        "product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_product_card": false,
+            "position_x": 38,
+            "position_y": 55
+          }
+        },
+        "product-3": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_product_card": false,
+            "position_x": 55,
+            "position_y": 29
+          }
+        }
+      },
+      "block_order": [
+        "product-1",
+        "product-3"
+      ],
+      "settings": {
+        "layout": "",
+        "title": "Shop the look",
+        "heading": "",
+        "heading_font_size": "heading-mini",
+        "show_dots": true,
+        "products_per_row": "2",
+        "enable_slider": false,
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1.1,
+        "color_scheme": "scheme-6",
+        "dot_color": "#ffffff",
+        "dot_background": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
+    "announcement-2": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Timeless pieces to treasure forever",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading_2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ethical sourcing and manufacturing",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text_3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading_3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainable heirlooms",
+            "heading_font_size": "heading-x-small"
+          }
+        }
+      },
+      "block_order": [
+        "text_1",
+        "heading_1",
+        "text_2",
+        "heading_2",
+        "text_3",
+        "heading_3"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "press-logos": {
@@ -674,54 +721,6 @@
         "color_scheme": "scheme-2",
         "padding_top": 20,
         "padding_bottom": 20
-      }
-    },
-    "look": {
-      "type": "section-look",
-      "blocks": {
-        "product-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "show_product_card": false,
-            "position_x": 38,
-            "position_y": 55
-          }
-        },
-        "product-3": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "show_product_card": false,
-            "position_x": 55,
-            "position_y": 29
-          }
-        }
-      },
-      "block_order": [
-        "product-1",
-        "product-3"
-      ],
-      "settings": {
-        "layout": "",
-        "title": "Shop the look",
-        "heading": "",
-        "heading_font_size": "heading-mini",
-        "show_dots": true,
-        "products_per_row": "2",
-        "enable_slider": false,
-        "button_type": "btn--primary",
-        "button_size": "",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "enable_aspect_ratio": true,
-        "image_aspect_ratio": 1.1,
-        "color_scheme": "scheme-6",
-        "dot_color": "#ffffff",
-        "dot_background": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
       }
     },
     "custom_content": {
@@ -1071,14 +1070,14 @@
     "section_text_background_G6tE8r",
     "columns-1",
     "double",
-    "announcement-2",
     "section-tab-collections",
     "video",
+    "look",
+    "announcement-2",
     "press-logos",
     "custom-content-1",
     "collections-list-hover",
     "announcement-3",
-    "look",
     "custom_content",
     "section-product",
     "rich-text-3",
