@@ -46,6 +46,13 @@
 
 .slideshow .hero__content--transparent {
   padding: 0 0 50px 50px;
+  max-width: 100%;
+}
+
+@media (max-width: 749px) {
+  .slideshow .hero__content--transparent {
+    padding: 0;
+  }
 }
 
 .btn {
@@ -54,10 +61,10 @@
 
 .hero__button-group {
   margin: 0;
+  gap: 20px;
 }
 .hero__button-group .hero__button {
   margin: 0;
-  margin-right: 20px;
 }
 
 .h1,
@@ -76,7 +83,6 @@ h6,
 .blog-section .article__image .article__tags {
   line-height: 1.15;
 }
-
 
 .dropdown__family {
   .sup {
