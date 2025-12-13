@@ -24,6 +24,14 @@
   --COLOR-TEXT: #24201c;
 }
 
+:root .color-scheme-2 {
+  --BTN-PRIMARY-BG: #fffcf3;
+  --BTN-SECONDARY-BORDER: #fffcf3;
+  --BTN-PRIMARY-TEXT: #24201c;
+  --BTN-PRIMARY-BG-BRIGHTER: #ffffff;
+  --COLOR-TEXT: #fffcf3;
+}
+
 /*
  * Custom CSS 
  */
