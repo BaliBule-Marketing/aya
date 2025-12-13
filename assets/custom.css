@@ -51,7 +51,7 @@
 
 @media (max-width: 749px) {
   .slideshow .hero__content--transparent {
-    padding: 0;
+    padding: 0 15px;
   }
 }
 
