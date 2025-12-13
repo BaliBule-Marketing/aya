@@ -48,6 +48,38 @@
     "header": {
       "type": "header",
       "blocks": {
+        "toolbar_image_bcenHr": {
+          "type": "toolbar_image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/powder_pink_small_bells_dress_organic_cocktail_dress_ombre_minimalist_dress_by_aya_sacred_wear_26.jpg",
+            "aspect_ratio": 1,
+            "wide_image": true,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "",
+            "text_color": ""
+          }
+        },
+        "toolbar_image_zjLh7X": {
+          "type": "toolbar_image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/Bridal_Boho_Cape_Poncho_Hand_loomed_by_AYA_Sacred_Wear_7.jpg",
+            "aspect_ratio": 1,
+            "wide_image": true,
+            "overlay_type": "text",
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "link_text": "",
+            "text_font_size": "body-medium",
+            "link": "",
+            "text_color": ""
+          }
+        },
         "toolbar": {
           "type": "toolbar",
           "settings": {
@@ -135,6 +167,8 @@
         }
       },
       "block_order": [
+        "toolbar_image_bcenHr",
+        "toolbar_image_zjLh7X",
         "toolbar",
         "image_1",
         "image_kcRx74",

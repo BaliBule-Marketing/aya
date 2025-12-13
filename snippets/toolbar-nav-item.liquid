@@ -23,7 +23,7 @@
   assign image_wide_count = 0
   assign images_space = 0
   for block in section.blocks
-    if block.type == 'image' and block.settings.position == index
+    if block.type == 'toolbar_image' and block.settings.position == index
       assign grandparent = true
       assign image_count = image_count | plus: 1
       assign image_space = 1
@@ -76,7 +76,7 @@
   </a>
   {% if expands %}
     <div
-      class="header__dropdown"
+      class="header__dropdown toolbar__dropdown"
       id="dropdown-{{ key }}"
     >
       <div class="header__dropdown__wrapper">
@@ -148,7 +148,7 @@
               <div class="menu__blocks" style="--images-space: {{ images_space }};">
                 {%- liquid
                   for block in section.blocks
-                    if block.type == 'image' and block.settings.position == index
+                    if block.type == 'toolbar_image' and block.settings.position == index
                       render 'header-block', block: block, image_count: image_count, only_images: only_images, link_columns: link.links.size
                     endif
                   endfor
@@ -178,3 +178,4 @@
     </div>
   {% endif %}
 </{{ item_tag }}>
+

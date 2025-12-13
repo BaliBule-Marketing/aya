@@ -18,6 +18,7 @@
     assign text = block.settings.text
     assign menu = block.settings.menu
     assign menu_links = linklists[menu].links
+    assign highlight_item = section.settings.highlight_item | default: ''
     assign languages = false
     assign countries = false
     assign show_locale_selector = block.settings.show_locale_selector
@@ -69,9 +70,13 @@
 
 {%- capture toolbar_menu -%}
   {%- if show_toolbar_menu -%}
-    {%- for link in menu_links -%}
-      <a href="{{ link.url }}" class="navlink navlink--toplevel">{{ link.title }}</a>
-    {%- endfor -%}
+    <div class="toolbar__menu__wrapper">
+      {%- for link in menu_links -%}
+        {%- render 'toolbar-nav-item', link: link, index: forloop.index, highlight_item: highlight_item, section: section -%}
+      {%- endfor -%}
+      <div class="hover__bar"></div>
+      <div class="hover__bg"></div>
+    </div>
   {%- endif -%}
 {%- endcapture -%}
 
@@ -131,9 +136,9 @@
                     {%- endif -%}
 
                     {%- if show_toolbar_menu -%}
-                      <div class="toolbar__menu desktop">
+                      <nav class="toolbar__menu desktop">
                         {{ toolbar_menu }}
-                      </div>
+                      </nav>
                     {%- endif -%}
                   </div>
                 </div>
