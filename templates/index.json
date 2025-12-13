@@ -240,6 +240,7 @@
         "image_ycnEVH",
         "buttons_VP8YTU"
       ],
+      "disabled": true,
       "settings": {
         "image_width": "one-half",
         "text_alignment": "text-center",
@@ -317,6 +318,7 @@
         "text_3",
         "heading_3"
       ],
+      "disabled": true,
       "settings": {
         "slider_speed": 7,
         "text_alignment": "center",
@@ -394,6 +396,7 @@
         "collection-1",
         "collection-3"
       ],
+      "disabled": true,
       "settings": {
         "show_product_count": false,
         "title": "Exceptional Pieces",
