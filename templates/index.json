@@ -89,60 +89,13 @@
         "padding_bottom": 0
       }
     },
-    "text_with_products": {
-      "type": "section-text-with-products",
-      "blocks": {
-        "collection_1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 1,
-            "aspect_ratio": 0.6,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 80
-          }
-        },
-        "collection_2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 2,
-            "aspect_ratio": 0.6,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 80
-          }
-        },
-        "collection_3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 7,
-            "aspect_ratio": 0.5,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 60
-          }
-        }
-      },
-      "block_order": [
-        "collection_1",
-        "collection_2",
-        "collection_3"
-      ],
+    "section_text_background_G6tE8r": {
+      "type": "section-text-background",
+      "name": "Text with background",
       "settings": {
-        "subheading": "bestselling fine jewelry",
-        "heading": "Modern heirlooms elegant treasures",
-        "image_border_radius": 20,
-        "width": "wrapper--full-padded",
-        "text_font_size_px_desktop": 32,
-        "text_align_desktop": "text-center",
-        "text_font_size_px_mobile": 26,
-        "text_align_mobile": "text-left--mobile",
-        "color_scheme": "",
-        "padding_top": 60,
-        "padding_bottom": 40
+        "heading": "Sacred Wear for The Modern Goddess",
+        "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
+        "background_image": "shopify://shop_images/yantra.png"
       }
     },
     "columns-1": {
@@ -1108,7 +1061,7 @@
   },
   "order": [
     "section_slideshow_nested",
-    "text_with_products",
+    "section_text_background_G6tE8r",
     "columns-1",
     "double",
     "announcement-2",
