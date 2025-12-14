@@ -368,6 +368,71 @@
         "heading_tag": "automatic"
       }
     },
+    "section_custom_content_xBkWMt": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_Qf3wp8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_xX8qFU": {
+          "type": "text",
+          "settings": {
+            "subheading": "New Arrivals",
+            "title": "FOR EVERYDAY WEAR",
+            "heading_font_size": "heading-large",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_Qf3wp8",
+        "text_xX8qFU"
+      ],
+      "name": "Custom section",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "look": {
       "type": "section-look",
       "blocks": {
@@ -394,6 +459,7 @@
         "product-1",
         "product-3"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "title": "Shop the look",
@@ -1072,6 +1138,7 @@
     "double",
     "section-tab-collections",
     "video",
+    "section_custom_content_xBkWMt",
     "look",
     "announcement-2",
     "press-logos",
