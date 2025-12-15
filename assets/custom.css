@@ -139,6 +139,8 @@ h6,
 
 /* ========== Custom Section: New Arrivals (custom) ========== */
 .new-arrivals-section {
+  background-image: url("/assets/Paper_03-cropped.webp");
+  background-size: cover;
   display: flex;
   gap: 40px;
   align-items: center;

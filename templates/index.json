@@ -373,12 +373,15 @@
       "name": "New Arrivals (custom)",
       "settings": {
         "main_image": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
+        "main_image_link": "",
         "title": "New Arrivals",
         "subtitle": "FOR EVERYDAY WEAR",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
         "secondary_image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
+        "secondary_image_1_link": "shopify://products/new-black-boho-crop-top-bohemian-top-with-handmade-knots",
         "caption_1": "Boho Top",
         "secondary_image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
+        "secondary_image_2_link": "shopify://products/black-organic-poncho-tribal-cotton-robe-hand-embroidered-overcoat",
         "caption_2": "Organic Poncho"
       }
     },
