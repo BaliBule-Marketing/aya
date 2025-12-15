@@ -359,7 +359,7 @@
         "desktop_height": "screen-height-three-quarters",
         "mobile_height": "screen-height-three-quarters--mobile",
         "width": "wrapper--full",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
         "show_text_background": false,
         "color": "",
         "overlay_type": "disabled",
@@ -434,65 +434,107 @@
     "announcement-2": {
       "type": "section-announcement",
       "blocks": {
+        "text_9QbcGj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HANDMADE GARMENTS</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
         "text_1": {
           "type": "text",
           "settings": {
-            "text": "<p>•</p>",
+            "text": "<h3>•</h3>",
             "text_font_size": "body-x-large",
             "color": "",
             "target_device_enabled": false,
             "target_device": "mobile"
           }
         },
-        "heading_1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Timeless pieces to treasure forever",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text_2": {
+        "text_DyN7tH": {
           "type": "text",
           "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
+            "text": "<p>SUSTAINABLE MATERIALS</p>",
+            "text_font_size": "body-medium",
             "color": "",
             "target_device_enabled": false,
             "target_device": "mobile"
           }
         },
-        "heading_2": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ethical sourcing and manufacturing",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text_3": {
+        "text_wr9WEq": {
           "type": "text",
           "settings": {
-            "text": "<p>•</p>",
+            "text": "<h3>•</h3>",
             "text_font_size": "body-x-large",
             "color": "",
             "target_device_enabled": false,
             "target_device": "mobile"
           }
         },
-        "heading_3": {
-          "type": "heading",
+        "text_Df3R4i": {
+          "type": "text",
           "settings": {
-            "heading": "Sustainable heirlooms",
-            "heading_font_size": "heading-x-small"
+            "text": "<p>SLOW FASHION</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_BAyNgR": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>•</h3>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VFeKdb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ETHICAL SOURCING</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_dxTfFJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>•</h3>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MLtQMc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ARTISANAL DESIGN</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
           }
         }
       },
       "block_order": [
+        "text_9QbcGj",
         "text_1",
-        "heading_1",
-        "text_2",
-        "heading_2",
-        "text_3",
-        "heading_3"
+        "text_DyN7tH",
+        "text_wr9WEq",
+        "text_Df3R4i",
+        "text_BAyNgR",
+        "text_VFeKdb",
+        "text_dxTfFJ",
+        "text_MLtQMc"
       ],
       "settings": {
         "slider_speed": 7,
@@ -502,7 +544,7 @@
         "message_spacing": 10,
         "show_border": false,
         "layout": "marquee",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "padding_top": 20,
         "padding_bottom": 20
       }

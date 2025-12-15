@@ -24,12 +24,16 @@
   --COLOR-TEXT: #24201c;
 }
 
-:root .color-scheme-2 {
+:root .color-scheme-5 {
   --BTN-PRIMARY-BG: #fffcf3;
   --BTN-SECONDARY-BORDER: #fffcf3;
   --BTN-PRIMARY-TEXT: #24201c;
   --BTN-PRIMARY-BG-BRIGHTER: #ffffff;
   --COLOR-TEXT: #fffcf3;
+}
+:root .color-scheme-2 {
+  --COLOR-BG: #443C36;
+  --COLOR-BG-GRADIENT: #443C36;
 }
 
 /*
@@ -37,10 +41,16 @@
  */
 
 .announcement__wrapper {
-  background: #f5eee4;
   .body-small {
     font-size: 12px;
     font-weight: 500;
+  }
+}
+.announcement__slide{
+
+  .heading-x-small .font-heading {
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }
 
