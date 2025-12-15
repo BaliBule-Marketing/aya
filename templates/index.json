@@ -368,6 +368,20 @@
         "heading_tag": "automatic"
       }
     },
+    "custom_new_arrivals_6wEUrp": {
+      "type": "custom-new-arrivals",
+      "name": "New Arrivals (custom)",
+      "settings": {
+        "main_image": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
+        "title": "New Arrivals",
+        "subtitle": "FOR EVERYDAY WEAR",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
+        "secondary_image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
+        "caption_1": "Boho Top",
+        "secondary_image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
+        "caption_2": "Organic Poncho"
+      }
+    },
     "look": {
       "type": "section-look",
       "blocks": {
@@ -1072,6 +1086,7 @@
     "double",
     "section-tab-collections",
     "video",
+    "custom_new_arrivals_6wEUrp",
     "look",
     "announcement-2",
     "press-logos",
