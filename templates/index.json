@@ -186,158 +186,6 @@
         "heading_tag": "automatic"
       }
     },
-    "double": {
-      "type": "section-double",
-      "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Trends & Tradition",
-            "padding_bottom": 6
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "For Everyday Wear",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>From dainty classics that are perfect for daily adornment to chic, to trendsetting pieces designed to complement any occasion – our selection blends exquisite craftsmanship with modern sensibility.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 24
-          }
-        },
-        "image_ycnEVH": {
-          "type": "image",
-          "settings": {
-            "image_width": 80,
-            "padding_bottom": 16
-          }
-        },
-        "buttons_VP8YTU": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Shop all products",
-            "button_url": "shopify://collections/all",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "image_ycnEVH",
-        "buttons_VP8YTU"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-center",
-        "layout": "",
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "scheme-1",
-        "padding_top": 42,
-        "padding_bottom": 82,
-        "show_placeholder": true
-      }
-    },
-    "section-tab-collections": {
-      "type": "section-tab-collections",
-      "blocks": {
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "featured_collection": "",
-            "show_image": true,
-            "align_with_product_images": false,
-            "overlay_type": "disabled",
-            "description": "<p>14k solid gold studs, hoops and pearls</p>",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "featured_collection": "",
-            "show_image": true,
-            "align_with_product_images": false,
-            "overlay_type": "disabled",
-            "description": "<p>14k solid gold essentials, sterling silver statement pieces and more.</p>",
-            "color": "#ffffff",
-            "link_text": "Shop rings",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "featured_collection": "",
-            "show_image": true,
-            "align_with_product_images": true,
-            "overlay_type": "disabled",
-            "description": "",
-            "color": "#ffffff",
-            "link_text": "View products",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "collection-2",
-        "collection-1",
-        "collection-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "show_product_count": false,
-        "title": "Exceptional Pieces",
-        "heading_font_size": "heading-medium",
-        "text": "<p>Soon-to-be staples in your rotation</p>",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "layout_desktop": "slider",
-        "product_limit": 7,
-        "grid": 4,
-        "rows": 3,
-        "layout_mobile": "2",
-        "color_scheme": "scheme-6",
-        "padding_top": 62,
-        "padding_bottom": 62,
-        "heading_tag": "automatic"
-      }
-    },
     "video": {
       "type": "section-video",
       "name": "Video",
@@ -383,6 +231,218 @@
         "secondary_image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
         "secondary_image_2_link": "shopify://products/black-organic-poncho-tribal-cotton-robe-hand-embroidered-overcoat",
         "caption_2": "Organic Poncho"
+      }
+    },
+    "announcement-2": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_9QbcGj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HANDMADE GARMENTS</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_DyN7tH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SUSTAINABLE MATERIALS</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_wBJjQj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_Df3R4i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SLOW FASHION</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_QWfJzL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_VFeKdb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ETHICAL SOURCING</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_6UPFjE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MLtQMc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ARTISANAL DESIGN</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_xAePXD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_9QbcGj",
+        "text_1",
+        "text_DyN7tH",
+        "text_wBJjQj",
+        "text_Df3R4i",
+        "text_QWfJzL",
+        "text_VFeKdb",
+        "text_6UPFjE",
+        "text_MLtQMc",
+        "text_xAePXD"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "scheme-2",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "section-tab-collections": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "title": "Dresses",
+            "featured_collection": "organic-cotton-dresses",
+            "show_image": true,
+            "align_with_product_images": false,
+            "image": "shopify://shop_images/DSC06819.jpg",
+            "overlay_type": "disabled",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
+            "color": "#ffffff",
+            "link_text": "Shop Dresses",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "title": "Skirts",
+            "featured_collection": "organic-skirts",
+            "show_image": true,
+            "align_with_product_images": false,
+            "overlay_type": "disabled",
+            "description": "<p>14k solid gold essentials, sterling silver statement pieces and more.</p>",
+            "color": "#ffffff",
+            "link_text": "Shop rings",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "featured_collection": "",
+            "show_image": true,
+            "align_with_product_images": true,
+            "overlay_type": "disabled",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection-2",
+        "collection-1",
+        "collection-3"
+      ],
+      "settings": {
+        "show_product_count": false,
+        "title": "UNIQUE ARTISAN PIECES",
+        "heading_font_size": "heading-medium",
+        "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "layout_desktop": "slider",
+        "product_limit": 7,
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "2",
+        "color_scheme": "scheme-1",
+        "padding_top": 62,
+        "padding_bottom": 62,
+        "heading_tag": "automatic"
       }
     },
     "look": {
@@ -432,124 +492,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "heading_tag": "automatic"
-      }
-    },
-    "announcement-2": {
-      "type": "section-announcement",
-      "blocks": {
-        "text_9QbcGj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HANDMADE GARMENTS</p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>•</h3>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_DyN7tH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SUSTAINABLE MATERIALS</p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_wr9WEq": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>•</h3>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_Df3R4i": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SLOW FASHION</p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_BAyNgR": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>•</h3>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_VFeKdb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>ETHICAL SOURCING</p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_dxTfFJ": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>•</h3>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_MLtQMc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>ARTISANAL DESIGN</p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text_9QbcGj",
-        "text_1",
-        "text_DyN7tH",
-        "text_wr9WEq",
-        "text_Df3R4i",
-        "text_BAyNgR",
-        "text_VFeKdb",
-        "text_dxTfFJ",
-        "text_MLtQMc"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "press-logos": {
@@ -834,19 +776,6 @@
         "padding_bottom": 0
       }
     },
-    "section-product": {
-      "type": "section-product",
-      "disabled": true,
-      "settings": {
-        "product": "",
-        "show_product_card": true,
-        "layout": "is-reversed",
-        "limit": 5,
-        "scrolling_styles": "vertical",
-        "horizontal_scroll": false,
-        "color_scheme": "scheme-3"
-      }
-    },
     "rich-text-3": {
       "type": "section-rich-text",
       "blocks": {
@@ -1123,27 +1052,109 @@
         "padding_bottom": 0,
         "show_placeholder": true
       }
+    },
+    "section-product": {
+      "type": "section-product",
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "show_product_card": true,
+        "layout": "is-reversed",
+        "limit": 5,
+        "scrolling_styles": "vertical",
+        "horizontal_scroll": false,
+        "color_scheme": "scheme-3"
+      }
+    },
+    "double": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Trends & Tradition",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "For Everyday Wear",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From dainty classics that are perfect for daily adornment to chic, to trendsetting pieces designed to complement any occasion – our selection blends exquisite craftsmanship with modern sensibility.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "image_ycnEVH": {
+          "type": "image",
+          "settings": {
+            "image_width": 80,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_VP8YTU": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop all products",
+            "button_url": "shopify://collections/all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "image_ycnEVH",
+        "buttons_VP8YTU"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 42,
+        "padding_bottom": 82,
+        "show_placeholder": true
+      }
     }
   },
   "order": [
     "section_slideshow_nested",
     "section_text_background_G6tE8r",
     "columns-1",
-    "double",
-    "section-tab-collections",
     "video",
     "custom_new_arrivals_6wEUrp",
-    "look",
     "announcement-2",
+    "section-tab-collections",
+    "look",
     "press-logos",
     "custom-content-1",
     "collections-list-hover",
     "announcement-3",
     "custom_content",
-    "section-product",
     "rich-text-3",
     "columns-2",
     "text-row",
-    "section_hero_scrolling"
+    "section_hero_scrolling",
+    "section-product",
+    "double"
   ]
 }

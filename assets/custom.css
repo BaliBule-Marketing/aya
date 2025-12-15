@@ -32,8 +32,8 @@
   --COLOR-TEXT: #fffcf3;
 }
 :root .color-scheme-2 {
-  --COLOR-BG: #443C36;
-  --COLOR-BG-GRADIENT: #443C36;
+  --COLOR-BG: #443c36;
+  --COLOR-BG-GRADIENT: #443c36;
 }
 
 /*
@@ -46,9 +46,9 @@
     font-weight: 500;
   }
 }
-.announcement__slide{
-
-  .heading-x-small .font-heading {
+.announcement__slide {
+  --padding: 8px;
+   .heading-x-small .font-heading {
     font-size: 16px;
     text-transform: uppercase;
   }
