@@ -408,6 +408,7 @@
         "product-1",
         "product-3"
       ],
+      "disabled": true,
       "settings": {
         "layout": "",
         "title": "Shop the look",
