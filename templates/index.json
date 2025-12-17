@@ -661,7 +661,7 @@
         "description": "Tell your brand's story through images.",
         "text_font_size": "body-medium",
         "enable_quick_add": true,
-        "color_product_bg": "#f5f2ec",
+        "color_product_bg": "#F5F2EC",
         "color_product_text": "#212121",
         "width": "wrapper--full",
         "height": "screen-height-three-quarters",
@@ -1130,16 +1130,6 @@
         "padding_bottom": 82,
         "show_placeholder": true
       }
-    },
-    "custom_split_background_section_HdMVE6": {
-      "type": "custom-split-background-section",
-      "name": "Split Background Section",
-      "settings": {
-        "background_left": "shopify://shop_images/Paper_02.webp",
-        "background_right": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
-        "product": "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
-        "content_image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear.jpg"
-      }
     }
   },
   "order": [
@@ -1161,7 +1151,6 @@
     "text-row",
     "section_hero_scrolling",
     "section-product",
-    "double",
-    "custom_split_background_section_HdMVE6"
+    "double"
   ]
 }
