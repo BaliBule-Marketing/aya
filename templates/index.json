@@ -224,7 +224,7 @@
         "main_image_link": "",
         "title": "New Arrivals",
         "subtitle": "FOR EVERYDAY WEAR",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
+        "description": "Thoughtfully made from natural, sustainable materials, our garments are designed to support everyday life — where comfort, beauty, and conscious craftsmanship become a daily ritual.",
         "secondary_image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
         "secondary_image_1_link": "shopify://products/new-black-boho-crop-top-bohemian-top-with-handmade-knots",
         "caption_1": "Boho Top",
@@ -494,81 +494,6 @@
         "heading_tag": "automatic"
       }
     },
-    "press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo_item_text_1": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Sustainable luxury at its most refined",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_2": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Jewelry that’s as ethical as it is exquisite",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_3": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "The future of fine jewelry is here—and it’s conscious.",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_4": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Each piece feels like a modern heirloom",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_5": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Minimal, meaningful, and made to last",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_6": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Where craftsmanship meets a conscience",
-            "text_font_size": "body-x-large"
-          }
-        }
-      },
-      "block_order": [
-        "logo_item_text_1",
-        "logo_item_text_2",
-        "logo_item_text_3",
-        "logo_item_text_4",
-        "logo_item_text_5",
-        "logo_item_text_6"
-      ],
-      "settings": {
-        "enable_heading_slider": true,
-        "logo_opacity": 60,
-        "title": "As seen in",
-        "color_scheme": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "custom-content-1": {
       "type": "section-custom-content",
       "blocks": {
@@ -618,6 +543,68 @@
       "block_order": [
         "image-1",
         "image-2"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": true,
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-6",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_7CyBry": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_nJp3Jp": {
+          "type": "image",
+          "settings": {
+            "title": "Geometry of Light",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Brilliantly cut and artfully arranged to capture light with effortless elegance.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_WiCDG9": {
+          "type": "image",
+          "settings": {
+            "title": "Modern and Timeless",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Accessorize with 14k recycled gold all day, everyday.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_nJp3Jp",
+        "image_WiCDG9"
       ],
       "settings": {
         "borders": false,
@@ -685,44 +672,6 @@
         "overlay_type": "disabled",
         "padding_top": 100,
         "padding_bottom": 0
-      }
-    },
-    "announcement-3": {
-      "type": "section-announcement",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "desktop"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Express yourself in your own way",
-            "heading_font_size": "heading-x-small"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "heading"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-ltr",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "custom_content": {
@@ -1145,10 +1094,9 @@
     "announcement-2",
     "section-tab-collections",
     "look",
-    "press-logos",
     "custom-content-1",
+    "section_custom_content_7CyBry",
     "collections-list-hover",
-    "announcement-3",
     "custom_content",
     "rich-text-3",
     "columns-2",
