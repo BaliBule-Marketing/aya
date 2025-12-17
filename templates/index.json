@@ -224,7 +224,7 @@
         "main_image_link": "",
         "title": "New Arrivals",
         "subtitle": "FOR EVERYDAY WEAR",
-        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
+        "description": "Thoughtfully made from natural, sustainable materials, our garments are designed to support everyday life — where comfort, beauty, and conscious craftsmanship become a daily ritual.",
         "secondary_image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
         "secondary_image_1_link": "shopify://products/new-black-boho-crop-top-bohemian-top-with-handmade-knots",
         "caption_1": "Boho Top",
@@ -494,81 +494,6 @@
         "heading_tag": "automatic"
       }
     },
-    "press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo_item_text_1": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Sustainable luxury at its most refined",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_2": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Jewelry that’s as ethical as it is exquisite",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_3": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "The future of fine jewelry is here—and it’s conscious.",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_4": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Each piece feels like a modern heirloom",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_5": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Minimal, meaningful, and made to last",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo_item_text_6": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Where craftsmanship meets a conscience",
-            "text_font_size": "body-x-large"
-          }
-        }
-      },
-      "block_order": [
-        "logo_item_text_1",
-        "logo_item_text_2",
-        "logo_item_text_3",
-        "logo_item_text_4",
-        "logo_item_text_5",
-        "logo_item_text_6"
-      ],
-      "settings": {
-        "enable_heading_slider": true,
-        "logo_opacity": 60,
-        "title": "As seen in",
-        "color_scheme": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "custom-content-1": {
       "type": "section-custom-content",
       "blocks": {
@@ -631,98 +556,169 @@
         "padding_bottom": 0
       }
     },
-    "collections-list-hover": {
-      "type": "section-collections-list-hover",
+    "section_custom_content_7CyBry": {
+      "type": "section-custom-content",
       "blocks": {
-        "collection-2": {
-          "type": "collection",
+        "image_nJp3Jp": {
+          "type": "image",
           "settings": {
-            "collection": "",
-            "title": ""
+            "title": "Geometry of Light",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Brilliantly cut and artfully arranged to capture light with effortless elegance.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
           }
         },
-        "collection-4": {
-          "type": "collection",
+        "image_WiCDG9": {
+          "type": "image",
           "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "all",
-            "title": ""
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-5": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
+            "title": "Modern and Timeless",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Accessorize with 14k recycled gold all day, everyday.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "collection-2",
-        "collection-4",
-        "collection-1",
-        "collection-3",
-        "collection-5"
+        "image_nJp3Jp",
+        "image_WiCDG9"
       ],
       "settings": {
-        "heading_font_size": "heading-x-large",
+        "borders": false,
+        "gutters": true,
+        "width": "wrapper--full-padded",
         "height": "sixty-fifty-height-hero",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "color_scheme": "scheme-b70ab148-83f3-47cd-8371-28026343f933",
-        "overlay_type": "disabled",
-        "padding_top": 100,
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-6",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "announcement-3": {
-      "type": "section-announcement",
+    "section_hero_product_XLWPXa": {
+      "type": "section-hero-product",
       "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "desktop"
-          }
-        },
-        "heading": {
+        "heading_jjcnN3": {
           "type": "heading",
           "settings": {
-            "heading": "Express yourself in your own way",
-            "heading_font_size": "heading-x-small"
+            "title": "Image banner",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_LpTCQK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tell your brand's story through images.</p>",
+            "text_font_size": "body-large"
+          }
+        },
+        "button_yPrmxq": {
+          "type": "button",
+          "settings": {
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "full_width": false
           }
         }
       },
       "block_order": [
-        "text",
-        "heading"
+        "heading_jjcnN3",
+        "text_LpTCQK",
+        "button_yPrmxq"
       ],
+      "name": "Image with product",
       "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-ltr",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "link": "",
+        "product": "",
+        "description": "Tell your brand's story through images.",
+        "text_font_size": "body-medium",
+        "enable_quick_add": true,
+        "color_product_bg": "#F5F2EC",
+        "color_product_text": "#212121",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-left-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_products_image_cPJVNr": {
+      "type": "section-products-image",
+      "blocks": {
+        "products_JC93xN": {
+          "type": "products",
+          "settings": {
+            "product_list": [],
+            "layout_mobile": "slider"
+          }
+        },
+        "image_xEj7XB": {
+          "type": "image",
+          "settings": {
+            "mobile_height": "screen-height-one-half--mobile",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "overlay_type": "disabled",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "products_JC93xN",
+        "image_xEj7XB"
+      ],
+      "name": "Products with image",
+      "settings": {
+        "width": "wrapper--full-padded",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "custom_content": {
@@ -1145,10 +1141,10 @@
     "announcement-2",
     "section-tab-collections",
     "look",
-    "press-logos",
     "custom-content-1",
-    "collections-list-hover",
-    "announcement-3",
+    "section_custom_content_7CyBry",
+    "section_hero_product_XLWPXa",
+    "section_products_image_cPJVNr",
     "custom_content",
     "rich-text-3",
     "columns-2",
