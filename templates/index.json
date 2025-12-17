@@ -841,10 +841,46 @@
             "show_arrow": false,
             "heading_tag": "automatic"
           }
+        },
+        "timeline_NYeDtL": {
+          "type": "timeline",
+          "settings": {
+            "subheading": "Commitment Two",
+            "title": "giving back",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We celebrated our first step in the ecommerce world by selling our very first product.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "timeline_y4X6cW": {
+          "type": "timeline",
+          "settings": {
+            "subheading": "Commitment Three",
+            "title": "aya community",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
         }
       },
       "block_order": [
-        "timeline_99cjPc"
+        "timeline_99cjPc",
+        "timeline_NYeDtL",
+        "timeline_y4X6cW"
       ],
       "name": "Timeline",
       "settings": {
