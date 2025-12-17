@@ -766,6 +766,9 @@
         "products_JC93xN",
         "image_xEj7XB"
       ],
+      "custom_css": [
+        ".brick__section {gap: 30px;}"
+      ],
       "name": "Products with image",
       "settings": {
         "width": "wrapper--full-padded",
