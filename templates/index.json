@@ -494,14 +494,66 @@
         "heading_tag": "automatic"
       }
     },
-    "custom_split_background_section_HdMVE6": {
-      "type": "custom-split-background-section",
-      "name": "Split Background Section",
+    "custom-content-1": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Geometry of Light",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Brilliantly cut and artfully arranged to capture light with effortless elegance.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "title": "Modern and Timeless",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Accessorize with 14k recycled gold all day, everyday.</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled",
+            "link_text": "Shop now",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2"
+      ],
       "settings": {
-        "background_left": "shopify://shop_images/Paper_02.webp",
-        "background_right": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
-        "product": "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
-        "content_image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear.jpg"
+        "borders": false,
+        "gutters": true,
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-6",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_custom_content_7CyBry": {
@@ -1078,6 +1130,16 @@
         "padding_bottom": 82,
         "show_placeholder": true
       }
+    },
+    "custom_split_background_section_HdMVE6": {
+      "type": "custom-split-background-section",
+      "name": "Split Background Section",
+      "settings": {
+        "background_left": "shopify://shop_images/Paper_02.webp",
+        "background_right": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
+        "product": "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
+        "content_image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear.jpg"
+      }
     }
   },
   "order": [
@@ -1089,7 +1151,7 @@
     "announcement-2",
     "section-tab-collections",
     "look",
-    "custom_split_background_section_HdMVE6",
+    "custom-content-1",
     "section_custom_content_7CyBry",
     "section_hero_product_XLWPXa",
     "section_products_image_cPJVNr",
@@ -1099,6 +1161,7 @@
     "text-row",
     "section_hero_scrolling",
     "section-product",
-    "double"
+    "double",
+    "custom_split_background_section_HdMVE6"
   ]
 }
