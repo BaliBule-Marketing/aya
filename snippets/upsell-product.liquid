@@ -29,7 +29,20 @@
   assign unique = section.id | append: '-' | append: upsell_product.id
   assign product_form_id = 'ProductFormUpsell--' | append: unique
 
-  assign sibling_color = upsell_product.metafields.theme.sibling_color.value | default: upsell_product.metafields.theme.sibling_colour.value | default: upsell_product.metafields.theme.siblings_color.value | default: upsell_product.metafields.theme.siblings_colour.value | default: upsell_product.metafields.theme.siblings_colors.value | default: upsell_product.metafields.theme.siblings_colours.value
+  assign sibling_color = ''
+
+  comment
+    Try to get upsell product color name from Category metafield (Metaobject list):
+    namespace: shopify, key: color-pattern.
+  endcomment
+  if upsell_product.metafields.shopify['color-pattern'] and upsell_product.metafields.shopify['color-pattern'].value != blank
+    assign upsell_color_meta = upsell_product.metafields.shopify['color-pattern'].value | first
+    assign sibling_color = upsell_color_meta.name | default: upsell_color_meta.title | default: upsell_color_meta.label
+  endif
+
+  if sibling_color == blank
+    assign sibling_color = upsell_product.metafields.theme.sibling_color.value | default: upsell_product.metafields.theme.sibling_colour.value | default: upsell_product.metafields.theme.siblings_color.value | default: upsell_product.metafields.theme.siblings_colour.value | default: upsell_product.metafields.theme.siblings_colors.value | default: upsell_product.metafields.theme.siblings_colours.value
+  endif
 
   assign is_product_list = is_product_list | default: false
   assign show_available_upsell_only = show_available_upsell_only | default: false

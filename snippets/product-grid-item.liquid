@@ -328,7 +328,21 @@
                 endif
 
                 assign sib_cutline = sib_product.metafields.theme.cutline | strip_html
-                assign sib_color = sib_product.metafields.theme.sibling_color.value | default: sib_product.metafields.theme.sibling_colour.value | default: sib_product.metafields.theme.siblings_color.value | default: sib_product.metafields.theme.siblings_colour.value | default: sib_product.metafields.theme.siblings_colors.value | default: sib_product.metafields.theme.siblings_colours.value
+
+                assign sib_color = ''
+
+                comment
+                  Try to get color name from Category metafield (Metaobject list):
+                  namespace: shopify, key: color-pattern.
+                endcomment
+                if sib_product.metafields.shopify['color-pattern'] and sib_product.metafields.shopify['color-pattern'].value != blank
+                  assign sib_color_meta = sib_product.metafields.shopify['color-pattern'].value | first
+                  assign sib_color = sib_color_meta.name | default: sib_color_meta.title | default: sib_color_meta.label
+                endif
+
+                if sib_color == blank
+                  assign sib_color = sib_product.metafields.theme.sibling_color.value | default: sib_product.metafields.theme.sibling_colour.value | default: sib_product.metafields.theme.siblings_color.value | default: sib_product.metafields.theme.siblings_colour.value | default: sib_product.metafields.theme.siblings_colors.value | default: sib_product.metafields.theme.siblings_colours.value
+                endif
 
                 assign swatch_color = sib_color | handle
                 assign sib_hex_color = sib_product.metafields.mm-google-shopping.color.value
@@ -543,7 +557,22 @@
     if settings.quickview_enable and current_variant
       if siblings_html != blank and product.variants.size == 1
         assign title_down = product.title | downcase
-        assign sibling = product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
+
+        assign sibling = ''
+
+        comment
+          Try to get current product color name from Category metafield (Metaobject list):
+          namespace: shopify, key: color-pattern.
+        endcomment
+        if product.metafields.shopify['color-pattern'] and product.metafields.shopify['color-pattern'].value != blank
+          assign product_color_meta = product.metafields.shopify['color-pattern'].value | first
+          assign sibling = product_color_meta.name | default: product_color_meta.title | default: product_color_meta.label
+        endif
+
+        if sibling == blank
+          assign sibling = product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
+        endif
+
         assign sibling_down = sibling | downcase
         unless title_down contains sibling_down
           assign sibling_property_value = sibling | strip_html | escape
