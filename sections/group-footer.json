@@ -19,7 +19,7 @@
           "settings": {
             "title": "About the Brand",
             "heading_font_size": "heading-x-small",
-            "text": "<p>All products in this store are for demo purposes only. They have been generously provided by Holuna Studio, Wolf Circus and Alohas.</p>",
+            "text": "<p>AYA Sacred Wear is a Bali-based, bohemian, organic fashion brand known for its handcrafted, plant-dyed clothing and commitment to sustainability.</p>",
             "column_width": 25,
             "enable_follow_on_shop": false,
             "enable_accordion": false
@@ -50,8 +50,8 @@
           "settings": {
             "title": "Stay in Touch",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
-            "button_text": "Join",
+            "text": "<p>Subscribe to get special offers, free giveaways, and collection updates.</p>",
+            "button_text": "Sign Up",
             "show_arrow": false,
             "terms": false,
             "show_name": true,
