@@ -441,7 +441,7 @@
         "layout_mobile": "2",
         "color_scheme": "scheme-1",
         "padding_top": 62,
-        "padding_bottom": 62,
+        "padding_bottom": 96,
         "heading_tag": "automatic"
       }
     },
