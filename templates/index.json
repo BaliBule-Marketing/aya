@@ -509,22 +509,58 @@
         "heading_tag": "automatic"
       }
     },
+    "section_rich_text_UGqpPw": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_beKwEE": {
+          "type": "heading",
+          "settings": {
+            "title": "ETHICAL SLOW FASHION",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_idkdxT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_beKwEE",
+        "text_idkdxT"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 96,
+        "padding_bottom": 42
+      }
+    },
     "custom-content-1": {
       "type": "section-custom-content",
       "blocks": {
         "image-1": {
           "type": "image",
           "settings": {
-            "title": "Geometry of Light",
+            "image": "shopify://shop_images/Bridal_Boho_Cape_Poncho_Hand_loomed_by_AYA_Sacred_Wear_7.jpg",
+            "title": "FOR EVERYDAY WEAR",
             "heading_font_size": "heading-medium",
-            "text": "<p>Brilliantly cut and artfully arranged to capture light with effortless elegance.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
             "text_font_size": "body-medium",
             "flex_align": "align--bottom-left",
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
             "overlay_type": "disabled",
-            "link_text": "Shop now",
+            "link_text": "Shop Dresses",
             "link": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -536,16 +572,17 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "title": "Modern and Timeless",
+            "image": "shopify://shop_images/new_light_beige_linen_cardigan_for_women_botanicallly_dyed_by_aya_sacred_wear.jpg",
+            "title": "FOR EVERYDAY WEAR",
             "heading_font_size": "heading-medium",
-            "text": "<p>Accessorize with 14k recycled gold all day, everyday.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
             "text_font_size": "body-medium",
             "flex_align": "align--bottom-left",
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
             "overlay_type": "disabled",
-            "link_text": "Shop now",
+            "link_text": "Shop Dresses",
             "link": "",
             "button_type": "btn--primary",
             "button_size": "",
@@ -1095,6 +1132,7 @@
     "section-tab-collections",
     "section_product_QL6CCf",
     "look",
+    "section_rich_text_UGqpPw",
     "custom-content-1",
     "section_hero_product_XLWPXa",
     "section_products_image_cPJVNr",
