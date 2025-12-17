@@ -81,6 +81,9 @@
         "footer-0",
         "text_NtHGrA"
       ],
+      "custom_css": [
+        ".footer__block__title {text-align: center; color: #bda571;}"
+      ],
       "settings": {
         "logo_image_width": 150,
         "color_scheme": "scheme-8",
