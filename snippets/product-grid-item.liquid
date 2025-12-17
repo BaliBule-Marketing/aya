@@ -75,11 +75,11 @@
   endif
 
   assign has_siblings = false
-  if settings.show_siblings and product.metafields.theme.siblings.value != blank and product.metafields.theme.siblings.type == 'single_line_text_field'
+  if settings.show_siblings and product.metafields.custom.related_colors_by_product_links.value != blank
     assign has_siblings = true
-  endif
-
-  if settings.show_siblings and product.metafields.theme.sibling_products != blank and product.metafields.theme.sibling_products.type == 'list.product_reference'
+  elsif settings.show_siblings and product.metafields.theme.sibling_products != blank
+    assign has_siblings = true
+  elsif settings.show_siblings and product.metafields.theme.siblings.value != blank
     assign has_siblings = true
   endif
 
@@ -271,8 +271,13 @@
 
 {%- if has_siblings -%}
   {%- liquid
-    assign sibling_products = product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
-    assign count = product.metafields.theme.sibling_products.value.count | default: collections[product.metafields.theme.siblings.value].products.size
+    comment
+      Main source of siblings — new metafield custom.related_colors_by_product_links.
+      Fallback: old metafield theme.sibling_products or collection by theme.siblings.
+    endcomment
+    assign sibling_products = product.metafields.custom.related_colors_by_product_links.value | default: product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
+
+    assign count = sibling_products.size
     assign count_string_one = 'collections.general.colors_with_count.one' | t
     assign count_string_other = 'collections.general.colors_with_count.other' | t
 
@@ -324,7 +329,9 @@
 
                 assign sib_cutline = sib_product.metafields.theme.cutline | strip_html
                 assign sib_color = sib_product.metafields.theme.sibling_color.value | default: sib_product.metafields.theme.sibling_colour.value | default: sib_product.metafields.theme.siblings_color.value | default: sib_product.metafields.theme.siblings_colour.value | default: sib_product.metafields.theme.siblings_colors.value | default: sib_product.metafields.theme.siblings_colours.value
+
                 assign swatch_color = sib_color | handle
+                assign sib_hex_color = sib_product.metafields.mm-google-shopping.color.value
 
                 if sib_cutline != blank
                   assign any_sibling_cutline = true
@@ -335,7 +342,11 @@
                 class="swatches swatch__button swatch__button--{{ settings.swatch_style }} swatch-{{ swatch_color }}"
                 style="
                   --animation-delay: {{ forloop.index0 | times: 50 }}ms;
-                  --swatch: var(--{{ swatch_color }});
+                  {% if sib_hex_color != blank %}
+                    --swatch: {{ sib_hex_color }};
+                  {% else %}
+                    --swatch: var(--{{ swatch_color }});
+                  {% endif %}
                 "
                 data-tooltip="{{ sib_color }}"
                 data-sibling-link="{{ sib_product.url }}"

@@ -1,19 +1,17 @@
-<!-- /snippets/product-siblings.liquid -->
-
 {%- liquid
-  assign metafields = metafields | default: false
   assign show_siblings = false
-  assign sibs_collection = collections[block.settings.siblings_collection].products
+
+  comment
+    Main source of siblings — new metafield custom.related_colors_by_product_links.
+    Fallback: old metafield theme.sibling_products or collection by theme.siblings.
+  endcomment
+  assign sibs_collection = product.metafields.custom.related_colors_by_product_links.value | default: product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
+
   assign sibling_color = block.settings.sibling_color | default: product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
+
   assign hide_labels_class = ''
 
-  if metafields
-    assign sibs_collection = product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
-  endif
-
-  if metafields and sibs_collection != blank
-    assign show_siblings = true
-  elsif metafields == false and sibs_collection.size > 0
+  if sibs_collection != blank and sibs_collection.size > 0
     assign show_siblings = true
   endif
 
@@ -93,7 +91,9 @@
                 endif
 
                 assign sib_color = sib_product.metafields.theme.sibling_color.value | default: sib_product.metafields.theme.sibling_colour.value | default: sib_product.metafields.theme.siblings_color.value | default: sib_product.metafields.theme.siblings_colour.value | default: sib_product.metafields.theme.siblings_colors.value | default: sib_product.metafields.theme.siblings_colours.value
+
                 assign swatch_color = sib_color | handle
+                assign sib_hex_color = sib_product.metafields['mm-google-shopping'].color.value
 
                 capture swatch_image
                   if settings.sibling_style == 'image'
@@ -116,7 +116,11 @@
 
               <tooltip-component
                 class="swatches swatch__button swatch__button--{{ settings.swatch_style }} swatch-{{ swatch_color | handle }}"
-                style="--swatch: var(--{{ swatch_color }});"
+                {% if sib_hex_color != blank %}
+                  style="--swatch: {{ sib_hex_color }};"
+                {% else %}
+                  style="--swatch: var(--{{ swatch_color | handle }});"
+                {% endif %}
                 data-tooltip="{{ sib_color }}"
               >
                 {%- if product_api -%}
