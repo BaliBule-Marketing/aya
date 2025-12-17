@@ -223,3 +223,51 @@ h6,
   }
 }
 
+/* ========== Custom Section: Split Background Section (custom) ========== */
+.split-section {
+  position: relative;
+  min-height: 600px;
+}
+
+.split-section__backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.split-section__bg-left,
+.split-section__bg-right {
+  width: 50%;
+  overflow: hidden;
+}
+
+.split-section__backgrounds img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-section__content {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.split-section__left,
+.split-section__right {
+  width: 50%;
+  padding: 40px;
+}
+
+.split-section__product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.split-section__right img {
+  max-width: 100%;
+  height: auto;
+}
