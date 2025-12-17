@@ -605,7 +605,7 @@
         "reverse_blocks": false,
         "color_scheme": "scheme-6",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 100
       }
     },
     "section_hero_4Qn873": {
@@ -729,17 +729,23 @@
         "products_JC93xN": {
           "type": "products",
           "settings": {
-            "product_list": [],
+            "product_list": [
+              "preorder-black-poncho-robe-boho-cape-for-women-handmade-bohemian-poncho",
+              "new-dusty-pink-maxi-adjustable-dress-open-back-sides-belly-dress",
+              "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
+              "boho-dress-for-women-off-white-bohemian-prom-dress-light-summer-dress"
+            ],
             "layout_mobile": "slider"
           }
         },
         "image_xEj7XB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
             "mobile_height": "screen-height-one-half--mobile",
-            "title": "",
-            "heading_font_size": "heading-large",
-            "text": "",
+            "title": "the boho essentials",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
             "text_font_size": "body-medium",
             "flex_align": "align--middle-center",
             "overlay_type": "disabled",
@@ -764,7 +770,7 @@
       "settings": {
         "width": "wrapper--full-padded",
         "reverse_blocks": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding_top": 50,
         "padding_bottom": 50
       }
