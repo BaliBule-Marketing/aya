@@ -882,6 +882,9 @@
         "timeline_NYeDtL",
         "timeline_y4X6cW"
       ],
+      "custom_css": [
+        ".timeline__dot {border-radius: 100%;}"
+      ],
       "name": "Timeline",
       "settings": {
         "show_images": true,
