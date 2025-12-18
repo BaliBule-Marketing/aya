@@ -207,6 +207,9 @@
         "image-1",
         "image-2"
       ],
+      "custom_css": [
+        ".btn .icon-nav-arrow-right {margin-left: 10px;}"
+      ],
       "settings": {
         "title": "",
         "heading_font_size": "heading-medium",
@@ -225,6 +228,9 @@
     },
     "video": {
       "type": "section-video",
+      "custom_css": [
+        ".hero__content {/* 8px button margin*/ padding: var(--outer) var(--outer) calc(var(--outer) - 8px);}"
+      ],
       "name": "Video",
       "settings": {
         "video": "shopify://files/videos/videoplayback.mp4",
@@ -235,7 +241,7 @@
         "text": "<p>Where nature meets art in perfect harmony</p>",
         "text_font_size": "body-medium",
         "flex_align": "align--bottom-left",
-        "link_text": "Learn more",
+        "link_text": "Learn More",
         "link": "",
         "button_type": "btn--primary",
         "button_size": "",
@@ -253,8 +259,79 @@
         "heading_tag": "automatic"
       }
     },
+    "section_double_wWhbm7": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_67KUBh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "New Arrivals",
+            "padding_bottom": 4
+          }
+        },
+        "heading_gXxRJi": {
+          "type": "heading",
+          "settings": {
+            "title": "FOR EVERYDAY WEAR",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 12,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_4TRk33": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 42
+          }
+        },
+        "collection_ATcQ9n": {
+          "type": "collection",
+          "settings": {
+            "show_collection_card": true,
+            "collection_1": "organic-tops-tunics",
+            "image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
+            "button_text_1": "Boho Top",
+            "collection_2": "organic-shawl-coverup",
+            "image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
+            "button_text_2": "Organic Poncho",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_67KUBh",
+        "heading_gXxRJi",
+        "text_4TRk33",
+        "collection_ATcQ9n"
+      ],
+      "custom_css": [
+        ".btn--text:not(.btn--text-no-underline) span::after {display: none;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_1": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-center",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 112,
+        "padding_bottom": 112,
+        "show_placeholder": true
+      }
+    },
     "custom_new_arrivals_6wEUrp": {
       "type": "custom-new-arrivals",
+      "disabled": true,
       "name": "New Arrivals (custom)",
       "settings": {
         "main_image": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
@@ -492,7 +569,7 @@
         "layout": "",
         "limit": 3,
         "image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
-        "scrolling_styles": "vertical",
+        "scrolling_styles": "horizontal",
         "horizontal_scroll": false,
         "color_scheme": ""
       }
@@ -694,11 +771,11 @@
         "content_width": 100,
         "mobile_height": "screen-height-three-quarters--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
         "show_text_background": false,
         "overlay_type": "disabled",
         "padding_top": 0,
-        "padding_bottom": 28,
+        "padding_bottom": 0,
         "show_placeholder": true
       }
     },
@@ -804,7 +881,8 @@
         "image_xEj7XB"
       ],
       "custom_css": [
-        ".brick__section {gap: 30px;}"
+        ".brick__section {gap: 30px;}",
+        ".hero__title, .hero__description, {color: #fffcf3;}"
       ],
       "name": "Products with image",
       "settings": {
@@ -1301,6 +1379,7 @@
     "section_rich_text_apnD8F",
     "columns-1",
     "video",
+    "section_double_wWhbm7",
     "custom_new_arrivals_6wEUrp",
     "announcement-2",
     "section-tab-collections",
