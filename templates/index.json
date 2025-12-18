@@ -78,7 +78,7 @@
       "custom_css": [
         ".hero__button-group {margin: 0; gap: 20px;}",
         ".hero__button {margin: 0;}",
-        ".slideshow .hero__content--transparent {padding: var(--outer) var(--outer) calc(var(--outer) );}"
+        ".slideshow .hero__content--transparent {padding: var(--outer) var(--outer) calc(var(--outer));}"
       ],
       "name": "Slideshow (Nested)",
       "settings": {
@@ -94,14 +94,45 @@
         "padding_bottom": 0
       }
     },
-    "section_text_background_G6tE8r": {
-      "type": "section-text-background",
-      "custom_css": [],
-      "name": "Text with background",
+    "section_rich_text_apnD8F": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_kUmfLC": {
+          "type": "heading",
+          "settings": {
+            "title": "Sacred Wear for The Modern Goddess",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_HXUdn6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_kUmfLC",
+        "text_HXUdn6"
+      ],
+      "custom_css": [
+        ".hero__content__wrapper {max-width: 426px; padding: 0;}",
+        "picture img {max-width: 310px; object-fit: contain; left: 50%; transform: translateX(-50%);}"
+      ],
+      "name": "Rich text",
       "settings": {
-        "heading": "Sacred Wear for The Modern Goddess",
-        "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
-        "background_image": "shopify://shop_images/yantra.png"
+        "align_text": "text-center",
+        "width": "wrapper",
+        "image": "shopify://shop_images/yantra.png",
+        "image_mobile": "shopify://shop_images/yantra.png",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 150,
+        "padding_bottom": 150
       }
     },
     "columns-1": {
@@ -1267,7 +1298,7 @@
   },
   "order": [
     "section_slideshow_nested",
-    "section_text_background_G6tE8r",
+    "section_rich_text_apnD8F",
     "columns-1",
     "video",
     "custom_new_arrivals_6wEUrp",
