@@ -313,7 +313,7 @@
       "custom_css": [
         ".btn--text:not(.btn--text-no-underline) span::after {display: none;}",
         ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}",
-        ".index-image-text {background-image: url('https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png'); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+        ".index-image-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
       ],
       "name": "Image with text",
       "settings": {
@@ -563,7 +563,9 @@
     },
     "section_product_QL6CCf": {
       "type": "section-product",
-      "custom_css": [],
+      "custom_css": [
+        ".featured-product__content {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02.webp\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+      ],
       "name": "Featured product",
       "settings": {
         "product": "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
