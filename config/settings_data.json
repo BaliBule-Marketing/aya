@@ -204,11 +204,11 @@
       "scheme-8": {
         "settings": {
           "section_text": "#212121",
-          "section_bg": "#eae6dd",
+          "section_bg": "#f5eee4",
           "section_bg_light": "#f5f2ec",
           "section_bg_gradient": "",
-          "btn_primary_bg": "#212121",
-          "btn_primary_text": "#ffffff",
+          "btn_primary_bg": "#24201c",
+          "btn_primary_text": "#fffcf3",
           "btn_primary_border": "#212121",
           "btn_secondary_bg": "#ab8c52",
           "btn_secondary_text": "#ffffff",
