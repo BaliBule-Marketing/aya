@@ -151,14 +151,6 @@
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'Urbanist';
-    src: url('{{ "Urbanist.woff2" | asset_url }}') format('woff2');
-    font-display: swap;
-    font-weight: 100 900;
-    font-style: normal;
-  }
-
   {{ heading_font | font_face: font_display: 'swap' }}
   {{ base_font | font_face: font_display: 'swap' }}
   {{ nav_font | font_face: font_display: 'swap' }}
@@ -462,7 +454,7 @@
     --FONT-HEADING-LARGE-MOBILE: {{ settings.heading_large_mobile | append: 'px' }};
     --FONT-HEADING-X-LARGE-MOBILE: {{ settings.heading_x_large_mobile | append: 'px' }};
 
-    --FONT-STACK-BODY: 'Urbanist', {{ base_font.family }}, {{ base_font.fallback_families }};
+    --FONT-STACK-BODY: {{ base_font.family }}, {{ base_font.fallback_families }};
     --FONT-STYLE-BODY: {{ base_font.style }};
     --FONT-WEIGHT-BODY: {{ base_font.weight }};
     --FONT-WEIGHT-BODY-BOLD: {{ base_font_bold.weight | default: 700 }};
@@ -632,7 +624,6 @@
 {% endstyle %}
 
 <link rel="preload" as="font" href="{{ 'tt-ricordi-allegria-trl.woff2' | asset_url }}" type="font/woff2" crossorigin>
-<link rel="preload" as="font" href="{{ 'Urbanist.woff2' | asset_url }}" type="font/woff2" crossorigin>
 
 {% comment %} {%- unless settings.type_base_font.system? -%}
   <link rel="preload" as="font" href="{{ settings.type_base_font | font_url }}" type="font/woff2" crossorigin>
