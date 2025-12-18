@@ -1889,5 +1889,10 @@
         "links": "#282c2e"
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ":root .color-scheme-1 {--BTN-PRIMARY-BG: #fffcf3; --BTN-SECONDARY-BORDER: #fffcf3; --BTN-PRIMARY-TEXT: #24201c; --BTN-PRIMARY-BG-BRIGHTER: #ffffff; --COLOR-TEXT: #24201c;}"
+    ]
   }
 }
