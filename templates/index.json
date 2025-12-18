@@ -273,7 +273,7 @@
           "type": "heading",
           "settings": {
             "title": "FOR EVERYDAY WEAR",
-            "heading_font_size": "heading-large",
+            "heading_font_size": "heading-medium",
             "padding_bottom": 12,
             "heading_tag": "automatic"
           }
@@ -311,7 +311,8 @@
         "collection_ATcQ9n"
       ],
       "custom_css": [
-        ".btn--text:not(.btn--text-no-underline) span::after {display: none;}"
+        ".btn--text:not(.btn--text-no-underline) span::after {display: none;}",
+        ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}"
       ],
       "name": "Image with text",
       "settings": {
@@ -882,7 +883,7 @@
       ],
       "custom_css": [
         ".brick__section {gap: 30px;}",
-        ".hero__title, .hero__description, {color: #fffcf3;}"
+        ".hero__title,.hero__description {color: #fffcf3;}"
       ],
       "name": "Products with image",
       "settings": {
