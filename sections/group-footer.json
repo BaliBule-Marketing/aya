@@ -38,7 +38,7 @@
         "links": {
           "type": "linklist",
           "settings": {
-            "linklist": "",
+            "linklist": "resources-footer-menu",
             "title": "Resources",
             "heading_font_size": "heading-x-small",
             "column_width": 20,
