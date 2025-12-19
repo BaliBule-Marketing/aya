@@ -31,7 +31,7 @@
         "text_discount"
       ],
       "custom_css": [
-        ".announcement__wrapper {background-color: #f5eee4;}"
+        ".announcement__wrapper {background-color: #f5eee4; --font-body-small: 0.75rem;}"
       ],
       "settings": {
         "show_border": false,
