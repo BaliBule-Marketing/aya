@@ -1898,7 +1898,7 @@
     "custom_css": [
       ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}",
       ".navlink {--font-nav-small: 1;}",
-      ".navtext {font-size: 20px;}"
+      ".navlink--child span {font-size: 20px;}"
     ]
   }
 }
