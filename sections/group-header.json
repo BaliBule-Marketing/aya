@@ -184,7 +184,7 @@
       ],
       "settings": {
         "header_sticky": false,
-        "enable_search": false,
+        "enable_search": true,
         "header_style": "logo_center_menu_left",
         "show_separator_line": false,
         "header_border_color": "",
