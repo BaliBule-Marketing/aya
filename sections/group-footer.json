@@ -106,14 +106,14 @@
     "supporting-menu": {
       "type": "section-supporting-menu",
       "settings": {
-        "linklist": "",
+        "linklist": "footer",
         "text_font_size": "body-small",
         "footer_payment_enable": false,
         "enable_greyscale": false,
         "show_locale_selector": true,
         "show_locale_code": false,
         "show_globe_icon": true,
-        "show_country_selector": true,
+        "show_country_selector": false,
         "show_country_name": false,
         "show_country_flag": true,
         "color_scheme": "scheme-8",
