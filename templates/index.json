@@ -78,7 +78,8 @@
       "custom_css": [
         ".hero__button-group {margin: 0; gap: 20px;}",
         ".hero__button {margin: 0;}",
-        ".slideshow .hero__content--transparent {padding: var(--outer) var(--outer) calc(var(--outer));}"
+        ".slideshow .hero__content--transparent {padding: var(--outer) var(--outer) calc(var(--outer));}",
+        "@media only screen and (min-width: 750px) {.screen-height-full {/* decrease parallax strength */ --PARALLAX-STRENGTH-MIN: 100%; --PARALLAX-STRENGTH-MAX: 120%; /* 10px is padding top+bottom*/ min-height: calc(var(--full-screen) - 10px); }}"
       ],
       "name": "Slideshow (Nested)",
       "settings": {
@@ -313,7 +314,9 @@
       "custom_css": [
         ".btn--text:not(.btn--text-no-underline) span::after {display: none;}",
         ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}",
-        ".index-image-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+        ".index-image-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}",
+        ".brick__block__image {max-width: 100%;}",
+        ".image__hero__frame {height: auto; max-width: 100%; aspect-ratio: 1.06;}"
       ],
       "name": "Image with text",
       "settings": {
@@ -323,12 +326,12 @@
         "layout": "",
         "width": "wrapper--full-padded",
         "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-half--mobile",
+        "mobile_height": "screen-height-full--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
         "padding_top": 112,
         "padding_bottom": 112,
-        "show_placeholder": true
+        "show_placeholder": false
       }
     },
     "custom_new_arrivals_6wEUrp": {
@@ -507,6 +510,7 @@
             "featured_collection": "organic-skirts",
             "show_image": true,
             "align_with_product_images": false,
+            "image": "shopify://shop_images/boho_boho_black_wrap_skirt_organic_cotton_by_aya_sacred_wear.jpg",
             "overlay_type": "disabled",
             "description": "<p>14k solid gold essentials, sterling silver statement pieces and more.</p>",
             "color": "#ffffff",
@@ -714,6 +718,7 @@
         "image-1",
         "image-2"
       ],
+      "custom_css": [],
       "settings": {
         "borders": false,
         "gutters": true,
@@ -756,7 +761,7 @@
             "button_style": "btn--solid",
             "show_arrow": false,
             "full_width": false,
-            "padding_bottom": 8
+            "padding_bottom": 16
           }
         }
       },
@@ -767,7 +772,7 @@
       ],
       "name": "Image banner",
       "settings": {
-        "image_1": "shopify://shop_images/powder_pink_small_bells_dress_organic_cocktail_dress_ombre_minimalist_dress_by_aya_sacred_wear_26.jpg",
+        "image_1": "shopify://shop_images/banner-image-cropped.webp",
         "link": "",
         "width": "wrapper--full",
         "height": "screen-height-three-quarters",
@@ -964,6 +969,7 @@
         "timeline_NYeDtL": {
           "type": "timeline",
           "settings": {
+            "image": "shopify://shop_images/Mandara_Dress_in_Ivory_Colour_Organic_Boho_Wedding_Dress_2.jpg",
             "subheading": "Commitment Two",
             "title": "giving back",
             "heading_font_size": "heading-medium",
@@ -981,6 +987,7 @@
         "timeline_y4X6cW": {
           "type": "timeline",
           "settings": {
+            "image": "shopify://shop_images/Maharani_Blouse_Inka_Gold_Colour_Pure_Silk_Chiffon_Elegant_Top_8.jpg",
             "subheading": "Commitment Three",
             "title": "aya community",
             "heading_font_size": "heading-medium",
