@@ -146,8 +146,25 @@
             </ticker-bar>
           {%- endif -%}
 
-          {%- if show_utilities -%}
+          {%- if show_utilities or section.settings.enable_search -%}
             <div class="toolbar__utilities desktop">
+              {%- if section.settings.enable_search -%}
+                <div class="toolbar__utility">
+                  <header-search-popdown>
+                    <details>
+                      <summary class="navlink navlink--search{% if section.settings.show_icons == false %} navlink--toplevel{% endif %}" aria-haspopup="dialog" title="{{ 'general.search.search' | t }}">
+                        <span class="navtext">{{ 'layout.header.search' | t }}</span>
+                        {%- render 'icon-search' -%}
+                        {%- render 'icon-cancel' -%}
+                      </summary>
+
+                      {%- render 'header-search-popdown', unique: 'toolbar' -%}
+
+                      <span class="underlay" data-popdown-underlay></span>
+                    </details>
+                  </header-search-popdown>
+                </div>
+              {%- endif -%}
               {{ utilities }}
             </div>
           {%- endif -%}

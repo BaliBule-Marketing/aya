@@ -437,24 +437,6 @@
       </div>
     {%- endif -%}
 
-    {%- if section.settings.enable_search -%}
-      <div class="header__desktop__button">
-        <header-search-popdown>
-          <details>
-            <summary class="navlink navlink--search{% if show_icons == false %} navlink--toplevel{% endif %}" aria-haspopup="dialog" title="{{ 'general.search.search' | t }}">
-              {%- render 'icon-search' -%}
-              {%- render 'icon-cancel' -%}
-              <span class="{% if show_icons == false %}navtext{% else %}visually-hidden{% endif %}">{{ 'layout.header.search' | t }}</span>
-            </summary>
-
-            {%- render 'header-search-popdown', unique: 'desktop' -%}
-
-            <span class="underlay" data-popdown-underlay></span>
-          </details>
-        </header-search-popdown>
-      </div>
-    {%- endif -%}
-
     <div class="header__desktop__button">
       <a href="{{ routes.cart_url }}" class="navlink {{ navlink_cart_classes }}" title="{{ 'cart.general.title' | t }}" data-cart-toggle>
         {{ cart_status }}
@@ -475,7 +457,7 @@
   </nav>
 {%- endcapture -%}
 
-{%- if show_toolbar -%}
+{%- if toolbar_block -%}
   <script src="{{ 'ticker.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 

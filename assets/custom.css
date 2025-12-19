@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
 }
-
+/* 
 /* ========== Custom Section: New Arrivals (custom) ========== */
 .new-arrivals-section {
   background-image: url("/assets/Paper_03-cropped.webp");
@@ -113,5 +113,35 @@
     flex-direction: column;
     gap: 14px;
   }
+} */
+
+/* ========== Search in toolbar fix ========== */
+.toolbar__utility header-search-popdown {
+  position: static;
 }
 
+.toolbar__utility header-search-popdown .search-popdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 6002;
+}
+
+.toolbar__utility header-search-popdown .search-popdown + .underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6001;
+}
+
+.navlink--search {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
