@@ -964,6 +964,7 @@
         "timeline_NYeDtL": {
           "type": "timeline",
           "settings": {
+            "image": "shopify://shop_images/Mandara_Dress_in_Ivory_Colour_Organic_Boho_Wedding_Dress_1.jpg",
             "subheading": "Commitment Two",
             "title": "giving back",
             "heading_font_size": "heading-medium",
@@ -981,6 +982,7 @@
         "timeline_y4X6cW": {
           "type": "timeline",
           "settings": {
+            "image": "shopify://shop_images/AYA-210.jpg",
             "subheading": "Commitment Three",
             "title": "aya community",
             "heading_font_size": "heading-medium",
