@@ -564,7 +564,7 @@
     "section_product_QL6CCf": {
       "type": "section-product",
       "custom_css": [
-        ".featured-product__content {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+        ".featured-product__content {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02.png?v=1765973107\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
       ],
       "name": "Featured product",
       "settings": {
