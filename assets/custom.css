@@ -7,6 +7,8 @@
 
 .toolbar__dropdown {
   position: fixed;
+  top: 0;
+  padding-top: 46px;
 }
 
 .toolbar__menu {
