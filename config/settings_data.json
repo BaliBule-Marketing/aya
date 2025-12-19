@@ -1896,7 +1896,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}"
+      ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}",
+      ".navlink {--font-nav-small: 1;}"
     ]
   }
 }
