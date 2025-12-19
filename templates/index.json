@@ -568,7 +568,7 @@
     "section_product_QL6CCf": {
       "type": "section-product",
       "custom_css": [
-        ".featured-product__content {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02.webp\"); background-size: cover; background-position: center; background-repeat: no-repeat;}"
+        "@media only screen and (min-width: 750px) {.featured-product__content {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02.png?v=1765973107\"); background-size: cover; background-position: center; background-repeat: no-repeat;}}"
       ],
       "name": "Featured product",
       "settings": {
@@ -969,7 +969,7 @@
         "timeline_NYeDtL": {
           "type": "timeline",
           "settings": {
-            "image": "shopify://shop_images/Mandara_Dress_in_Ivory_Colour_Organic_Boho_Wedding_Dress_2.jpg",
+            "image": "shopify://shop_images/Mandara_Dress_in_Ivory_Colour_Organic_Boho_Wedding_Dress_1.jpg",
             "subheading": "Commitment Two",
             "title": "giving back",
             "heading_font_size": "heading-medium",
@@ -987,7 +987,7 @@
         "timeline_y4X6cW": {
           "type": "timeline",
           "settings": {
-            "image": "shopify://shop_images/Maharani_Blouse_Inka_Gold_Colour_Pure_Silk_Chiffon_Elegant_Top_8.jpg",
+            "image": "shopify://shop_images/AYA-210.jpg",
             "subheading": "Commitment Three",
             "title": "aya community",
             "heading_font_size": "heading-medium",
@@ -1380,7 +1380,7 @@
         "layout_mobile": "2",
         "color_scheme": "scheme-1",
         "padding_top": 15,
-        "padding_bottom": 30,
+        "padding_bottom": 88,
         "heading_tag": "automatic"
       }
     }
