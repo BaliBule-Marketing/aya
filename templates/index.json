@@ -713,7 +713,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
-            "overlay_type": "disabled",
+            "overlay_type": "opacity",
             "link_text": "Shop Dresses",
             "link": "",
             "button_type": "btn--primary",
