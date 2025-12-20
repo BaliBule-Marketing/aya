@@ -82,7 +82,7 @@
         "text_NtHGrA"
       ],
       "custom_css": [
-        ".rte h2 {text-align: center; color: #bda571; font-size: 10vw;}",
+        ".rte h2 {text-align: center; color: #bda571; font-size: 10vw; margin-bottom: 0px;}",
         ".btn {padding-block: 8px;}",
         ".footer__block__title {font-family: var(--FONT-STACK-BODY); text-transform: unset;}",
         ".site-footer {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/yantra-footer.png?v=1766240507\"); background-size: contain; background-position: center; background-repeat: no-repeat;}"
@@ -107,7 +107,7 @@
     "supporting-menu": {
       "type": "section-supporting-menu",
       "settings": {
-        "linklist": "footer",
+        "linklist": "supporting-menu-under-footer",
         "text_font_size": "body-small",
         "footer_payment_enable": false,
         "enable_greyscale": false,
