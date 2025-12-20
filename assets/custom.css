@@ -1,10 +1,4 @@
 /* ========== Toolvar with nested menu(custom) ========== */
-.dropdown__family {
-  .sup {
-    display: none;
-  }
-}
-
 .toolbar__dropdown {
   position: fixed;
   top: 0;
