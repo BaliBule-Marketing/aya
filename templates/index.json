@@ -691,7 +691,7 @@
             "show_text_background": false,
             "bg_color": "",
             "color": "#ffffff",
-            "overlay_type": "disabled",
+            "overlay_type": "opacity",
             "link_text": "Shop Dresses",
             "link": "",
             "button_type": "btn--primary",
@@ -728,7 +728,9 @@
         "image-1",
         "image-2"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".image-overlay {background-color: unset; background: linear-gradient( to top, rgba(36, 32, 28, 0.6), rgba(36, 32, 28, 0) );}"
+      ],
       "settings": {
         "borders": false,
         "gutters": true,
