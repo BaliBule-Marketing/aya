@@ -98,13 +98,12 @@
     "section_rich_text_apnD8F": {
       "type": "section-rich-text",
       "blocks": {
-        "heading_kUmfLC": {
-          "type": "heading",
+        "text_Yz9PgM": {
+          "type": "text",
           "settings": {
-            "title": "Sacred Wear for The Modern Goddess",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
+            "text": "<h3>Sacred Wear for</h3><h3>The Modern Goddess</h3>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
           }
         },
         "text_HXUdn6": {
@@ -117,7 +116,7 @@
         }
       },
       "block_order": [
-        "heading_kUmfLC",
+        "text_Yz9PgM",
         "text_HXUdn6"
       ],
       "custom_css": [
