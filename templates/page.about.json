@@ -458,6 +458,32 @@
         "padding_bottom": 96,
         "heading_tag": "automatic"
       }
+    },
+    "section_rich_text_GVQBnM": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_jVNtUP": {
+          "type": "heading",
+          "settings": {
+            "title": "“we only use natural, hand-spun, and hand-woven fabrics, aiming to connect with the source of our materials and the artisans who craft them.”",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jVNtUP"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 128
+      }
     }
   },
   "order": [
@@ -468,6 +494,7 @@
     "columns",
     "double-2",
     "section_announcement_f9XBVx",
-    "collections-list"
+    "collections-list",
+    "section_rich_text_GVQBnM"
   ]
 }
