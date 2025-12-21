@@ -52,7 +52,7 @@
         "text-1-1"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.brick__block {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02_about.jpg?v=1766317656&width=365\"); background-size: cover; background-position: center; background-repeat: no-repeat; }}"
+        "@media only screen and (min-width: 750px) {.brick__block {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/Paper_02_about.jpg?idth=1080\"); background-size: cover; background-position: center; background-repeat: no-repeat; }}"
       ],
       "settings": {
         "image_1": "shopify://shop_images/powder_pink_small_bells_dress_organic_cocktail_dress_ombre_minimalist_dress_by_aya_sacred_wear_26.jpg",
