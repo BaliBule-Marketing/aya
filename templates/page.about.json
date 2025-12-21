@@ -114,11 +114,11 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_5.jpg",
-            "image_width": 66,
+            "image_width": 100,
             "image_shape": "normal",
-            "title": "Add a title or tagline",
+            "title": "sustainable materials",
             "heading_font_size": "heading-small",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
             "text_font_size": "body-medium",
             "button_text": "",
             "button_url": "",
@@ -126,7 +126,7 @@
             "button_size": "",
             "button_style": "btn--solid",
             "show_arrow": false,
-            "image_aspect_ratio": 1.2,
+            "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "heading_tag": "automatic"
           }
