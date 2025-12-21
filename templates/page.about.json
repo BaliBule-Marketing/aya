@@ -420,7 +420,8 @@
       ],
       "custom_css": [
         ".grid__heading {font-size: 14px; font-family: var(--FONT-STACK-SUBHEADING); text-transform: none; font-weight: 400;}",
-        ".grid__heading-text {width: 100%; margin: 0; text-align: left; }"
+        ".grid__heading-text {margin: 0; text-align: left;}",
+        ".grid__description h4 {margin-top: 4px;}"
       ],
       "settings": {
         "title": "Now Available",
@@ -434,7 +435,7 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "aspect_ratio": 1.2,
-        "width": "wrapper--full-padded",
+        "width": "wrapper--full",
         "layout": "grid",
         "grid": 4,
         "layout_mobile": "slider",
