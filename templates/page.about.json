@@ -28,10 +28,13 @@
     },
     "section_divider_wxgNhV": {
       "type": "section-divider",
+      "custom_css": [
+        ".divider {--border: #24201C;}"
+      ],
       "settings": {
         "show_line": true,
         "width": "wrapper--full",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
       }
