@@ -65,7 +65,7 @@
         "reverse_blocks": false,
         "color_scheme": "scheme-10",
         "padding_top": 0,
-        "padding_bottom": 50,
+        "padding_bottom": 0,
         "show_placeholder": true
       }
     },
@@ -77,7 +77,7 @@
           "settings": {
             "image": "shopify://shop_images/what_we_stand_for.png",
             "image_width": 100,
-            "padding_bottom": 16
+            "padding_bottom": 42
           }
         },
         "heading_eLQ98L": {
@@ -85,7 +85,7 @@
           "settings": {
             "title": "what we stand for",
             "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
+            "padding_bottom": 0,
             "heading_tag": "automatic"
           }
         }
@@ -95,7 +95,7 @@
         "heading_eLQ98L"
       ],
       "custom_css": [
-        "picture img {max-width: 300px; object-fit: contain; left: 50%; transform: translateX(-50%);}"
+        ".hero__media {max-width: 300px;}"
       ],
       "name": "Rich text",
       "settings": {
@@ -103,8 +103,8 @@
         "width": "wrapper",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 64,
+        "padding_bottom": 0
       }
     },
     "columns": {
