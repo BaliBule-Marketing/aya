@@ -1900,7 +1900,8 @@
       ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}",
       "header {--font-nav-small: 1;}",
       ".navlink--child span {font-size: 20px;}",
-      ".header__dropdown {padding-bottom: 25px;}"
+      ".header__dropdown {padding-bottom: 25px;}",
+      ".hero__subheading{text-transform: none;}"
     ]
   }
 }
