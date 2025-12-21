@@ -418,9 +418,12 @@
         "collection-3",
         "collection-4"
       ],
+      "custom_css": [
+        ".grid__heading {font-size: 14px; font-family: var(--FONT-STACK-SUBHEADING); text-transform: none; font-weight: 400;}"
+      ],
       "settings": {
         "title": "Now Available",
-        "heading_font_size": "heading-x-small",
+        "heading_font_size": "heading-medium",
         "description": "<h4>Shop aya sacred wear </h4>",
         "text_font_size": "body-small",
         "button_text": "",
