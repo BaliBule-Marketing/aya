@@ -1901,7 +1901,7 @@
       "header {--font-nav-small: 1;}",
       ".navlink--child span {font-size: 20px;}",
       ".header__dropdown {padding-bottom: 25px;}",
-      ".hero__subheading{text-transform: none;}"
+      ".hero__subheading {text-transform: none;}"
     ]
   }
 }
