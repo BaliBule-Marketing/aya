@@ -190,7 +190,7 @@
         "grid": 3,
         "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 50,
+        "padding_top": 42,
         "padding_bottom": 96,
         "heading_tag": "automatic"
       }
@@ -247,13 +247,103 @@
         "show_placeholder": true
       }
     },
-    "announcement": {
+    "section_announcement_f9XBVx": {
       "type": "section-announcement",
       "blocks": {
-        "text": {
+        "text_JYWARd": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Make an announcement</strong> | More info</p>",
+            "text": "<p>HANDMADE GARMENTS</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_6wh38J": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_m6Pm4e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SUSTAINABLE MATERIALS</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_UXbkQB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MnPMi6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SLOW FASHION</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_kGrxR7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_qNPV6k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ETHICAL SOURCING</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_BthVdJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
+            "text_font_size": "body-small",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_PJfRBJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ARTISANAL DESIGN</p>",
+            "text_font_size": "body-medium",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_7DmEhX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>●</p>",
             "text_font_size": "body-small",
             "color": "",
             "target_device_enabled": false,
@@ -262,7 +352,16 @@
         }
       },
       "block_order": [
-        "text"
+        "text_JYWARd",
+        "text_6wh38J",
+        "text_m6Pm4e",
+        "text_UXbkQB",
+        "text_MnPMi6",
+        "text_kGrxR7",
+        "text_qNPV6k",
+        "text_BthVdJ",
+        "text_PJfRBJ",
+        "text_7DmEhX"
       ],
       "settings": {
         "slider_speed": 7,
@@ -272,9 +371,9 @@
         "message_spacing": 10,
         "show_border": false,
         "layout": "marquee",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "color_scheme": "scheme-2",
+        "padding_top": 10,
+        "padding_bottom": 10
       }
     },
     "collections-list": {
@@ -283,29 +382,33 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
+            "collection": "ananda-shakti-ss-2026",
+            "collection_image": "shopify://shop_images/olive_colour_boho_dress_with_ledder_sides_see_through_dress_women_by_aya_sacred_wear_3.jpg",
+            "title": "New in Store"
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
+            "collection": "organic-cotton-dresses",
+            "collection_image": "shopify://shop_images/dutsy_pink_cotton_boho_dress_by_aya_sacred_wear_6.jpg",
+            "title": "Dresses"
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
+            "collection": "organic-skirts",
+            "collection_image": "shopify://shop_images/boho-top-with-hand-knots-6-logo.jpg",
+            "title": "Skirts"
           }
         },
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
+            "collection": "organic-tops-tunics",
+            "collection_image": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
+            "title": "Tops"
           }
         }
       },
@@ -316,10 +419,10 @@
         "collection-4"
       ],
       "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
+        "title": "Now Available",
+        "heading_font_size": "heading-small",
+        "description": "<h4>Shop aya sacred wear </h4>",
+        "text_font_size": "body-small",
         "button_text": "",
         "button_url": "shopify://collections",
         "button_type": "btn--primary",
@@ -332,8 +435,8 @@
         "grid": 4,
         "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 32,
+        "padding_top": 96,
+        "padding_bottom": 96,
         "heading_tag": "automatic"
       }
     },
@@ -409,7 +512,7 @@
     "section_rich_text_VMGBnN",
     "columns",
     "double-2",
-    "announcement",
+    "section_announcement_f9XBVx",
     "collections-list",
     "press-logos",
     "divider"
