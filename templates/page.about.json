@@ -421,7 +421,8 @@
       "custom_css": [
         ".grid__heading {font-size: 14px; font-family: var(--FONT-STACK-SUBHEADING); text-transform: none; font-weight: 400;}",
         ".grid__heading-text {margin: 0; text-align: left;}",
-        ".grid__description h4 {margin-top: 4px;}"
+        ".grid__description h4 {margin-top: 4px;}",
+        ".grid__heading-holder {--gutter: 42px;}"
       ],
       "settings": {
         "title": "Now Available",
