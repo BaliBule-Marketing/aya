@@ -212,7 +212,7 @@
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.</p>",
             "text_font_size": "body-medium",
-            "padding_bottom": 16
+            "padding_bottom": 28
           }
         },
         "image_CaC9rM": {
@@ -230,7 +230,7 @@
         "image_CaC9rM"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 750px) {.hero__media {position: relative; left: -14px;}}"
+        "@media only screen and (min-width: 750px) {.hero__media {position: relative; left: -14px; }}"
       ],
       "settings": {
         "image_1": "shopify://shop_images/black_boho_goddess_dress_open_sides_macrame_robes_dress_organic_dress_by_aya_sacred_wear_8.jpg",
