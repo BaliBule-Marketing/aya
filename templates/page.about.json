@@ -422,7 +422,7 @@
         ".grid__heading {font-size: 14px; font-family: var(--FONT-STACK-SUBHEADING); text-transform: none; font-weight: 400;}",
         ".grid__heading-text {margin: 0; text-align: left;}",
         ".grid__description h4 {margin-top: 4px;}",
-        "@media only screen and (min-width: 750px) {.grid__heading-holder {--gutter: 42px;}}"
+        "@media only screen and (min-width: 750px) {.grid__heading-holder {--gutter: 42px; }}"
       ],
       "settings": {
         "title": "Now Available",
@@ -445,71 +445,6 @@
         "padding_bottom": 96,
         "heading_tag": "automatic"
       }
-    },
-    "press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo-item-1": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": "",
-            "text": "Include a brief quote from a brand that loves your products",
-            "heading_font_size": "heading-small"
-          }
-        },
-        "logo-item-2": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": "",
-            "text": "Include a brief quote from a brand that loves your products",
-            "heading_font_size": "heading-small"
-          }
-        },
-        "logo-item-3": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": "",
-            "text": "Include a brief quote from a brand that loves your products",
-            "heading_font_size": "heading-small"
-          }
-        },
-        "logo-item-4": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": "",
-            "text": "Include a brief quote from a brand that loves your products",
-            "heading_font_size": "heading-small"
-          }
-        }
-      },
-      "block_order": [
-        "logo-item-1",
-        "logo-item-2",
-        "logo-item-3",
-        "logo-item-4"
-      ],
-      "settings": {
-        "enable_heading_slider": false,
-        "logo_opacity": 60,
-        "title": "As seen in",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "divider": {
-      "type": "section-divider",
-      "settings": {
-        "show_line": true,
-        "width": "wrapper--full-padded",
-        "color_scheme": "",
-        "padding_top": 31,
-        "padding_bottom": 50
-      }
     }
   },
   "order": [
@@ -519,8 +454,6 @@
     "columns",
     "double-2",
     "section_announcement_f9XBVx",
-    "collections-list",
-    "press-logos",
-    "divider"
+    "collections-list"
   ]
 }
