@@ -69,6 +69,23 @@
         "show_placeholder": true
       }
     },
+    "section_rich_text_VMGBnN": {
+      "type": "section-rich-text",
+      "custom_css": [
+        "picture img {max-width: 300px; object-fit: contain; left: 50%; transform: translateX(-50%);}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "image": "shopify://shop_images/what_we_stand_for.png",
+        "image_mobile": "shopify://shop_images/what_we_stand_for.png",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "columns": {
       "type": "section-columns",
       "blocks": {
@@ -352,6 +369,7 @@
   "order": [
     "main",
     "double-1",
+    "section_rich_text_VMGBnN",
     "columns",
     "double-2",
     "announcement",
