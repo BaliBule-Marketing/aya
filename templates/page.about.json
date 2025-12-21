@@ -26,6 +26,16 @@
         "heading_tag": "automatic"
       }
     },
+    "section_divider_wxgNhV": {
+      "type": "section-divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full",
+        "color_scheme": "scheme-6",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "double-1": {
       "type": "section-double",
       "blocks": {
@@ -449,6 +459,7 @@
   },
   "order": [
     "main",
+    "section_divider_wxgNhV",
     "double-1",
     "section_rich_text_VMGBnN",
     "columns",
