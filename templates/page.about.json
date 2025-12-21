@@ -435,7 +435,7 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "aspect_ratio": 1.2,
-        "width": "wrapper--full",
+        "width": "wrapper--full-padded",
         "layout": "grid",
         "grid": 4,
         "layout_mobile": "slider",
