@@ -201,8 +201,8 @@
         "heading-2-1": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
-            "heading_font_size": "heading-x-large",
+            "title": "From our founder",
+            "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
           }
@@ -210,17 +210,27 @@
         "text-2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.</p>",
             "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "image_CaC9rM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/amma_sign.svg",
+            "image_width": 30,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
         "heading-2-1",
-        "text-2-1"
+        "text-2-1",
+        "image_CaC9rM"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/black_boho_goddess_dress_open_sides_macrame_robes_dress_organic_dress_by_aya_sacred_wear_8.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
