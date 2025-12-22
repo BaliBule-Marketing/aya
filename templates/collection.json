@@ -185,7 +185,7 @@
         "featured_image_2"
       ],
       "custom_css": [
-        ".product-item__image-content{}"
+        ".product-item__image-content {}"
       ],
       "settings": {
         "enable_sort": true,
