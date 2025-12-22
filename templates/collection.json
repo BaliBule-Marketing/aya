@@ -184,6 +184,9 @@
         "featured_image_1",
         "featured_image_2"
       ],
+      "custom_css": [
+        ".product-item__image-content{}"
+      ],
       "settings": {
         "enable_sort": true,
         "enable_filters": true,
