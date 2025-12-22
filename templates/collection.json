@@ -23,7 +23,7 @@
       "type": "collection-image-with-title",
       "settings": {
         "show_title": true,
-        "show_description": true,
+        "show_description": false,
         "flex_align": "align--middle-left",
         "color_scheme": "",
         "show_text_background": false,
@@ -108,6 +108,7 @@
         "highlight_BfUMW8",
         "highlight_J6Ue7q"
       ],
+      "disabled": true,
       "settings": {
         "style": "button",
         "grid": 6,
@@ -143,11 +144,13 @@
         "featured_image_1": {
           "type": "featured_image",
           "settings": {
+            "featured_image": "shopify://shop_images/dusty_pink_toga_dress_boho_macrame_dress_boho_sustainable_dress_by_sacred_wear_24.jpg",
             "position": 3,
-            "featured_heading": "Gemstone Collection",
-            "heading_font_size": "heading-medium",
-            "featured_text": "<p>Sculpted in Stone. Designed for Now.</p>",
-            "featured_button_text": "Shop now",
+            "featured_heading": "natural dyes",
+            "heading_font_size": "heading-small",
+            "featured_text": "<p>Naturally dyed using plant-based materials like flowers, herbs, and roots. No synthetic chemicals.</p>",
+            "featured_button_text": "",
+            "featured_button_link": "",
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--solid",
@@ -160,10 +163,11 @@
         "featured_image_2": {
           "type": "featured_image",
           "settings": {
+            "featured_image": "shopify://shop_images/new_boho_wedding_dress_white_angel_wings_with_makrome_belt_by_aya_sacred_wear.jpg",
             "position": 7,
-            "featured_heading": "",
-            "heading_font_size": "heading-medium",
-            "featured_text": "<p>Our top sellers on hand in the studio, perfect for quick gifts or if you're after something ready to wear. All other pieces are handmade to order, and it'll take about 4-8 weeks to craft.</p>",
+            "featured_heading": "handmade",
+            "heading_font_size": "heading-small",
+            "featured_text": "<p>Each garment is individually sewn by hand, ensuring quality and craftsmanship in every detail.</p>",
             "featured_button_text": "",
             "featured_button_link": "",
             "button_type": "btn--primary",
@@ -188,7 +192,7 @@
         "collection_linklist": "",
         "grid": 3,
         "grid_mobile": "2",
-        "products_per_page": 24,
+        "products_per_page": 7,
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
