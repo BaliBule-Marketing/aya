@@ -186,7 +186,8 @@
       ],
       "custom_css": [
         ".product-item__image-content {margin-top: auto; text-align: left;}",
-        ".product-item__image-content p {font-size: 14px;}"
+        ".product-item__image-content p {font-size: 14px;}",
+        ".image-overlay {background-color: unset; background: linear-gradient( to top, rgba(36, 32, 28, 0.6), rgba(36, 32, 28, 0) );}"
       ],
       "settings": {
         "enable_sort": true,
