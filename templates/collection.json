@@ -185,6 +185,7 @@
         "featured_image_2"
       ],
       "custom_css": [
+        ".product-item__image-content {margin-top: auto; text-align: left;}",
         ".product-item__image-content p {font-size: 14px;}"
       ],
       "settings": {
