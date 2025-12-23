@@ -152,7 +152,7 @@
         "image-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/dusty_pink_toga_dress_boho_macrame_dress_boho_sustainable_dress_by_sacred_wear_24.jpg",
+            "image": "shopify://shop_images/goddes_collection_img_1.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "goddess collection",
@@ -173,7 +173,7 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/new_light_beige_linen_cardigan_for_women_botanicallly_dyed_by_aya_sacred_wear.jpg",
+            "image": "shopify://shop_images/goddes_collection_img_2.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Organic linen",
@@ -194,7 +194,7 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Bridal_Boho_Cape_Poncho_Hand_loomed_by_AYA_Sacred_Wear_7.jpg",
+            "image": "shopify://shop_images/goddes_collection_img_3.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Shawls & cover-ups",
