@@ -704,7 +704,7 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/goddes_collection_img_2.jpg",
+            "image": "shopify://shop_images/for_everyday_wear_img_2.jpg",
             "title": "FOR EVERYDAY WEAR",
             "heading_font_size": "heading-medium",
             "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
