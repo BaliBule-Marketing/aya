@@ -110,7 +110,7 @@
           "type": "accordion",
           "settings": {
             "style": "collapsible",
-            "show_description": false,
+            "show_description": true,
             "show_read_more": false,
             "default_open": true,
             "heading": "Description",
