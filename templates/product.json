@@ -59,14 +59,22 @@
           "type": "variants",
           "settings": {
             "info_page": "",
-            "size_chart_style": "question",
+            "size_chart_style": "text",
             "option_font_size": "body-medium",
-            "value_font_size": "body-x-small",
+            "value_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "code_4JzWGN": {
+          "type": "code",
+          "settings": {
+            "code": "",
             "padding_bottom": 16
           }
         },
         "countdown_8L6JjP": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "end_date": "2025-8-30",
             "end_time": "11:59",
@@ -135,7 +143,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "show_quantity": true,
+            "show_quantity": false,
             "button_type": "btn--black",
             "button_size": "btn--large",
             "button_style": "btn--solid",
@@ -249,6 +257,7 @@
         "price",
         "siblings_RdbAxK",
         "variants",
+        "code_4JzWGN",
         "countdown_8L6JjP",
         "accordion_i6tbbM",
         "accordion_LUmAgG",
@@ -265,7 +274,7 @@
         "features_chGfmk"
       ],
       "custom_css": [
-        ".product__block--lines {--border: #F5EEE4; }"
+        ".product__block--lines {--border: #f5eee4;}"
       ],
       "settings": {
         "product_sticky_enable": true,
