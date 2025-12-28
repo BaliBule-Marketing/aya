@@ -127,7 +127,7 @@
         "accordion_LUmAgG": {
           "type": "accordion",
           "settings": {
-            "style": "drawer",
+            "style": "collapsible",
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
