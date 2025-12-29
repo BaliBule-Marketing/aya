@@ -640,29 +640,57 @@
         "heading_tag": "automatic"
       }
     },
+    "section_rich_text_Vkhj6m": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_NATe3a": {
+          "type": "heading",
+          "settings": {
+            "title": "more artisan styles",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_6hb3xE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_NATe3a",
+        "text_6hb3xE"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
     "related": {
       "type": "related",
       "blocks": {
         "related": {
           "type": "related",
           "settings": {
-            "product_recommendations_heading": "Related products"
-          }
-        },
-        "recent": {
-          "type": "recent",
-          "settings": {
-            "product_recently_heading": "Recently viewed"
+            "product_recommendations_heading": ""
           }
         }
       },
       "block_order": [
-        "related",
-        "recent"
+        "related"
       ],
       "settings": {
-        "enable_tabs": true,
-        "heading_alignment": "text-center",
+        "enable_tabs": false,
+        "heading_alignment": "text-left",
         "heading_font_size": "heading-small",
         "limit": 4,
         "layout_desktop": "slider",
@@ -670,8 +698,8 @@
         "rows": 3,
         "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 42,
+        "padding_bottom": 100
       }
     }
   },
@@ -685,6 +713,7 @@
     "hero",
     "section_custom_content_YjMwAD",
     "section_video_aMceMY",
+    "section_rich_text_Vkhj6m",
     "related"
   ]
 }
