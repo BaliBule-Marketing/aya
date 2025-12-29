@@ -108,8 +108,8 @@
           "type": "buttons",
           "settings": {
             "show_quantity": false,
-            "button_type": "btn--black",
-            "button_size": "btn--large",
+            "button_type": "btn--secondary",
+            "button_size": "",
             "button_style": "btn--solid",
             "show_dynamic_checkout": false,
             "button_type_dynamic": "btn--secondary",
