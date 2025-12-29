@@ -224,7 +224,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "What materials do you use for your garments?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -236,8 +236,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "title": "Are all items handmade?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ipsum, lacinia at dignissim sit amet, dapibus feugiat felis. Nullam eget dignissim risus, nec sodales enim. Sed lobortis est vitae risus tincidunt hendrerit. Praesent urna nisl, venenatis vitae arcu at, vestibulum venenatis velit.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -248,7 +248,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "How are the garments dyed?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -260,7 +260,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Do you restock sold-out items?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
