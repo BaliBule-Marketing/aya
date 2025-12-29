@@ -144,9 +144,27 @@
             "show_description": false,
             "show_read_more": false,
             "default_open": false,
-            "heading": "Details",
+            "heading": "Material Details",
             "heading_font_size": "body-medium",
             "text": "<p>Each piece in our collection is crafted with intention—balancing timeless design with modern responsibility. We use only high-quality, ethically sourced materials, working closely with skilled artisans who bring every detail to life with care and precision.</p><p>Our commitment to sustainability extends from recycled precious metals to responsible stone sourcing and mindful production practices. Whether it's a gift or a personal keepsake, your jewelry is made to last—and made to matter.</p>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
+            "padding_bottom": 24
+          }
+        },
+        "accordion_LGatew": {
+          "type": "accordion",
+          "settings": {
+            "style": "collapsible",
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "Shipping & Returns",
+            "heading_font_size": "body-medium",
+            "text": "<p>Shipping & Returns</p>",
             "text_font_size": "body-medium",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -176,18 +194,12 @@
             "padding_bottom": 32
           }
         },
-        "divider_RHQKMP": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 20
-          }
-        },
         "upsell": {
           "type": "upsell",
+          "disabled": true,
           "settings": {
             "upsell_product": "",
-            "upsell_product_list": "{{ block.settings.upsell_product.metafields[\"shopify--discovery--product_recommendation\"].related_products.value }}",
+            "upsell_product_list": [],
             "show_available_upsell_only": false,
             "layout": "stacked",
             "autoplay": false,
@@ -229,9 +241,9 @@
         "buttons",
         "accordion_i6tbbM",
         "accordion_LUmAgG",
+        "accordion_LGatew",
         "inventory_countdown_9EACqM",
         "pickup",
-        "divider_RHQKMP",
         "upsell",
         "divider_1",
         "features_chGfmk"
