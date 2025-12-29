@@ -42,7 +42,7 @@
         "subheading_HKVhLx": {
           "type": "subheading",
           "settings": {
-            "subheading": "Have a question?",
+            "subheading": "All your questions answered",
             "padding_bottom": 16
           }
         },
@@ -58,7 +58,7 @@
         "text_pGLmcp": {
           "type": "text",
           "settings": {
-            "text": "<p>Please see below for answers to common questions from customers</p>",
+            "text": "<p>For any other questions, please contact us</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -73,6 +73,7 @@
         "align_text": "text-center",
         "width": "wrapper",
         "color_scheme": "",
+        "overlay_type": "disabled",
         "padding_top": 100,
         "padding_bottom": 0
       }
@@ -135,6 +136,7 @@
         "header_3",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "heading_font_size": "heading-x-small",
         "width": "wrapper--full-padded",
@@ -191,6 +193,7 @@
         "icon-1",
         "icon-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_font_size": "heading-x-small",
@@ -207,6 +210,89 @@
         "padding_bottom": 50,
         "heading_tag": "automatic"
       }
+    },
+    "section_accordion_group_qAerqF": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_J4cK7b": {
+          "type": "heading",
+          "settings": {
+            "title": "Products"
+          }
+        },
+        "question_43imax": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_VWQwdK": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_JxwFA3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_RBnd7M": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "heading_beBxka": {
+          "type": "heading",
+          "settings": {
+            "title": "Size & Fit"
+          }
+        }
+      },
+      "block_order": [
+        "heading_J4cK7b",
+        "question_43imax",
+        "question_VWQwdK",
+        "question_JxwFA3",
+        "question_RBnd7M",
+        "heading_beBxka"
+      ],
+      "name": "Accordion group",
+      "settings": {
+        "heading_font_size": "heading-medium",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -214,6 +300,7 @@
     "main",
     "rich_text",
     "sidebar",
-    "icons"
+    "icons",
+    "section_accordion_group_qAerqF"
   ]
 }
