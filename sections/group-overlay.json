@@ -16,6 +16,7 @@
       "blocks": {
         "cart-message": {
           "type": "cart-message",
+          "disabled": true,
           "settings": {
             "cart_custom_message_text": "<p>Use coupon code <strong>WELCOME10</strong> for 10% off your first order.</p>",
             "text_font_size": "body-x-small",
@@ -27,12 +28,13 @@
         "title": {
           "type": "title",
           "settings": {
-            "title": "Cart",
+            "title": "Shopping Bag",
             "text_font_size": "body-medium"
           }
         },
         "free-shipping": {
           "type": "free-shipping",
+          "disabled": true,
           "settings": {
             "message": "You are ||amount|| away from free shipping.",
             "text_font_size": "body-x-small",
@@ -43,12 +45,13 @@
         "products": {
           "type": "products",
           "settings": {
-            "text_font_size": "body-small",
+            "text_font_size": "body-medium",
             "pin_to_bottom": false
           }
         },
         "upsell-products": {
           "type": "upsell-products",
+          "disabled": true,
           "settings": {
             "upsell_auto_open": true,
             "pin_to_bottom": false
@@ -63,6 +66,7 @@
         },
         "gift-note": {
           "type": "gift-note",
+          "disabled": true,
           "settings": {
             "pin_to_bottom": false
           }
