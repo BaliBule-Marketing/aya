@@ -238,6 +238,7 @@
       ],
       "custom_css": [
         ".product__block--lines {--border: #f5eee4;}",
+        ".block__icon__row {padding-top: 8px;}",
         ".block__icon {align-self: center;}"
       ],
       "settings": {
