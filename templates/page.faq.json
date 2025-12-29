@@ -256,7 +256,7 @@
             "icon_color": ""
           }
         },
-        "question_RBnd7M": {
+        "question_difYcn": {
           "type": "question",
           "settings": {
             "default_open": false,
@@ -273,6 +273,168 @@
           "settings": {
             "title": "Size & Fit"
           }
+        },
+        "question_yyBXxe": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_jNJwn3": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_yqaxY4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "heading_Mmftpj": {
+          "type": "heading",
+          "settings": {
+            "title": "Worldwide Shipping"
+          }
+        },
+        "question_NUhNaz": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_wkdbCq": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_QJC8ph": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_83fN6J": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "heading_wkCiUY": {
+          "type": "heading",
+          "settings": {
+            "title": "Returns"
+          }
+        },
+        "question_rBJgim": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_QHBzKF": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_RBnd7M": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "heading_RGdBbd": {
+          "type": "heading",
+          "settings": {
+            "title": "Garment Care"
+          }
+        },
+        "question_3ggFrn": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_FTynXR": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
         }
       },
       "block_order": [
@@ -280,8 +442,23 @@
         "question_43imax",
         "question_VWQwdK",
         "question_JxwFA3",
+        "question_difYcn",
+        "heading_beBxka",
+        "question_yyBXxe",
+        "question_jNJwn3",
+        "question_yqaxY4",
+        "heading_Mmftpj",
+        "question_NUhNaz",
+        "question_wkdbCq",
+        "question_QJC8ph",
+        "question_83fN6J",
+        "heading_wkCiUY",
+        "question_rBJgim",
+        "question_QHBzKF",
         "question_RBnd7M",
-        "heading_beBxka"
+        "heading_RGdBbd",
+        "question_3ggFrn",
+        "question_FTynXR"
       ],
       "name": "Accordion group",
       "settings": {
