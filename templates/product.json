@@ -222,10 +222,10 @@
             "icon_size": 20,
             "title": "Styling Questions?",
             "text_font_size": "body-medium",
-            "text": "<p>For any styling or fit questions, please contact our team. Hours of operations: M-F 9:00 - 17:00 (WITA)</p><p><a href=\"/pages/contact\" title=\"Contact\">Email</a> Whatsapp</p>",
+            "text": "<p>For any styling or fit questions, please contact our team. Hours of operations: M-F 9:00 - 17:00 (WITA)</p><p><a href=\"/pages/contact\" title=\"Contact\">Email</a> <a href=\"/pages/contact\" title=\"Contact\">Whatsapp</a></p>",
             "bg_color": "#f5eee4",
             "color": "",
-            "padding_bottom": 16
+            "padding_bottom": 22
           }
         }
       },
