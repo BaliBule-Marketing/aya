@@ -657,7 +657,7 @@
           "settings": {
             "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
             "text_font_size": "body-medium",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         }
       },
