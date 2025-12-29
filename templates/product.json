@@ -65,13 +65,6 @@
             "padding_bottom": 16
           }
         },
-        "code_4JzWGN": {
-          "type": "code",
-          "settings": {
-            "code": "",
-            "padding_bottom": 16
-          }
-        },
         "countdown_8L6JjP": {
           "type": "countdown",
           "disabled": true,
@@ -89,6 +82,45 @@
             "color": "",
             "text_align": "text-center",
             "padding_bottom": 8
+          }
+        },
+        "icon_2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-recycle",
+            "image": "shopify://shop_images/needle-icon.svg",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>Each garment is individually sewn by hand, ensuring quality and craftsmanship in every detail.</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 8
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "image": "shopify://shop_images/cotton-icon.svg",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>Made from 100% homespun cotton, offering breathability, softness, and everyday comfort.</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 8
+          }
+        },
+        "icon_bH3jWT": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-donation",
+            "image": "shopify://shop_images/flower-icon.svg",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>Naturally dyed using plant-based materials like flowers, herbs, and roots. No synthetic chemicals.</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 42
           }
         },
         "buttons": {
@@ -163,55 +195,6 @@
             "padding_bottom": 32
           }
         },
-        "icon_2": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-recycle",
-            "image": "shopify://shop_images/needle-icon.svg",
-            "icon_size": 20,
-            "icon_color": "",
-            "text": "<p>Each garment is individually sewn by hand, ensuring quality and craftsmanship in every detail.</p>",
-            "text_font_size": "body-small",
-            "width": "full",
-            "padding_bottom": 8
-          }
-        },
-        "icon_1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-truck",
-            "icon_size": 20,
-            "icon_color": "",
-            "text": "<p>Free shipping on orders over $100</p>",
-            "text_font_size": "body-small",
-            "width": "full",
-            "padding_bottom": 8
-          }
-        },
-        "icon_bH3jWT": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-donation",
-            "icon_size": 20,
-            "icon_color": "",
-            "text": "<p>1 year warranty</p>",
-            "text_font_size": "body-small",
-            "width": "full",
-            "padding_bottom": 8
-          }
-        },
-        "icon_c6KeCK": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-flare",
-            "icon_size": 20,
-            "icon_color": "",
-            "text": "<p>14k Solid Gold</p>",
-            "text_font_size": "body-small",
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
         "divider_RHQKMP": {
           "type": "divider",
           "settings": {
@@ -259,17 +242,15 @@
         "price",
         "siblings_RdbAxK",
         "variants",
-        "code_4JzWGN",
         "countdown_8L6JjP",
+        "icon_2",
+        "icon_1",
+        "icon_bH3jWT",
         "buttons",
         "accordion_i6tbbM",
         "accordion_LUmAgG",
         "inventory_countdown_9EACqM",
         "pickup",
-        "icon_2",
-        "icon_1",
-        "icon_bH3jWT",
-        "icon_c6KeCK",
         "divider_RHQKMP",
         "upsell",
         "divider_1",
@@ -277,7 +258,7 @@
       ],
       "custom_css": [
         ".product__block--lines {--border: #f5eee4;}",
-        ".block__icon{align-self: center;}"
+        ".block__icon {align-self: center;}"
       ],
       "settings": {
         "product_sticky_enable": true,
