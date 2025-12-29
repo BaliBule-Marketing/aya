@@ -220,10 +220,10 @@
           "settings": {
             "icon_name": "icon-chat",
             "icon_size": 20,
-            "title": "Need styling help?",
+            "title": "Styling Questions?",
             "text_font_size": "body-medium",
-            "text": "<p>Book an appointment with our virtual stylists! <a href=\"https://broadcast-theme-main.myshopify.com/pages/contact\" title=\"https://broadcast-theme-main.myshopify.com/pages/contact\">Chat now</a></p>",
-            "bg_color": "#fcfbf9",
+            "text": "<p>For any styling or fit questions, please contact our team. Hours of operations: M-F 9:00 - 17:00 (WITA)</p><p><a href=\"/pages/contact\" title=\"Contact\">Email</a> Whatsapp</p>",
+            "bg_color": "#f5eee4",
             "color": "",
             "padding_bottom": 16
           }
