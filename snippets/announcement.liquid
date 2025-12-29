@@ -9,7 +9,16 @@
   assign padding_bottom = section.settings.padding_bottom | default: 0
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
-  assign color_scheme = 'color-' | append: section.settings.color_scheme
+  
+  comment
+    Use different color scheme for homepage if set
+  endcomment
+  if template == 'index' and section.settings.color_scheme_home != blank
+    assign color_scheme = 'color-' | append: section.settings.color_scheme_home
+  else
+    assign color_scheme = 'color-' | append: section.settings.color_scheme
+  endif
+  
   assign border_color = section.settings.border_color
   assign text_font_size = section.settings.text_font_size
   assign show_border = section.settings.show_border
