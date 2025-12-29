@@ -62,26 +62,7 @@
             "size_chart_style": "text",
             "option_font_size": "body-medium",
             "value_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "countdown_8L6JjP": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "end_date": "2025-8-30",
-            "end_time": "11:59",
-            "period": "am",
-            "end_message": "<p>Offer has expired</p>",
-            "hide_on_complete": true,
-            "digits_font_size": "heading-small",
-            "text_font_size": "body-x-small",
-            "text": "<p>Our seasonal sale ends soon</p>",
-            "heading_font_size": "heading-x-small",
-            "bg_color": "#e9d2c2",
-            "color": "",
-            "text_align": "text-center",
-            "padding_bottom": 8
+            "padding_bottom": 24
           }
         },
         "icon_2": {
@@ -242,7 +223,6 @@
         "price",
         "siblings_RdbAxK",
         "variants",
-        "countdown_8L6JjP",
         "icon_2",
         "icon_1",
         "icon_bH3jWT",
