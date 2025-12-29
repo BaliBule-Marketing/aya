@@ -460,6 +460,10 @@
         "question_3ggFrn",
         "question_FTynXR"
       ],
+      "custom_css": [
+        ".accordion__heading {font-family: var(--FONT-STACK-SUBHEADING); font-size: 20px; text-transform: none; font-weight: 500;}",
+        ".accordion__title {font-family: var(--FONT-STACK-SUBHEADING); font-size: 18px; text-transform: none; font-weight: 400;}"
+      ],
       "name": "Accordion group",
       "settings": {
         "heading_font_size": "heading-small",
