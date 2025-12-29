@@ -607,6 +607,39 @@
         "padding_bottom": 100
       }
     },
+    "section_video_aMceMY": {
+      "type": "section-video",
+      "custom_css": [
+        ".hero__content {/* 8px button margin*/ padding: var(--outer) var(--outer) calc(var(--outer) - 8px);}"
+      ],
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/videoplayback.mp4",
+        "show_video_popup": false,
+        "video_popup_social": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "text": "",
+        "text_font_size": "body-medium",
+        "flex_align": "align--bottom-left",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-5",
+        "show_text_background": false,
+        "color": "",
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_tag": "automatic"
+      }
+    },
     "related": {
       "type": "related",
       "blocks": {
@@ -651,6 +684,7 @@
     "about",
     "hero",
     "section_custom_content_YjMwAD",
+    "section_video_aMceMY",
     "related"
   ]
 }
