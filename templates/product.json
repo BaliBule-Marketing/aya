@@ -668,7 +668,7 @@
       "name": "Rich text",
       "settings": {
         "align_text": "text-left",
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "color_scheme": "",
         "overlay_type": "disabled",
         "padding_top": 96,
