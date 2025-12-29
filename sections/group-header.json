@@ -31,7 +31,7 @@
         "text_discount"
       ],
       "custom_css": [
-        ".announcement__wrapper {background-color: #f5eee4; --font-body-small: 0.75rem;}"
+        ".announcement__wrapper {background-color: #443C36; --font-body-small: 0.75rem;}"
       ],
       "settings": {
         "show_border": false,
@@ -42,7 +42,7 @@
         "marquee_speed": 100,
         "message_spacing": 10,
         "text_font_size": "body-small",
-        "color_scheme": "scheme-9ed5072b-abe0-4af2-a70e-2ac0c2e5cb1f",
+        "color_scheme": "scheme-2",
         "border_color": "rgba(0,0,0,0)",
         "padding_top": 5,
         "padding_bottom": 5
@@ -183,7 +183,7 @@
         ".header__mobile {padding-top: 1em;}",
         ".toolbar.has-border::before,.theme__header.has-border::before {border-width: 0.5px;}",
         ".icon-search {--icon-size: 11px;}",
-        ".icon-profile-circled, .icon-cart {--icon-size: 20px;}"
+        ".icon-profile-circled,.icon-cart {--icon-size: 20px;}"
       ],
       "settings": {
         "header_sticky": false,
