@@ -1,6 +1,283 @@
+{% doc %}
+  @prompt
+    Create an announcement bar section that can automatically use different color schemes on different pages. The section should:
+    - Display an announcement message with customizable text
+    - Have a setting to select a default color scheme (Scheme 1)
+    - Have a setting to select an alternate color scheme for the About page (Scheme 2)
+    - Automatically detect when it's on the About page and switch to the alternate color scheme
+    - Support the same styling and features as a standard announcement bar (text alignment, link, dismissible option)
+    - Use the theme's existing color scheme settings
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% liquid
+  assign is_about_page = false
+  if template.name == 'page' and page.handle == 'about'
+    assign is_about_page = true
+  endif
+
+  if is_about_page
+    assign active_color_scheme = block.settings.about_color_scheme
+  else
+    assign active_color_scheme = block.settings.default_color_scheme
+  endif
+%}
+
+{% style %}
+  .ai-announcement-bar-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-announcement-bar-content-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    text-align: {{ block.settings.text_alignment }};
+    position: relative;
+  }
+
+  .ai-announcement-bar-text-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.font_size }}px;
+    line-height: 1.4;
+  }
+
+  .ai-announcement-bar-text-{{ ai_gen_id }} a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .ai-announcement-bar-text-{{ ai_gen_id }} a:hover {
+    opacity: 0.8;
+  }
+
+  .ai-announcement-bar-close-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    right: {{ block.settings.padding_horizontal }}px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-announcement-bar-close-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-announcement-bar-close-{{ ai_gen_id }} svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ai-announcement-bar-{{ ai_gen_id }}.hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-announcement-bar-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+    }
+
+    .ai-announcement-bar-content-{{ ai_gen_id }} {
+      padding-right: {{ block.settings.dismissible | times: 40 }}px;
+    }
+  }
+{% endstyle %}
+
+<announcement-bar-{{ ai_gen_id }}
+  class="ai-announcement-bar-{{ ai_gen_id }} color-{{ active_color_scheme }}"
+  data-block-id="{{ block.id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-announcement-bar-content-{{ ai_gen_id }}">
+    <div class="ai-announcement-bar-text-{{ ai_gen_id }}">
+      {% if block.settings.announcement_link != blank %}
+        <a href="{{ block.settings.announcement_link }}">
+          {{ block.settings.announcement_text }}
+        </a>
+      {% else %}
+        {{ block.settings.announcement_text }}
+      {% endif %}
+    </div>
+
+    {% if block.settings.dismissible %}
+      <button
+        class="ai-announcement-bar-close-{{ ai_gen_id }}"
+        aria-label="Close announcement"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    {% endif %}
+  </div>
+</announcement-bar-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AnnouncementBar{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.blockId = this.dataset.blockId;
+        this.storageKey = 'announcement-bar-dismissed-' + this.blockId;
+      }
+
+      connectedCallback() {
+        if (this.isDismissed()) {
+          this.classList.add('hidden');
+          return;
+        }
+
+        const closeButton = this.querySelector('.ai-announcement-bar-close-{{ ai_gen_id }}');
+        if (closeButton) {
+          closeButton.addEventListener('click', this.handleClose.bind(this));
+        }
+      }
+
+      handleClose() {
+        this.classList.add('hidden');
+        this.setDismissed();
+      }
+
+      isDismissed() {
+        try {
+          return localStorage.getItem(this.storageKey) === 'true';
+        } catch (e) {
+          return false;
+        }
+      }
+
+      setDismissed() {
+        try {
+          localStorage.setItem(this.storageKey, 'true');
+        } catch (e) {
+          console.warn('Could not save announcement bar state');
+        }
+      }
+    }
+
+    customElements.define('announcement-bar-{{ ai_gen_id }}', AnnouncementBar{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Announcement bar",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "announcement_text",
+      "label": "Text",
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "url",
+      "id": "announcement_link",
+      "label": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "dismissible",
+      "label": "Allow customers to dismiss",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Color schemes"
+    },
+    {
+      "type": "color_scheme",
+      "id": "default_color_scheme",
+      "label": "Default color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "about_color_scheme",
+      "label": "About page color scheme",
+      "default": "scheme-2",
+      "info": "Automatically applied when on the About page"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Vertical padding",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar"
+    }
+  ]
+}
 {% endschema %}
