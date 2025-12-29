@@ -252,7 +252,7 @@
         ".product__block--lines {--border: #f5eee4;}",
         ".block__icon__row {padding-top: 8px;}",
         ".block__icon {align-self: center;}",
-        ".rte p a {margin-right: 20px}"
+        ".rte p a {margin-right: 20px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -312,6 +312,7 @@
         "text_rNczAj",
         "heading_XVqAix"
       ],
+      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "slider_speed": 7,
@@ -368,6 +369,7 @@
         "faq-3",
         "faq-4"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Care Instructions",
@@ -430,6 +432,7 @@
         "shipping-1",
         "shipping-2"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Shipping  & Returns",
@@ -480,6 +483,7 @@
         "about-1",
         "about-2"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Sourcing & Materials",
@@ -519,6 +523,7 @@
         "heading_VmncVj",
         "text_HCfkAU"
       ],
+      "disabled": true,
       "settings": {
         "link": "",
         "width": "wrapper--full",
@@ -541,6 +546,7 @@
         "custom-0": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/for_everyday_wear_img_1.jpg",
             "title": "Pieces to Keep Forever",
             "heading_font_size": "heading-small",
             "text": "<p>Thoughtfully designed jewelry to wear everyday</p>",
@@ -562,6 +568,7 @@
         "image_XG6xwK": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/for_everyday_wear_img_2.jpg",
             "title": "Latest Lookbook",
             "heading_font_size": "heading-small",
             "text": "<p>Our newest collection inspired by unique shapes</p>",
