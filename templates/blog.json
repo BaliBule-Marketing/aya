@@ -47,7 +47,7 @@
     "main": {
       "type": "blog",
       "custom_css": [
-        ".btn--text:not(.btn--text-no-underline) span::after {}"
+        ".btn--text:not(.btn--text-no-underline) span::after {background: url('')}"
       ],
       "settings": {
         "show_title": false,
