@@ -34,7 +34,7 @@
         "button_style": "btn--text",
         "show_arrow": false,
         "width": "wrapper--full",
-        "height": "five-fifty-height-hero",
+        "height": "screen-height-full",
         "mobile_height": "screen-height-one-half--mobile",
         "color_scheme": "scheme-3",
         "padding_top": 0,
