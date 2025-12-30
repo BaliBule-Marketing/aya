@@ -36,7 +36,7 @@
         "show_date": true,
         "show_author": true,
         "tags": false,
-        "show_sharing": true,
+        "show_sharing": false,
         "arrows": false,
         "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-third--mobile",
