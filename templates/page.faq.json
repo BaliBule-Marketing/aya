@@ -278,7 +278,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "How do I find the right size?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -290,7 +290,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Do your styles run true to size?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -302,7 +302,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Can I request custom sizing?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -320,7 +320,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Where do you ship from?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -332,7 +332,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Do you offer international shipping?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -344,7 +344,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "How long does shipping take?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -356,7 +356,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Will I have to pay customs fees?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -374,7 +374,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "What is your return policy?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -386,7 +386,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Can I exchange an item for another size?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -398,7 +398,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "How do I start a return?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -416,7 +416,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "How should I wash my garment?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -428,10 +428,10 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Frequently asked question",
+            "title": "Will the color fade over time?",
             "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
             "show_icon": false,
-            "icon_name": "icon-award",
+            "icon_name": "icon-check",
             "icon_size": 20,
             "icon_color": ""
           }
