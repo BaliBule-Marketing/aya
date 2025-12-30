@@ -46,9 +46,7 @@
     },
     "main": {
       "type": "blog",
-      "custom_css": [
-        ".btn--text:not(.btn--text-no-underline) span::after {background: url('')}"
-      ],
+      "custom_css": [],
       "settings": {
         "show_title": false,
         "show_rss": false,
