@@ -24,7 +24,7 @@
         "feat"
       ],
       "custom_css": [
-        ".editorial__subheading{text-transform: none;}"
+        ".editorial__subheading {text-transform: none;}"
       ],
       "settings": {
         "show_author": false,
@@ -46,6 +46,9 @@
     },
     "main": {
       "type": "blog",
+      "custom_css": [
+        ".btn--text:not(.btn--text-no-underline) span::after {display: none}"
+      ],
       "settings": {
         "show_title": false,
         "show_rss": false,
