@@ -52,8 +52,3 @@
   align-items: center;
   gap: 8px;
 }
-
-.btn--text:not(.btn--text-no-underline) span::after {
-  display: inline-block;
-  background: url("/assets/icon-nav-arrow-right.svg") no-repeat center / contain;
-}
