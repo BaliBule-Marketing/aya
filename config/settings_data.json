@@ -143,7 +143,7 @@
           "btn_secondary_text": "#24201c",
           "btn_secondary_border": "#24201c",
           "accent": "#ab8c52",
-          "lines_and_border": "#f3f3f3",
+          "lines_and_border": "#24201c",
           "overlay": "#0000004d",
           "links": "#282c2e"
         }
