@@ -47,7 +47,8 @@
     "main": {
       "type": "blog",
       "custom_css": [
-        ".btn--text span {display: flex; align-items: center; gap: 8px;}",
+        ".btn--text:hover {}",
+        ".btn--text span {display: flex; align-items: center; gap: 8px; line-height: 1;}",
         ".btn--text:not(.btn--text-no-underline) span::after {position: relative; display: inline-block; width: 11px; height: 8px; background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/icon-button-arrow-right.svg?v=1767102047\"); background-repeat: no-repeat; background-size: contain;}"
       ],
       "settings": {
