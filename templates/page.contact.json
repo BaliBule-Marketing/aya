@@ -127,6 +127,9 @@
         "Urgent-checkbox",
         "Options-select"
       ],
+      "custom_css": [
+        ".custom-form__block--heading{text-align: center; font-weight: 400;}"
+      ],
       "settings": {
         "title": "contact us",
         "heading_font_size": "heading-large",
