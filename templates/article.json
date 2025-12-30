@@ -12,23 +12,66 @@
     "main": {
       "type": "article",
       "blocks": {
-        "related-products": {
+        "related_gFPKXD": {
           "type": "related",
-          "settings": {}
+          "settings": {
+            "title": "Related products",
+            "product_list": []
+          }
         },
         "recent-articles": {
           "type": "recent",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "title": "Recent articles"
+          }
         }
       },
       "block_order": [
-        "related-products",
+        "related_gFPKXD",
         "recent-articles"
       ],
-      "settings": {}
+      "settings": {
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "tags": false,
+        "show_sharing": true,
+        "arrows": false,
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-third--mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "section_blog_Acra43": {
+      "type": "section-blog",
+      "name": "Blog posts",
+      "settings": {
+        "blog_name": "our-journal",
+        "aspect_ratio": 1,
+        "title": "OUR JOURNAL",
+        "heading_font_size": "heading-medium",
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_blog_Acra43"
   ]
 }
