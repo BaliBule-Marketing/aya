@@ -91,25 +91,12 @@
             "required": true
           }
         },
-        "Optional-text": {
-          "type": "formHeading",
-          "settings": {
-            "title": "Optional"
-          }
-        },
-        "Urgent-checkbox": {
-          "type": "checkbox",
-          "settings": {
-            "title": "This is urgent",
-            "required": false
-          }
-        },
         "Options-select": {
           "type": "select",
           "settings": {
-            "title": "Select an option",
-            "required": false,
-            "label-one": "- Pick an option -",
+            "title": "Contact Reason",
+            "required": true,
+            "label-one": "Please select",
             "label-two": "Option one",
             "label-three": "Option two",
             "label-four": "Option three",
@@ -123,12 +110,10 @@
         "Name",
         "Email",
         "Message",
-        "Optional-text",
-        "Urgent-checkbox",
         "Options-select"
       ],
       "custom_css": [
-        ".custom-form__block--heading{text-align: center; font-weight: 400;}"
+        ".custom-form__block--heading {text-align: center; font-weight: 400;}"
       ],
       "settings": {
         "title": "contact us",
