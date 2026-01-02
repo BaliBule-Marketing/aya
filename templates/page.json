@@ -21,6 +21,8 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "show_title": true,
@@ -30,14 +32,57 @@
         "align_text": "text-left",
         "width": "wrapper",
         "color_scheme": "",
-        "padding_top": 50,
+        "padding_top": 70,
         "padding_bottom": 50,
         "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_hJaAqE": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_kHptcR": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "title": "Botanical Dyes",
+            "heading_font_size": "heading-large",
+            "text": "<p><em>The language of plants, written in fabric</em></p><p><em> </em>Botanical dyes are an ancient way of coloring textiles using plants, roots, leaves, bark, flowers, and minerals.</p><p>For AYA Sacred Wear, this is not a decorative technique — it is <strong>a philosophy of color</strong>, rooted in respect for nature and time.</p><p>Unlike synthetic dyes, plant-based pigments are <strong>biodegradable</strong> and return to the natural cycle without leaving toxic traces. They do not create persistent pollution in water or soil and are considered a gentler alternative for ecosystems and for the human body.</p><p><br/></p><p>Each shade created through botanical dyeing is <strong>alive</strong>.</p><p>It is shaped by the season, the water, temperature, duration of the process, and the character of the fabric itself. Because of this, color can never be fully replicated — <strong>every piece is unique</strong>, just like the moment in which it was made.</p><p><strong>Color that breathes</strong></p><p>Botanical dyes do not sit on the surface of the fabric — they <strong>interact with the fiber</strong>, creating depth, soft transitions, and natural gradients. Over time, the color may evolve, deepen, and develop a patina — much like skin, wood, or stone.</p><p>We see this not as wear, but as <strong>the natural aging of a living material</strong>.</p><p><strong>Close to the body</strong></p><p>AYA garments are dyed to be worn close to the skin.</p><p>While we do not make medical claims, we consciously avoid aggressive synthetic dyes and choose a path with <strong>less petrochemical origin and more natural sources</strong>.</p><p>For those with sensitive skin, we recommend washing the garment before first wear.</p><p><strong>Color as a choice for the future</strong></p><p>We believe the future of fashion is not speed, but depth.</p><p>Botanical dyes require time, care, and human presence — and that is precisely why they represent <strong>a more conscious and sustainable language of color</strong>, one that does not harm the Earth, but returns to it.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_kHptcR"
+      ],
+      "name": "Custom section",
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "divider",
-    "main"
+    "main",
+    "section_custom_content_hJaAqE"
   ]
 }
