@@ -31,6 +31,9 @@
         "related_gFPKXD",
         "recent-articles"
       ],
+      "custom_css": [
+        ".article__hero .article__image .image__fill img {object-fit: cover;}"
+      ],
       "settings": {
         "show_image": true,
         "show_date": true,
