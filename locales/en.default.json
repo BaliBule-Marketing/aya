@@ -165,7 +165,7 @@
   },
   "cart": {
     "general": {
-      "title": "Cart",
+      "title": "Shopping Bag",
       "vendor": "Vendor",
       "remove": "Remove",
       "subtotal": "Subtotal",
@@ -497,7 +497,7 @@
       "taxes_included": "Taxes included.",
       "duties_included": "Duties included.",
       "quantity": {
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in cart",
         "decrease": "Decrease quantity for {{ product }}",
         "multiples_of": "Increments of {{ quantity }}",
         "minimum_of": "Minimum of {{ quantity }}",
@@ -511,7 +511,7 @@
       },
       "volume_pricing": {
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "at {{ price }}\/ea",
+        "price_at_each_html": "at {{ price }}/ea",
         "title": "Volume Pricing",
         "note": "Volume pricing available"
       },
@@ -532,7 +532,7 @@
   },
   "sections": {
     "quick_order_list": {
-      "each": "{{ money }}\/ea"
+      "each": "{{ money }}/ea"
     }
   },
   "countdown": {
