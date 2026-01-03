@@ -46,7 +46,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "All your questions answered",
-            "padding_bottom": 16
+            "padding_bottom": 0
           }
         },
         "heading_DdkVf4": {
