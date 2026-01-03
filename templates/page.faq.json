@@ -9,8 +9,11 @@
  */
 {
   "sections": {
-    "divider": {
+    "section_divider_3kGmtg": {
       "type": "section-divider",
+      "custom_css": [
+        ".divider {--border: #24201c; border-width: 0.5px 0 0;}"
+      ],
       "settings": {
         "show_line": true,
         "width": "wrapper--full",
@@ -477,7 +480,7 @@
     }
   },
   "order": [
-    "divider",
+    "section_divider_3kGmtg",
     "main",
     "rich_text",
     "sidebar",
