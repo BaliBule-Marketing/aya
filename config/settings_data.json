@@ -62,7 +62,7 @@
     "show_automatic_new_badge": true,
     "badge_new_date_limit": 20,
     "free_shipping_limit": "200",
-    "show_lock_icon": true,
+    "show_lock_icon": false,
     "show_recently_viewed_products": true,
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
