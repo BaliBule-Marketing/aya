@@ -24,14 +24,16 @@
       "block_order": [
         "image_TPFcFA"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".hero__content {max-width: 190px;}"
+      ],
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
         "width": "wrapper",
         "color_scheme": "",
         "overlay_type": "disabled",
-        "padding_top": 100,
+        "padding_top": 64,
         "padding_bottom": 12
       }
     },
