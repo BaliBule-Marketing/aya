@@ -61,6 +61,9 @@
         "checkout-buttons",
         "upsell-products"
       ],
+      "custom_css": [
+        ".cart__note{text-align: center}"
+      ],
       "settings": {
         "text_font_size": "body-medium",
         "color_scheme": "scheme-4",
