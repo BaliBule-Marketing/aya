@@ -62,7 +62,8 @@
         "upsell-products"
       ],
       "custom_css": [
-        ".cart__note{text-align: center}"
+        ".cart__note {text-align: center;}",
+        ".btn {line-height: 1;}"
       ],
       "settings": {
         "text_font_size": "body-medium",
