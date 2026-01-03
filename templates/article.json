@@ -9,6 +9,31 @@
  */
 {
   "sections": {
+    "section_rich_text_bJCRNP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "image_TPFcFA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/article-logo.png",
+            "image_width": 100,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_TPFcFA"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_type": "disabled",
+        "padding_top": 100,
+        "padding_bottom": 12
+      }
+    },
     "main": {
       "type": "article",
       "blocks": {
@@ -75,6 +100,7 @@
     }
   },
   "order": [
+    "section_rich_text_bJCRNP",
     "main",
     "section_blog_Acra43"
   ]
