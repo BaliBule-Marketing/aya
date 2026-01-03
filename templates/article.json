@@ -24,6 +24,7 @@
       "block_order": [
         "image_TPFcFA"
       ],
+      "custom_css": [],
       "name": "Rich text",
       "settings": {
         "align_text": "text-center",
