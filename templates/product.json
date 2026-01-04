@@ -255,7 +255,9 @@
         ".product__block--lines {--border: #f5eee4;}",
         ".block__icon__row {padding-top: 8px;}",
         ".block__icon {align-self: center;}",
-        ".rte p a {margin-right: 20px;}"
+        ".rte p a {margin-right: 20px;}",
+        ".radio__fieldset .radio__button label {border-color: #f5eee4; border-radius: 2px; padding-block: 6px; padding-inline: 16px;}",
+        ".radio__fieldset .radio__button input:checked ~ label, .radio__fieldset .radio__button label:hover {background: #f5eee4; color: var(--text);}"
       ],
       "settings": {
         "product_sticky_enable": true,
