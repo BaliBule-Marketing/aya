@@ -54,7 +54,7 @@
             "siblings_collection": "",
             "sibling_color": "",
             "option_font_size": "body-medium",
-            "value_font_size": "body-x-small",
+            "value_font_size": "body-small",
             "padding_bottom": 16
           }
         },
@@ -258,7 +258,7 @@
         ".rte p a {margin-right: 20px;}",
         ".radio__fieldset .radio__button label {border-color: #f5eee4; border-radius: 2px; padding-block: 6px; padding-inline: 16px;}",
         ".radio__fieldset .radio__button input:checked ~ label,.radio__fieldset .radio__button label:hover {background: #f5eee4; color: var(--text);}",
-        ".radio__legend__link {width: fit-content; margin: 0; margin-top: 14px; margin-bottom: 4px;}"
+        ".radio__legend__link {font-size: 14px; width: fit-content; margin: 0; margin-top: 14px; margin-bottom: 4px;}"
       ],
       "settings": {
         "product_sticky_enable": true,
