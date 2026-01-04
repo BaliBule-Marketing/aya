@@ -55,7 +55,6 @@
       "blocks": {
         "related_gFPKXD": {
           "type": "related",
-          "disabled": true,
           "settings": {
             "title": "Related products",
             "product_list": []
