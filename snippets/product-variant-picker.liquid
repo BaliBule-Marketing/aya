@@ -99,16 +99,21 @@
           {{ size_button }}
         </a>
 
-        <dialog class="product-modal" aria-hidden="true" inert data-scroll-lock-required>
+        <dialog class="drawer drawer--size-chart" aria-hidden="true" inert data-scroll-lock-required>
           <form method="dialog">
             <button class="visually-hidden" aria-label="{{ 'general.accessibility.close' | t }}"></button>
           </form>
 
-          <div class="product-modal__outer">
-            <div class="product-modal__content small" data-scroll-lock-scrollable>
-              <button type="button" class="product-modal__close" data-popup-close aria-label="{{ 'general.accessibility.close' | t }}">
-                {%- render 'icon-cancel' -%}
-              </button>
+          <div class="drawer__inner">
+            <div class="drawer__body" data-scroll-lock-scrollable>
+              <div class="drawer__head">
+                <h3 class="drawer__heading">
+                  {{- 'general.size_chart.title' | t -}}
+                </h3>
+                <button type="button" class="drawer__close" data-popup-close aria-label="{{ 'general.accessibility.close' | t }}">
+                  {%- render 'icon-cancel' -%}
+                </button>
+              </div>
 
               <tabs-component class="rte product-tabs">
                 {%- liquid
@@ -187,6 +192,8 @@
                 {%- endif -%}
               </tabs-component>
             </div>
+
+            <span class="underlay drawer__underlay" data-drawer-underlay></span>
           </div>
         </dialog>
       </popup-component>

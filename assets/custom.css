@@ -52,3 +52,65 @@
   align-items: center;
   gap: 8px;
 }
+
+
+
+/* Size chart drawer modal styles - dialog that behaves like drawer */
+dialog.drawer--size-chart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background: transparent;
+  z-index: 6000;
+  margin: 0;
+  padding: 0;
+}
+
+dialog.drawer--size-chart[open] .drawer__inner {
+  visibility: visible;
+  animation: slideInRight 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+dialog.drawer--size-chart[closing] .drawer__inner {
+  animation: slideOutRight 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 480px) {
+  dialog.drawer--size-chart .drawer__inner {
+    max-width: var(--DRAWER-WIDTH);
+  }
+}
+
+dialog.drawer--size-chart .drawer__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dialog.drawer--size-chart .drawer__close {
+  position: static;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--text);
+  margin-left: auto;
+}
+
+dialog.drawer--size-chart .drawer__close:hover {
+  color: var(--accent);
+}
+
+dialog.drawer--size-chart .drawer__underlay {
+  z-index: 6000;
+}
