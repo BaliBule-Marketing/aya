@@ -255,10 +255,6 @@
                         id="{{ uniq_id }}-select-{{ option.name | handle }}-label"
                       >
                         {{ option.name }}
-
-                        {%- if is_size_option -%}
-                          {{- size_chart_content -}}
-                        {%- endif -%}
                       </span>
 
                       {%- if form_style == 'classic' -%}
@@ -290,6 +286,10 @@
                         picker_type: picker_type
                       %}
                     </div>
+
+                    {%- if is_size_option -%}
+                      {{- size_chart_content -}}
+                    {%- endif -%}
                   </div>
                 </fieldset>
               {%- elsif picker_type == 'button' -%}
@@ -322,10 +322,6 @@
                         id="{{ uniq_id }}-select-{{ option.name | handle }}-label"
                       >
                         <span class="radio__legend__option-name {{ option_font_size }}">{{ option.name }}</span>
-
-                        {%- if is_size_option -%}
-                          {{- size_chart_content -}}
-                        {%- endif -%}
                       </span>
 
                       {%- if form_style == 'classic' -%}
@@ -366,6 +362,10 @@
                       has_variant_option_image: has_variant_option_image,
                       picker_type: picker_type
                     %}
+
+                    {%- if is_size_option -%}
+                      {{- size_chart_content -}}
+                    {%- endif -%}
                   </div>
                 </fieldset>
               {%- elsif picker_type == 'dropdown' -%}
@@ -376,10 +376,6 @@
                       id="{{ uniq_id }}-select-{{ option.name | handle }}-label"
                     >
                       <span class="radio__legend__option-name {{ option_font_size }}">{{ option.name }}</span>
-
-                      {%- if is_size_option -%}
-                        {{- size_chart_content -}}
-                      {%- endif -%}
                     </span>
 
                     {%- if form_style == 'classic' -%}
@@ -439,6 +435,10 @@
                       {{- 'icon-caret.svg' | inline_asset_content -}}
                     </span>
                   </popout-select>
+
+                  {%- if is_size_option -%}
+                    {{- size_chart_content -}}
+                  {%- endif -%}
                 </div>
               {%- endif -%}
             </div>
