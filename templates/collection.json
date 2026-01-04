@@ -172,7 +172,7 @@
             "heading_font_size": "heading-small",
             "featured_text": "<p>Each garment is individually sewn by hand, ensuring quality and craftsmanship in every detail.</p>",
             "featured_button_text": "",
-            "featured_button_link": "",
+            "featured_button_link": "shopify://blogs/news/botanical-dyes",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--outline",
