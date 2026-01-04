@@ -7,24 +7,8 @@
   endcomment
   assign sibs_collection = product.metafields.custom.related_colors_by_product_links.value | default: product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
 
-  assign sibling_color = ''
+  assign sibling_color = block.settings.sibling_color | default: product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
 
-  comment
-    Try to get current product color name from Category metafield (Metaobject list):
-    namespace: shopify, key: color-pattern.
-  endcomment
-  if product.metafields.shopify['color-pattern'] and product.metafields.shopify['color-pattern'].value != blank
-    assign product_color_meta = product.metafields.shopify['color-pattern'].value | first
-    assign sibling_color = product_color_meta.name | default: product_color_meta.title | default: product_color_meta.label
-  endif
-
-  if sibling_color == blank
-    assign sibling_color = product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
-  endif
-
-  if block.settings.sibling_color != blank
-    assign sibling_color = block.settings.sibling_color
-  endif
 
   assign hide_labels_class = ''
 
