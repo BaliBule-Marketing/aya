@@ -92,7 +92,9 @@
       ],
       "custom_css": [
         ".cart-block--top {border-bottom: none;}",
-        ".drawer .cart__checkout {margin-bottom: 6px;}"
+        ".drawer .cart__checkout {margin-bottom: 6px;}",
+        ".cart__item__image a {width: 90px; height: 115px;}",
+        " .cart__item__image img {object-fit: cover; }"
       ],
       "settings": {
         "color_scheme": "scheme-4"
