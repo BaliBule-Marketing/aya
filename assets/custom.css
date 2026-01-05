@@ -72,7 +72,7 @@
 .cart__foot__inner::before {
   content: "";
   position: relative;
-  top: var(--inner);
+  bottom: var(--inner);
   display: block;
   width: 100%;
   height: 1px;
