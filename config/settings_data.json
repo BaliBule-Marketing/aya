@@ -1898,6 +1898,7 @@
   "platform_customizations": {
     "custom_css": [
       ":root {--DRAWER-WIDTH: 438px;}",
+      ".drawer__close .icon {fill: none; stroke: currentcolor;}",
       ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}",
       "header {--font-nav-small: 1;}",
       ".navlink--child span {font-size: 20px;}",
