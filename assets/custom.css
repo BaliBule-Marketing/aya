@@ -111,6 +111,10 @@ dialog.drawer--size-chart .drawer__close:hover {
   color: var(--accent);
 }
 
+dialog.drawer--size-chart .drawer__body {
+  padding-inline: 38px;
+}
+
 dialog.drawer--size-chart .drawer__underlay {
   z-index: 6000;
 }
