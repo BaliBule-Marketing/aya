@@ -94,7 +94,9 @@
         ".cart-block--top {border-bottom: none;}",
         ".drawer .cart__checkout {margin-bottom: 6px;}",
         ".cart__item__image a {width: 90px; height: 115px;}",
-        " .cart__item__image img {object-fit: cover; }"
+        ".cart__item__image img {object-fit: cover;}",
+        ".drawer__heading {padding-inline: 13px;}",
+        ".cart__item, .cart__foot__inner {padding-inline: 28px;}"
       ],
       "settings": {
         "color_scheme": "scheme-4"
