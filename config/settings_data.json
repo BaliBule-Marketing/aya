@@ -1899,7 +1899,7 @@
     "custom_css": [
       ":root {--DRAWER-WIDTH: 438px;}",
       ".drawer__head {display: flex; flex-direction: column-reverse;}",
-      ".drawer__close {position: relative; justify-content: start; inset: unset;}",
+      ".drawer__close {position: relative; justify-content: start; inset: unset; padding: 0;}",
       ".drawer__close .icon {fill: none; stroke: currentcolor;}",
       ":root .color-scheme-1 {--BTN-PRIMARY-BG-BRIGHTER: #ffffff;}",
       "header {--font-nav-small: 1;}",
