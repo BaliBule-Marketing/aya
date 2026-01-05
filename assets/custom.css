@@ -69,7 +69,7 @@
 .cart__foot__inner {
  border-top: none;
 }
-.cart__item::before {
+.cart__foot__inner::before {
   content: "";
   position: relative;
   top: var(--inner);
