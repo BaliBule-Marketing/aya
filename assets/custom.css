@@ -66,6 +66,18 @@
   background-color: #f5eee4;
 }
 
+.cart__foot__inner {
+ border-top: none;
+}
+.cart__item::before {
+  content: "";
+  position: relative;
+  top: var(--inner);
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f5eee4;
+}
 
 /* Size chart drawer modal styles - dialog that behaves like drawer */
 dialog.drawer--size-chart {
