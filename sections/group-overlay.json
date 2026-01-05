@@ -97,7 +97,8 @@
         ".cart__item__image img {object-fit: cover;}",
         ".drawer__heading {padding-inline: 13px;}",
         ".cart__item,.cart__foot__inner {padding-inline: 28px;}",
-        ".cart__quantity-counter {display: flex; gap: 24px;}"
+        ".cart__quantity-counter {display: flex; align-items: center; gap: 24px;}",
+        ".drawer__items .cart__item__remove {margin: 0;}"
       ],
       "settings": {
         "color_scheme": "scheme-4"
