@@ -91,7 +91,6 @@
         "checkout-buttons"
       ],
       "custom_css": [
-        ".cart-block {--inner: 38px;}",
         ".cart-block--top {border-bottom: none;}",
         ".drawer .cart__checkout {margin-bottom: 6px;}"
       ],
