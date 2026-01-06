@@ -5618,7 +5618,7 @@ img.fit-cover {
   min-height: 800px;
 }
 .article-single .image__hero__frame img {
-  object-fit: contain;
+  object-fit: contain !important;
 }
 
 
