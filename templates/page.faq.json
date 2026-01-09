@@ -228,7 +228,7 @@
           "settings": {
             "default_open": false,
             "title": "What materials do you use for your garments?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>We work exclusively with natural and carefully selected materials such as silk, linen, cotton, and other plant-based fibers.</p><p>Our fabrics are chosen for their breathability, longevity, and the way they move with the body — becoming softer and more beautiful with time.</p><p>Each textile is sourced and tested with intention, honoring both the wearer and the earth.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -240,7 +240,7 @@
           "settings": {
             "default_open": false,
             "title": "Are all items handmade?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit ipsum, lacinia at dignissim sit amet, dapibus feugiat felis. Nullam eget dignissim risus, nec sodales enim. Sed lobortis est vitae risus tincidunt hendrerit. Praesent urna nisl, venenatis vitae arcu at, vestibulum venenatis velit.</p>",
+            "content": "<p>Yes. Every AYA Sacred Wear piece is handmade.</p><p>From weaving and dyeing to embroidery, braiding, and finishing — our garments are created by skilled artisans in Bali and Java using traditional techniques. Small variations are a natural part of this process and a signature of true craftsmanship.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -252,7 +252,7 @@
           "settings": {
             "default_open": false,
             "title": "How are the garments dyed?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Our garments are dyed using botanical dyes derived from plants, roots, leaves, bark, and natural minerals.</p><p>This process is slow, seasonal, and guided by nature — which means no two pieces are ever exactly the same. Subtle variations in tone are not imperfections, but living expressions of natural dyeing.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -264,7 +264,7 @@
           "settings": {
             "default_open": false,
             "title": "Do you restock sold-out items?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Some designs may return in small quantities, while others are created as limited or one-of-a-kind pieces.</p><p>Because our work is entirely handmade and naturally dyed, restocks are never guaranteed. We recommend joining our newsletter or following us on Instagram to stay informed about new drops and returning styles.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -282,7 +282,7 @@
           "settings": {
             "default_open": false,
             "title": "How do I find the right size?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Each product page includes detailed measurements and fit notes.</p><p>If you are unsure between sizes or need guidance, we are happy to assist — simply contact us with your measurements and we will help you choose the best fit.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -294,7 +294,7 @@
           "settings": {
             "default_open": false,
             "title": "Do your styles run true to size?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Most of our designs follow standard sizing, however many silhouettes are intentionally relaxed, fluid, or adjustable.<br/></p><p>Fit may vary depending on the fabric and style. We recommend checking the garment measurements rather than relying solely on your usual size.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -306,7 +306,7 @@
           "settings": {
             "default_open": false,
             "title": "Can I request custom sizing?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>In certain cases, custom sizing may be available.<br/></p><p>As each piece requires additional time and artisan work, custom orders are considered individually and are final sale. Please contact us before placing your order to discuss availability.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -324,7 +324,7 @@
           "settings": {
             "default_open": false,
             "title": "Where do you ship from?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>All orders are shipped directly from Bali, Indonesia.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -336,7 +336,7 @@
           "settings": {
             "default_open": false,
             "title": "Do you offer international shipping?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Yes, we ship worldwide.<br/></p><p>Shipping rates and options are calculated at checkout based on your location.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -348,7 +348,7 @@
           "settings": {
             "default_open": false,
             "title": "How long does shipping take?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Processing time is usually 2–5 business days.</p><p>Estimated delivery times:</p><p> • Asia: 5–10 business days</p><p> • Europe & Australia: 7–14 business days</p><p> • USA & Rest of the world: 10–21 business days</p><p>Please note that delivery times may vary due to customs procedures and seasonal conditions.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -360,7 +360,7 @@
           "settings": {
             "default_open": false,
             "title": "Will I have to pay customs fees?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Customs duties and import taxes are determined by your country and are the responsibility of the recipient.</p><p>We recommend checking your local customs regulations prior to ordering, as we are unable to control or predict these charges.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -378,7 +378,7 @@
           "settings": {
             "default_open": false,
             "title": "What is your return policy?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>We accept returns on unworn, unused items within 7 days of delivery.</p><p>Due to the delicate nature of our fabrics and the handmade process, items must be returned in original condition. Custom orders, sale items, and custom-sized pieces are final sale.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -390,7 +390,7 @@
           "settings": {
             "default_open": false,
             "title": "Can I exchange an item for another size?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Exchanges may be possible depending on availability.</p><p>Please contact us as soon as possible after receiving your order, and we will do our best to assist.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -402,7 +402,7 @@
           "settings": {
             "default_open": false,
             "title": "How do I start a return?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>To initiate a return, please contact us via email with your order number and reason for return.</p><p>Once approved, you will receive detailed return instructions.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -420,7 +420,7 @@
           "settings": {
             "default_open": false,
             "title": "How should I wash my garment?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>We recommend gentle hand washing in cold water using a mild, natural detergent.<br/></p><p>Avoid soaking, harsh chemicals, or direct sunlight when drying. Lay flat or hang to dry in shade.</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -432,7 +432,7 @@
           "settings": {
             "default_open": false,
             "title": "Will the color fade over time?",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "content": "<p>Botanical dyes evolve naturally.<br/></p><p>With proper care, your garment will age beautifully, developing a softer and more nuanced tone over time. This gentle evolution is part of the living nature of plant-dyed textiles.</p>",
             "show_icon": false,
             "icon_name": "icon-check",
             "icon_size": 20,
