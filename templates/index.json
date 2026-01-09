@@ -302,11 +302,11 @@
           "settings": {
             "show_collection_card": true,
             "collection_1": "organic-tops-tunics",
-            "image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
+            "image_1": "shopify://shop_images/AYA-73.jpg",
             "button_text_1": "Boho Top",
-            "collection_2": "organic-shawl-coverup",
-            "image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
-            "button_text_2": "Organic Poncho",
+            "collection_2": "organic-skirts",
+            "image_2": "shopify://shop_images/AYA-69.jpg",
+            "button_text_2": "Pants & Skirts",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -326,11 +326,11 @@
         ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}",
         ".index-image-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}",
         ".brick__block__image {max-width: 100%;}",
-        ".image__hero__frame {height: 100%; max-width: 100%; aspect-ratio: 0.76;}"
+        ".image__hero__frame {height: 100%; max-width: 100%; aspect-ratio: 0.86;}"
       ],
       "name": "Image with text",
       "settings": {
-        "image_1": "shopify://shop_images/AYA-71.jpg",
+        "image_1": "shopify://shop_images/AYA-71_785f5161-ef17-42ee-b5eb-038cc3f7157c.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "layout": "",
