@@ -275,6 +275,7 @@
       "blocks": {
         "subheading_67KUBh": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "New Arrivals",
             "padding_bottom": 4
@@ -283,7 +284,7 @@
         "heading_gXxRJi": {
           "type": "heading",
           "settings": {
-            "title": "FOR EVERYDAY WEAR",
+            "title": "Creativity is the greatest rebellion in existence.",
             "heading_font_size": "heading-medium",
             "padding_bottom": 12,
             "heading_tag": "automatic"
@@ -291,6 +292,7 @@
         },
         "text_4TRk33": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
             "text_font_size": "body-medium",
@@ -299,14 +301,15 @@
         },
         "collection_ATcQ9n": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "show_collection_card": true,
             "collection_1": "organic-tops-tunics",
-            "image_1": "shopify://shop_images/AYA-73.jpg",
+            "image_1": "shopify://shop_images/new_black_crop_top_for_women_by_aya_sacred_wear_3.jpg",
             "button_text_1": "Boho Top",
             "collection_2": "organic-skirts",
-            "image_2": "shopify://shop_images/AYA-69.jpg",
-            "button_text_2": "Pants & Skirts",
+            "image_2": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_10.jpg",
+            "button_text_2": "Organic Poncho",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -330,7 +333,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image_1": "shopify://shop_images/AYA-71_785f5161-ef17-42ee-b5eb-038cc3f7157c.jpg",
+        "image_1": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "layout": "",
@@ -339,8 +342,8 @@
         "mobile_height": "screen-height-full--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
-        "padding_top": 112,
-        "padding_bottom": 112,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "show_placeholder": false
       }
     },
@@ -1380,6 +1383,7 @@
         "image-3",
         "image-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_font_size": "heading-medium",
@@ -1394,6 +1398,35 @@
         "padding_top": 15,
         "padding_bottom": 88,
         "heading_tag": "automatic"
+      }
+    },
+    "176794874018dc9f16": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_6waFWx": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 12,
+            "instafeed_margin_bottom": 12,
+            "instafeed_margin_sides": 16,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_6waFWx"
+      ],
+      "settings": {
+        "include_margins": false
       }
     }
   },
@@ -1420,6 +1453,7 @@
     "section_hero_scrolling",
     "section-product",
     "rich-text-3",
-    "columns-2"
+    "columns-2",
+    "176794874018dc9f16"
   ]
 }
