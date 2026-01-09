@@ -324,9 +324,9 @@
       "custom_css": [
         ".btn--text:not(.btn--text-no-underline) span::after {display: none;}",
         ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}",
-        ".index-image-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0223/5200/3146/files/paper_03.png\"); background-size: cover; background-position: center; background-repeat: no-repeat;}",
         ".brick__block__image {max-width: 100%;}",
-        ".image__hero__frame {height: 100%; max-width: 100%; aspect-ratio: 0.86;}"
+        ".image__hero__frame {height: 100%; max-width: 100%; aspect-ratio: 0.86;}",
+        ".collection-item__bg .image-wrapper {aspect-ratio: 0.5 !important;}"
       ],
       "name": "Image with text",
       "settings": {
