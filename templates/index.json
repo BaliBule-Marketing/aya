@@ -326,7 +326,7 @@
         ".brick__block,.brick__block__text,.hero__content,.collection-item--card {background: none;}",
         ".brick__block__image {max-width: 100%;}",
         ".image__hero__frame {height: 100%; max-width: 100%; aspect-ratio: 0.86;}",
-        ".collection-item__bg .image-wrapper {aspect-ratio: 0.5 !important;}"
+        ".collection-item__bg .image-wrapper {--aspect-ratio: 0.5 !important;}"
       ],
       "name": "Image with text",
       "settings": {
