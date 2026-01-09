@@ -275,7 +275,6 @@
       "blocks": {
         "subheading_67KUBh": {
           "type": "subheading",
-          "disabled": true,
           "settings": {
             "subheading": "New Arrivals",
             "padding_bottom": 4
@@ -284,7 +283,7 @@
         "heading_gXxRJi": {
           "type": "heading",
           "settings": {
-            "title": "Creativity is the greatest rebellion in existence.",
+            "title": "FOR EVERYDAY WEAR",
             "heading_font_size": "heading-medium",
             "padding_bottom": 12,
             "heading_tag": "automatic"
@@ -292,7 +291,6 @@
         },
         "text_4TRk33": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
             "text_font_size": "body-medium",
@@ -301,7 +299,6 @@
         },
         "collection_ATcQ9n": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "show_collection_card": true,
             "collection_1": "organic-tops-tunics",
@@ -333,7 +330,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image_1": "shopify://shop_images/black_boho_long_kimono_hand_loomed_by_aya_sacred_wear_8.jpg",
+        "image_1": "shopify://shop_images/AYA-71_785f5161-ef17-42ee-b5eb-038cc3f7157c.jpg",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "layout": "",
@@ -342,8 +339,8 @@
         "mobile_height": "screen-height-full--mobile",
         "reverse_blocks": false,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 112,
+        "padding_bottom": 112,
         "show_placeholder": false
       }
     },
