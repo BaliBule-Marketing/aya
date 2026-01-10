@@ -111,11 +111,11 @@
                   {{- 'general.size_chart.title' | t -}}
                 </h3>
                 <button type="button" class="drawer__close" data-popup-close aria-label="{{ 'general.accessibility.close' | t }}">
-                  {%- render 'icon-cancel' -%}
+                  {%- render 'icon-drawer-close' -%}
                 </button>
               </div>
 
-              <tabs-component class="rte product-tabs">
+              <tabs-component class="rte product-tabs size-chart-content">
                 {%- liquid
                   assign tabs_navigation = ''
                   assign tabs = ''
