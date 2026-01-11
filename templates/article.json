@@ -86,7 +86,7 @@
         "tags": false,
         "show_sharing": false,
         "arrows": false,
-        "height": "image-height",
+        "height": "screen-height-one-third",
         "mobile_height": "screen-height-one-third--mobile",
         "color_scheme": "",
         "padding_top": 0,
