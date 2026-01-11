@@ -52,29 +52,6 @@
     },
     "main": {
       "type": "article",
-      "blocks": {
-        "related_gFPKXD": {
-          "type": "related",
-          "settings": {
-            "title": "Related products",
-            "product_list": [
-              "ananda-lalita-dress-blush-rose-crinkle-linen-goddess-dress-organic-handmade-bridesmaid-gown-sustainable-wedding-clothing-for-women",
-              "ananda-lalita-dress-ivory-colour-linen-organic-goddess-gown-handmade-boho-resort-wear-bohemian-wedding-clothing-women"
-            ]
-          }
-        },
-        "recent-articles": {
-          "type": "recent",
-          "disabled": true,
-          "settings": {
-            "title": "Recent articles"
-          }
-        }
-      },
-      "block_order": [
-        "related_gFPKXD",
-        "recent-articles"
-      ],
       "custom_css": [
         ".article-single .image__hero__frame {min-height: 340px;}",
         ".widget__products .widget__column {flex-direction: column; border: none;}",
@@ -95,28 +72,31 @@
         "padding_bottom": 50
       }
     },
-    "section_blog_Acra43": {
-      "type": "section-blog",
-      "name": "Blog posts",
+    "section_collection_zxkcmg": {
+      "type": "section-collection",
+      "name": "Featured collection",
       "settings": {
-        "blog_name": "our-journal",
-        "aspect_ratio": 1,
-        "title": "OUR JOURNAL",
+        "featured_collection": "on-sale",
+        "heading": "Shop our looks",
         "heading_font_size": "heading-medium",
-        "title_font_size": "heading-small",
-        "show_tags": false,
-        "show_author": false,
-        "show_date": false,
-        "show_button": true,
-        "show_comments": false,
-        "width": "wrapper--full-padded",
-        "grid": 3,
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
         "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 0,
-        "heading_tag": "automatic",
-        "title_tag": "automatic"
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     }
   },
@@ -124,6 +104,6 @@
     "section_divider_jtTNmM",
     "section_rich_text_bJCRNP",
     "main",
-    "section_blog_Acra43"
+    "section_collection_zxkcmg"
   ]
 }
