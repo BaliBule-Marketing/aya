@@ -76,7 +76,7 @@
         "recent-articles"
       ],
       "custom_css": [
-        ".article__hero .article__image .image__fill img {object-fit: cover;}",
+        ".article-single .image__hero__frame img {object-fit: cover;}",
         ".article-single .image__hero__frame {min-height: 340px;}"
       ],
       "settings": {
