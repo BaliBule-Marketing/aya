@@ -77,7 +77,8 @@
       ],
       "custom_css": [
         ".article-single .image__hero__frame {min-height: 340px;}",
-        ".widget__products .widget__column {flex-direction: column;}"
+        ".widget__products .widget__column {flex-direction: column;}",
+        ".widget__products .widget__column .widget__column__image {flex-basis: 375px;}"
       ],
       "settings": {
         "show_image": true,
