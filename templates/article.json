@@ -58,8 +58,8 @@
           "settings": {
             "title": "Related products",
             "product_list": [
-              "boho-macrame-bridesmaid-dress-off-white-to-sky-blue-multiway-dress",
-              "boho-wedding-dress-beach-wedding-dress-off-white-multiway-dress"
+              "ananda-lalita-dress-blush-rose-crinkle-linen-goddess-dress-organic-handmade-bridesmaid-gown-sustainable-wedding-clothing-for-women",
+              "ananda-lalita-dress-ivory-colour-linen-organic-goddess-gown-handmade-boho-resort-wear-bohemian-wedding-clothing-women"
             ]
           }
         },
@@ -76,7 +76,8 @@
         "recent-articles"
       ],
       "custom_css": [
-        ".article__hero .article__image .image__fill img {object-fit: cover;}"
+        ".article__hero .article__image .image__fill img {object-fit: cover;}",
+        ".article-single .image__hero__frame {min-height: 340px;}"
       ],
       "settings": {
         "show_image": true,
