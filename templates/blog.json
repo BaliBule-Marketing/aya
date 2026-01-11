@@ -28,7 +28,8 @@
         "feat": {
           "type": "featured_post",
           "settings": {
-            "featured_post": "our-journal/aya-sacred-wear-inspired-by-mother-nature-first-post",
+            "featured_post": "news/who-we-are",
+            "image": "shopify://shop_images/5256e3fdde5c126ff18119f074c4644634fb475e.jpg",
             "subheading": "Featured Journal"
           }
         }
