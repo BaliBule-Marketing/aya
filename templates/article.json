@@ -79,7 +79,7 @@
         ".article-single .image__hero__frame {min-height: 340px;}",
         ".widget__products .widget__column {flex-direction: column;}",
         ".widget__products .widget__column .widget__column__image {flex-basis: 375px;}",
-        "@media only screen and (min-width: 750px) {.grid--article {grid-template-columns: auto minmax(300px, 332px); align-items: start; }}"
+        "@media only screen and (min-width: 750px) {.grid--article {grid-template-columns: auto minmax(300px, 334px); align-items: start; }}"
       ],
       "settings": {
         "show_image": true,
