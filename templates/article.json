@@ -76,7 +76,8 @@
         "recent-articles"
       ],
       "custom_css": [
-        ".article-single .image__hero__frame {min-height: 340px;}"
+        ".article-single .image__hero__frame {min-height: 340px;}",
+        ".widget__products .widget__column {flex-direction: column;}"
       ],
       "settings": {
         "show_image": true,
