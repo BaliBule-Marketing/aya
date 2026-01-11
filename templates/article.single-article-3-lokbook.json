@@ -22,76 +22,9 @@
         "padding_bottom": 0
       }
     },
-    "section_hero_FEaQxX": {
-      "type": "section-hero",
-      "blocks": {
-        "heading_cpbRGU": {
-          "type": "heading",
-          "settings": {
-            "title": "{{ article.title }}",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        },
-        "text_jPKFpz": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        },
-        "button_4Gt3tn": {
-          "type": "button",
-          "settings": {
-            "link_text": "View products",
-            "link": "{{ article.url }}",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "full_width": false,
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_cpbRGU",
-        "text_jPKFpz",
-        "button_4Gt3tn"
-      ],
-      "name": "Image banner",
-      "settings": {
-        "image_1": "{{ article.image }}",
-        "link": "",
-        "width": "wrapper--full",
-        "height": "screen-height-three-quarters",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 50,
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
-        "show_text_background": false,
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
     "main": {
       "type": "article",
       "blocks": {
-        "related_gFPKXD": {
-          "type": "related",
-          "settings": {
-            "title": "Related products",
-            "product_list": [
-              "ananda-lalita-dress-blush-rose-crinkle-linen-goddess-dress-organic-handmade-bridesmaid-gown-sustainable-wedding-clothing-for-women",
-              "ananda-lalita-dress-ivory-colour-linen-organic-goddess-gown-handmade-boho-resort-wear-bohemian-wedding-clothing-women"
-            ]
-          }
-        },
         "recent-articles": {
           "type": "recent",
           "disabled": true,
@@ -101,7 +34,6 @@
         }
       },
       "block_order": [
-        "related_gFPKXD",
         "recent-articles"
       ],
       "custom_css": [
@@ -124,35 +56,37 @@
         "padding_bottom": 50
       }
     },
-    "section_blog_Acra43": {
-      "type": "section-blog",
-      "name": "Blog posts",
+    "section_collection_EGxYmW": {
+      "type": "section-collection",
+      "name": "Featured collection",
       "settings": {
-        "blog_name": "our-journal",
-        "aspect_ratio": 1,
-        "title": "OUR JOURNAL",
+        "featured_collection": "on-sale",
+        "heading": "Shop our looks",
         "heading_font_size": "heading-medium",
-        "title_font_size": "heading-small",
-        "show_tags": false,
-        "show_author": false,
-        "show_date": false,
-        "show_button": true,
-        "show_comments": false,
-        "width": "wrapper--full-padded",
-        "grid": 3,
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
         "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "slider",
         "color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 0,
-        "heading_tag": "automatic",
-        "title_tag": "automatic"
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     }
   },
   "order": [
     "section_divider_jtTNmM",
-    "section_hero_FEaQxX",
     "main",
-    "section_blog_Acra43"
+    "section_collection_EGxYmW"
   ]
 }
