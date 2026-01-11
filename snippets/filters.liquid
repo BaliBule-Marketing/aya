@@ -81,6 +81,179 @@
       </div>
     {%- endunless -%}
 
+    {%- if section.settings.enable_sort -%}
+      {%- liquid
+        assign sort_options = search.sort_options | default: collection.sort_options
+        assign sort_by = search.sort_by | default: collection.sort_by
+        assign sort_translation = 'collections.general.sort' | t
+        assign currently_selected = sort_options | where: 'value', sort_by | first
+        assign animation_delay = animation_delay | plus: animation_delay_increment
+
+        if animation_delay == 50
+          assign animation_delay = animation_delay | plus: 200
+        endif
+
+        assign collection_url = collection.url | default: '/collections/all'
+        if template.name == 'search'
+          assign base_url = request.path
+        else
+          assign base_url = collection_url
+        endif
+
+        assign current_url = request.url
+        assign url_parts = current_url | split: '?'
+        assign base_path = url_parts[0]
+        assign current_params = ''
+        if url_parts.size > 1
+          assign current_params = url_parts[1]
+        endif
+      -%}
+
+      <div
+        class="filter-group"
+        data-animation="{{ animation_name }}"
+        data-animation-delay="{{ animation_delay }}"
+        data-animation-duration="{{ animation_duration }}"
+      >
+        <details
+          data-collapsible
+          {% if default_open %}
+            open="true"
+          {% endif %}
+        >
+          <summary class="filter-group__heading" data-collapsible-trigger>
+            <span>{{ sort_translation }}</span>
+
+            {%- render 'icon-nav-arrow-down' -%}
+          </summary>
+
+          <div
+            class="filter-group__body"
+            data-collapsible-body
+            {% if default_open %}
+              style="height: auto;"
+            {% endif %}
+          >
+            <div class="filter-group__content" data-collapsible-content>
+              <ul class="collection-nav">
+                {%- for option in sort_options -%}
+                  {%- assign active = false -%}
+                  {%- if sort_by == option.value -%}
+                    {%- assign active = true -%}
+                  {%- endif -%}
+                  {%- liquid
+                    assign sort_url = base_path
+                    assign params_array = current_params | split: '&'
+                    assign new_params = ''
+                    assign sort_added = false
+                    
+                    for param in params_array
+                      if param != blank
+                        unless param contains 'sort_by='
+                          if new_params != ''
+                            assign new_params = new_params | append: '&'
+                          endif
+                          assign new_params = new_params | append: param
+                        endunless
+                      endif
+                    endfor
+                    
+                    if new_params != ''
+                      assign sort_url = sort_url | append: '?' | append: new_params | append: '&sort_by=' | append: option.value
+                    else
+                      assign sort_url = sort_url | append: '?sort_by=' | append: option.value
+                    endif
+                  -%}
+                  <li class="sidebar__item{% if active %} sidebar__item--active{% endif %}">
+                    <a
+                      href="{{ sort_url }}"
+                      class="{% if active %}link--remove{% else %}link--add{% endif %}"
+                      data-value="{{ option.value }}"
+                      data-sort-link
+                      data-filter-update-url
+                      {% if active %}
+                        aria-current="true"
+                      {% endif %}
+                    >
+                      {{ option.name }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+
+              <input
+                type="hidden"
+                name="sort_by"
+                value="{{ currently_selected.value }}"
+                data-popout-input
+              >
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <script>
+        (function() {
+          function initSortLinks() {
+            const form = document.querySelector('#{{ section.id }}-form-filter');
+            if (!form) {
+              setTimeout(initSortLinks, 100);
+              return;
+            }
+            
+            const sortLinks = form.querySelectorAll('[data-sort-link]');
+            const sortInput = form.querySelector('input[name="sort_by"]');
+            
+            if (sortLinks.length && sortInput) {
+              sortLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  
+                  const value = this.getAttribute('data-value');
+                  if (value && sortInput) {
+                    // Update input value
+                    sortInput.value = value;
+                    sortInput.removeAttribute('disabled');
+                    
+                    // Update visual state - remove active from all, add to clicked
+                    sortLinks.forEach(function(l) {
+                      const li = l.closest('li');
+                      if (li) {
+                        li.classList.remove('sidebar__item--active');
+                        l.classList.remove('link--remove');
+                        l.classList.add('link--add');
+                        l.removeAttribute('aria-current');
+                      }
+                    });
+                    
+                    // Mark clicked as active
+                    const clickedLi = this.closest('li');
+                    if (clickedLi) {
+                      clickedLi.classList.add('sidebar__item--active');
+                      this.classList.remove('link--add');
+                      this.classList.add('link--remove');
+                      this.setAttribute('aria-current', 'true');
+                    }
+                    
+                    // The data-filter-update-url will handle the URL update via collection-filters-form.js
+                    // No need to manually submit - the href with data-filter-update-url will be handled
+                  }
+                  return false;
+                });
+              });
+            }
+          }
+          
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSortLinks);
+          } else {
+            initSortLinks();
+          }
+        })();
+      </script>
+    {%- endif -%}
+
     {%- for filter in filters_default -%}
       {%- liquid
         assign filter_check_active = filter.values | where: 'active', false

@@ -175,7 +175,7 @@
           </div>
         {%- endif -%}
 
-        {%- if enable_sort -%}
+        {%- if enable_sort and enable_filters == false -%}
           {% render 'collection-sorting' %}
         {%- endif -%}
       </nav>

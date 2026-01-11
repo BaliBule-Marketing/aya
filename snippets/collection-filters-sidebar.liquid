@@ -98,7 +98,7 @@
       </div>
     {%- endif -%}
 
-    {%- render 'filters' animation_delay: animation_delay, animation_duration: animation_duration, animation_name: animation_name, animation_delay_increment: animation_delay_increment -%}
+    {%- render 'filters' section: section, animation_delay: animation_delay, animation_duration: animation_duration, animation_name: animation_name, animation_delay_increment: animation_delay_increment -%}
 
     {%- unless filter_exist -%}
       <div class="no-results">
