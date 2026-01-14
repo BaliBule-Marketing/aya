@@ -99,7 +99,14 @@
 
                     {{ title }}
 
-                    {%- render 'icon-nav-arrow-down' -%}
+                    <span class="accordion__toggle-icon" aria-hidden="true">
+                      <span class="accordion__toggle-icon-plus">
+                        {%- render 'icon-accordion-closed' -%}
+                      </span>
+                      <span class="accordion__toggle-icon-minus">
+                        {%- render 'icon-accordion-open' -%}
+                      </span>
+                    </span>
                   </summary>
 
                   <div

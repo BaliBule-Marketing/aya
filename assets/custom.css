@@ -92,3 +92,62 @@ dialog .drawer__head {
   background: var(--bg);
   border-bottom: none;
 }
+
+/* ========== Accordion toggle icons (+ / -) ========== */
+.accordion__toggle-icon {
+  --icon-size: 10px;
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.accordion__toggle-icon .icon {
+  position: static;
+  transform: none;
+  stroke: none;
+  fill: var(--icons, currentColor);
+}
+
+.accordion__toggle-icon-minus {
+  display: none;
+}
+
+.accordion[open] .accordion__toggle-icon-plus,
+details.accordion[open] .accordion__toggle-icon-plus,
+[data-collapsible-trigger][aria-expanded="true"] .accordion__toggle-icon-plus,
+.accordion__title[aria-expanded="true"] .accordion__toggle-icon-plus {
+  display: none;
+}
+
+.accordion[open] .accordion__toggle-icon-minus,
+details.accordion[open] .accordion__toggle-icon-minus,
+[data-collapsible-trigger][aria-expanded="true"] .accordion__toggle-icon-minus,
+.accordion__title[aria-expanded="true"] .accordion__toggle-icon-minus {
+  display: block;
+}
+
+/* Guard against buggy open="false" states: force plus, hide minus */
+details.accordion[open="false"] .accordion__toggle-icon-plus,
+.accordion[open="false"] .accordion__toggle-icon-plus,
+[data-collapsible-trigger][aria-expanded="false"] .accordion__toggle-icon-plus,
+.accordion__title[aria-expanded="false"] .accordion__toggle-icon-plus {
+  display: block;
+}
+
+details.accordion[open="false"] .accordion__toggle-icon-minus,
+.accordion[open="false"] .accordion__toggle-icon-minus,
+[data-collapsible-trigger][aria-expanded="false"] .accordion__toggle-icon-minus,
+.accordion__title[aria-expanded="false"] .accordion__toggle-icon-minus {
+  display: none;
+}
+
+/* Product accordion uses absolute-positioned icons on the right */
+.product__block--accordion .accordion__title .accordion__toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  margin-left: 0;
+}
