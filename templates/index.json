@@ -876,7 +876,7 @@
         "image_xEj7XB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/boho_green_bridesmaid_organic_thick_cotton_slip_dress_with_tassels_by_aya_sacred_wear_7.jpg",
+            "image": "shopify://shop_images/785b955b14f8493d523a3d2495c376cc580e2c60.png",
             "mobile_height": "screen-height-one-half--mobile",
             "title": "the boho essentials",
             "heading_font_size": "heading-medium",
@@ -888,7 +888,7 @@
             "link": "",
             "button_type": "btn--primary",
             "button_size": "",
-            "button_style": "btn--solid",
+            "button_style": "btn--outline",
             "show_arrow": false,
             "show_text_background": false,
             "bg_color": "",
