@@ -503,7 +503,7 @@
             "align_with_product_images": false,
             "image": "shopify://shop_images/DSC06819.jpg",
             "overlay_type": "disabled",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
+            "description": "",
             "color": "#ffffff",
             "link_text": "Shop Dresses",
             "link": "",
@@ -865,10 +865,10 @@
           "type": "products",
           "settings": {
             "product_list": [
-              "preorder-black-poncho-robe-boho-cape-for-women-handmade-bohemian-poncho",
-              "new-dusty-pink-maxi-adjustable-dress-open-back-sides-belly-dress",
-              "boho-maxi-dress-for-women-organic-cotton-sage-colour-goddess-dress",
-              "boho-dress-for-women-off-white-bohemian-prom-dress-light-summer-dress"
+              "powder-pink-toga-dress-boho-macrame-dress-boho-sustainable-dress",
+              "dusty-pink-puff-sleeves-top-boho-tassels-crop-top-hand-embroidered-top",
+              "new-greek-goddess-dress-boho-dress-organic-cotton-bridesmaid-dress-bohemian-dress",
+              "powder-pink-small-bells-dress-organic-cocktail-dress-ombre-minimalist-dress"
             ],
             "layout_mobile": "slider"
           }
