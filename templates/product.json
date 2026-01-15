@@ -230,6 +230,17 @@
             "color": "",
             "padding_bottom": 22
           }
+        },
+        "complementary_products_qtdAMd": {
+          "type": "complementary-products",
+          "settings": {
+            "complementary_limit": 3,
+            "layout": "stacked",
+            "autoplay": false,
+            "autoplay_speed": 8,
+            "bg_color": "",
+            "padding_bottom": 16
+          }
         }
       },
       "block_order": [
@@ -249,7 +260,8 @@
         "pickup",
         "upsell",
         "divider_1",
-        "features_chGfmk"
+        "features_chGfmk",
+        "complementary_products_qtdAMd"
       ],
       "custom_css": [
         ".product__block--lines {--border: #f5eee4;}",

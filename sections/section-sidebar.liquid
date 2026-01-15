@@ -64,7 +64,14 @@
           <summary class="accordion__title subheading" data-collapsible-trigger>
             <span>{{ title }}</span>
 
-            {%- render 'icon-nav-arrow-down' -%}
+            <span class="accordion__toggle-icon" aria-hidden="true">
+              <span class="accordion__toggle-icon-plus">
+                {%- render 'icon-accordion-closed' -%}
+              </span>
+              <span class="accordion__toggle-icon-minus">
+                {%- render 'icon-accordion-open' -%}
+              </span>
+            </span>
           </summary>
 
           <div class="accordion__body rte" data-collapsible-body>
