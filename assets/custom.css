@@ -151,3 +151,35 @@ details.accordion[open="false"] .accordion__toggle-icon-minus,
   transform: translateY(-50%);
   margin-left: 0;
 }
+
+/* ========== Swap filters and sort buttons - filters on right, sort on left ========== */
+.collection__nav {
+  flex-direction: row-reverse;
+}
+
+/* Adjust alignment when both filters and sort are present */
+.collection__nav--filter.collection__nav--sort {
+  justify-content: space-between;
+}
+
+/* Ensure filter button stays on the right */
+.collection__nav--filter {
+  justify-content: flex-end;
+}
+
+/* Ensure sort button stays on the left when alone */
+.collection__nav--sort:not(.collection__nav--filter) {
+  justify-content: flex-start;
+}
+
+/* ========== Make filters slide-out panel appear from the right ========== */
+.collection__sidebar__slide-out {
+  right: auto;
+  left: 100%;
+  border-left: none;
+  border-right: 1px solid var(--border);
+}
+
+.collection__sidebar__slide-out.expanded {
+  transform: translateX(-100%);
+}
