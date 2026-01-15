@@ -92,21 +92,6 @@
         if animation_delay == 50
           assign animation_delay = animation_delay | plus: 200
         endif
-
-        assign collection_url = collection.url | default: '/collections/all'
-        if template.name == 'search'
-          assign base_url = request.path
-        else
-          assign base_url = collection_url
-        endif
-
-        assign current_url = request.url
-        assign url_parts = current_url | split: '?'
-        assign base_path = url_parts[0]
-        assign current_params = ''
-        if url_parts.size > 1
-          assign current_params = url_parts[1]
-        endif
       -%}
 
       <div
@@ -182,43 +167,52 @@
             const form = link.closest('form');
             const sortInput = form ? form.querySelector('input[name="sort_by"]') : null;
             
-            if (value && sortInput && form) {
-              // Update hidden input
-              sortInput.value = value;
-              sortInput.removeAttribute('disabled');
-              
-              // Update visual state immediately
-              const allLinks = form.querySelectorAll('[data-sort-link]');
-              allLinks.forEach(function(l) {
-                const li = l.closest('li');
-                if (li) {
-                  li.classList.remove('sidebar__item--active', 'link--remove');
-                  li.classList.add('link--add');
-                  l.removeAttribute('aria-current');
-                }
-              });
-              
-              const clickedLi = link.closest('li');
-              if (clickedLi) {
-                clickedLi.classList.add('sidebar__item--active', 'link--remove');
-                link.setAttribute('aria-current', 'true');
+            // Early return if required elements are missing
+            if (!value || !sortInput || !form) return;
+            
+            // Update hidden input
+            sortInput.value = value;
+            sortInput.removeAttribute('disabled');
+            
+            // Update visual state immediately
+            const allLinks = form.querySelectorAll('[data-sort-link]');
+            allLinks.forEach(function(l) {
+              const li = l.closest('li');
+              if (li) {
+                li.classList.remove('sidebar__item--active', 'link--remove');
+                li.classList.add('link--add');
+                l.removeAttribute('aria-current');
               }
-              
-              // Trigger form submission
-              const collectionForm = form.closest('collection-filters-form');
-              
-              if (collectionForm && collectionForm.submitForm) {
+            });
+            
+            const clickedLi = link.closest('li');
+            if (clickedLi) {
+              clickedLi.classList.add('sidebar__item--active', 'link--remove');
+              link.setAttribute('aria-current', 'true');
+            }
+            
+            // Trigger form submission
+            const collectionForm = form.closest('collection-filters-form');
+            
+            if (collectionForm && collectionForm.submitForm) {
+              try {
+                // Create a minimal event object
+                const fakeEvent = {
+                  type: 'custom',
+                  target: sortInput,
+                  preventDefault: function() {},
+                  stopPropagation: function() {}
+                };
+                collectionForm.submitForm.call(collectionForm, fakeEvent, '');
+              } catch (error) {
+                console.error('Sort submitForm error:', error);
+                // Fallback: reload page with correct URL parameters
                 try {
-                  // Create a minimal event object
-                  const fakeEvent = {
-                    type: 'custom',
-                    target: sortInput,
-                    preventDefault: function() {},
-                    stopPropagation: function() {}
-                  };
-                  collectionForm.submitForm.call(collectionForm, fakeEvent, '');
-                } catch (error) {
-                  console.error('submitForm error:', error);
+                  const currentUrl = new URL(window.location.href);
+                  currentUrl.searchParams.set('sort_by', value);
+                  window.location.href = currentUrl.toString();
+                } catch (urlError) {
+                  console.error('URL fallback error:', urlError);
                 }
               }
             }
@@ -226,20 +220,31 @@
             return false;
           }
           
-          function initSortDelegation() {
+          function initSortDelegation(retries) {
+            retries = retries || 0;
+            var MAX_RETRIES = 20; // 2 seconds maximum (20 * 100ms)
+            
             // Find the form first
-            const form = document.querySelector('#{{ section.id }}-form-filter');
+            var form = document.querySelector('#{{ section.id }}-form-filter');
             
             if (!form) {
-              setTimeout(initSortDelegation, 100);
+              if (retries < MAX_RETRIES) {
+                setTimeout(function() {
+                  initSortDelegation(retries + 1);
+                }, 100);
+              }
               return;
             }
             
             // Find the container that contains this form and won't be replaced by AJAX
-            const container = form.closest('[data-section-id]');
+            var container = form.closest('[data-section-id]');
             
             if (!container) {
-              setTimeout(initSortDelegation, 100);
+              if (retries < MAX_RETRIES) {
+                setTimeout(function() {
+                  initSortDelegation(retries + 1);
+                }, 100);
+              }
               return;
             }
             
@@ -250,9 +255,11 @@
           }
           
           if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initSortDelegation);
+            document.addEventListener('DOMContentLoaded', function() {
+              initSortDelegation(0);
+            });
           } else {
-            initSortDelegation();
+            initSortDelegation(0);
           }
         })();
       </script>
