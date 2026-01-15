@@ -81,6 +81,183 @@
       </div>
     {%- endunless -%}
 
+    {%- if section.settings.enable_sort -%}
+      {%- liquid
+        assign sort_options = search.sort_options | default: collection.sort_options
+        assign sort_by = search.sort_by | default: collection.sort_by
+        assign sort_translation = 'collections.general.sort' | t
+        assign currently_selected = sort_options | where: 'value', sort_by | first
+        assign animation_delay = animation_delay | plus: animation_delay_increment
+
+        if animation_delay == 50
+          assign animation_delay = animation_delay | plus: 200
+        endif
+
+        assign collection_url = collection.url | default: '/collections/all'
+        if template.name == 'search'
+          assign base_url = request.path
+        else
+          assign base_url = collection_url
+        endif
+
+        assign current_url = request.url
+        assign url_parts = current_url | split: '?'
+        assign base_path = url_parts[0]
+        assign current_params = ''
+        if url_parts.size > 1
+          assign current_params = url_parts[1]
+        endif
+      -%}
+
+      <div
+        class="filter-group"
+        data-animation="{{ animation_name }}"
+        data-animation-delay="{{ animation_delay }}"
+        data-animation-duration="{{ animation_duration }}"
+      >
+        <details
+          data-collapsible
+          {% if default_open %}
+            open="true"
+          {% endif %}
+        >
+          <summary class="filter-group__heading" data-collapsible-trigger>
+            <span>{{ sort_translation }}</span>
+
+            {%- render 'icon-nav-arrow-down' -%}
+          </summary>
+
+          <div
+            class="filter-group__body"
+            data-collapsible-body
+            {% if default_open %}
+              style="height: auto;"
+            {% endif %}
+          >
+            <div class="filter-group__content" data-collapsible-content>
+              <ul class="collection-nav">
+                {%- for option in sort_options -%}
+                  {%- assign active = false -%}
+                  {%- if sort_by == option.value -%}
+                    {%- assign active = true -%}
+                  {%- endif -%}
+                  <li class="sidebar__item{% if active %} sidebar__item--active link--remove{% else %} link--add{% endif %}">
+                    <a
+                      href="#"
+                      data-value="{{ option.value }}"
+                      data-sort-link
+                      {% if active %}
+                        aria-current="true"
+                      {% endif %}
+                    >
+                      {{ option.name }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+
+              <input
+                type="hidden"
+                name="sort_by"
+                value="{{ currently_selected.value }}"
+                data-popout-input
+              >
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <script>
+        (function() {
+          // Use event delegation to handle clicks even after AJAX updates
+          function handleSortClick(e) {
+            const link = e.target.closest('[data-sort-link]');
+            if (!link) return;
+            
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            
+            const value = link.getAttribute('data-value');
+            const form = link.closest('form');
+            const sortInput = form ? form.querySelector('input[name="sort_by"]') : null;
+            
+            if (value && sortInput && form) {
+              // Update hidden input
+              sortInput.value = value;
+              sortInput.removeAttribute('disabled');
+              
+              // Update visual state immediately
+              const allLinks = form.querySelectorAll('[data-sort-link]');
+              allLinks.forEach(function(l) {
+                const li = l.closest('li');
+                if (li) {
+                  li.classList.remove('sidebar__item--active', 'link--remove');
+                  li.classList.add('link--add');
+                  l.removeAttribute('aria-current');
+                }
+              });
+              
+              const clickedLi = link.closest('li');
+              if (clickedLi) {
+                clickedLi.classList.add('sidebar__item--active', 'link--remove');
+                link.setAttribute('aria-current', 'true');
+              }
+              
+              // Trigger form submission
+              const collectionForm = form.closest('collection-filters-form');
+              
+              if (collectionForm && collectionForm.submitForm) {
+                try {
+                  // Create a minimal event object
+                  const fakeEvent = {
+                    type: 'custom',
+                    target: sortInput,
+                    preventDefault: function() {},
+                    stopPropagation: function() {}
+                  };
+                  collectionForm.submitForm.call(collectionForm, fakeEvent, '');
+                } catch (error) {
+                  console.error('submitForm error:', error);
+                }
+              }
+            }
+            
+            return false;
+          }
+          
+          function initSortDelegation() {
+            // Find the form first
+            const form = document.querySelector('#{{ section.id }}-form-filter');
+            
+            if (!form) {
+              setTimeout(initSortDelegation, 100);
+              return;
+            }
+            
+            // Find the container that contains this form and won't be replaced by AJAX
+            const container = form.closest('[data-section-id]');
+            
+            if (!container) {
+              setTimeout(initSortDelegation, 100);
+              return;
+            }
+            
+            // Remove old listener if exists
+            container.removeEventListener('click', handleSortClick, true);
+            // Add new listener with delegation - use capture phase to catch events early
+            container.addEventListener('click', handleSortClick, true);
+          }
+          
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSortDelegation);
+          } else {
+            initSortDelegation();
+          }
+        })();
+      </script>
+    {%- endif -%}
+
     {%- for filter in filters_default -%}
       {%- liquid
         assign filter_check_active = filter.values | where: 'active', false
