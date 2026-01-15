@@ -141,36 +141,11 @@
                   {%- if sort_by == option.value -%}
                     {%- assign active = true -%}
                   {%- endif -%}
-                  {%- liquid
-                    assign sort_url = base_path
-                    assign params_array = current_params | split: '&'
-                    assign new_params = ''
-                    assign sort_added = false
-                    
-                    for param in params_array
-                      if param != blank
-                        unless param contains 'sort_by='
-                          if new_params != ''
-                            assign new_params = new_params | append: '&'
-                          endif
-                          assign new_params = new_params | append: param
-                        endunless
-                      endif
-                    endfor
-                    
-                    if new_params != ''
-                      assign sort_url = sort_url | append: '?' | append: new_params | append: '&sort_by=' | append: option.value
-                    else
-                      assign sort_url = sort_url | append: '?sort_by=' | append: option.value
-                    endif
-                  -%}
-                  <li class="sidebar__item{% if active %} sidebar__item--active{% endif %}">
+                  <li class="sidebar__item{% if active %} sidebar__item--active link--remove{% else %} link--add{% endif %}">
                     <a
-                      href="{{ sort_url }}"
-                      class="{% if active %}link--remove{% else %}link--add{% endif %}"
+                      href="#"
                       data-value="{{ option.value }}"
                       data-sort-link
-                      data-filter-update-url
                       {% if active %}
                         aria-current="true"
                       {% endif %}
@@ -194,61 +169,90 @@
 
       <script>
         (function() {
-          function initSortLinks() {
+          // Use event delegation to handle clicks even after AJAX updates
+          function handleSortClick(e) {
+            const link = e.target.closest('[data-sort-link]');
+            if (!link) return;
+            
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            
+            const value = link.getAttribute('data-value');
+            const form = link.closest('form');
+            const sortInput = form ? form.querySelector('input[name="sort_by"]') : null;
+            
+            if (value && sortInput && form) {
+              // Update hidden input
+              sortInput.value = value;
+              sortInput.removeAttribute('disabled');
+              
+              // Update visual state immediately
+              const allLinks = form.querySelectorAll('[data-sort-link]');
+              allLinks.forEach(function(l) {
+                const li = l.closest('li');
+                if (li) {
+                  li.classList.remove('sidebar__item--active', 'link--remove');
+                  li.classList.add('link--add');
+                  l.removeAttribute('aria-current');
+                }
+              });
+              
+              const clickedLi = link.closest('li');
+              if (clickedLi) {
+                clickedLi.classList.add('sidebar__item--active', 'link--remove');
+                link.setAttribute('aria-current', 'true');
+              }
+              
+              // Trigger form submission
+              const collectionForm = form.closest('collection-filters-form');
+              
+              if (collectionForm && collectionForm.submitForm) {
+                try {
+                  // Create a minimal event object
+                  const fakeEvent = {
+                    type: 'custom',
+                    target: sortInput,
+                    preventDefault: function() {},
+                    stopPropagation: function() {}
+                  };
+                  collectionForm.submitForm.call(collectionForm, fakeEvent, '');
+                } catch (error) {
+                  console.error('submitForm error:', error);
+                }
+              }
+            }
+            
+            return false;
+          }
+          
+          function initSortDelegation() {
+            // Find the form first
             const form = document.querySelector('#{{ section.id }}-form-filter');
+            
             if (!form) {
-              setTimeout(initSortLinks, 100);
+              setTimeout(initSortDelegation, 100);
               return;
             }
             
-            const sortLinks = form.querySelectorAll('[data-sort-link]');
-            const sortInput = form.querySelector('input[name="sort_by"]');
+            // Find the container that contains this form and won't be replaced by AJAX
+            const container = form.closest('[data-section-id]');
             
-            if (sortLinks.length && sortInput) {
-              sortLinks.forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  
-                  const value = this.getAttribute('data-value');
-                  if (value && sortInput) {
-                    // Update input value
-                    sortInput.value = value;
-                    sortInput.removeAttribute('disabled');
-                    
-                    // Update visual state - remove active from all, add to clicked
-                    sortLinks.forEach(function(l) {
-                      const li = l.closest('li');
-                      if (li) {
-                        li.classList.remove('sidebar__item--active');
-                        l.classList.remove('link--remove');
-                        l.classList.add('link--add');
-                        l.removeAttribute('aria-current');
-                      }
-                    });
-                    
-                    // Mark clicked as active
-                    const clickedLi = this.closest('li');
-                    if (clickedLi) {
-                      clickedLi.classList.add('sidebar__item--active');
-                      this.classList.remove('link--add');
-                      this.classList.add('link--remove');
-                      this.setAttribute('aria-current', 'true');
-                    }
-                    
-                    // The data-filter-update-url will handle the URL update via collection-filters-form.js
-                    // No need to manually submit - the href with data-filter-update-url will be handled
-                  }
-                  return false;
-                });
-              });
+            if (!container) {
+              setTimeout(initSortDelegation, 100);
+              return;
             }
+            
+            // Remove old listener if exists
+            container.removeEventListener('click', handleSortClick, true);
+            // Add new listener with delegation - use capture phase to catch events early
+            container.addEventListener('click', handleSortClick, true);
           }
           
           if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initSortLinks);
+            document.addEventListener('DOMContentLoaded', initSortDelegation);
           } else {
-            initSortLinks();
+            initSortDelegation();
           }
         })();
       </script>
