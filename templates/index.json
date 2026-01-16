@@ -785,7 +785,7 @@
       "name": "Image banner",
       "settings": {
         "image_1": "shopify://shop_images/banner-image-cropped.webp",
-        "link": "",
+        "link": "shopify://collections/shirts-and-pants",
         "width": "wrapper--full",
         "height": "screen-height-three-quarters",
         "flex_align_desktop": "align--bottom-left-desktop",
