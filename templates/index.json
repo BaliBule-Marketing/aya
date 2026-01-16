@@ -173,7 +173,7 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/goddes_collection_img_1_d156bb7b-182c-442c-b335-cc29e52c1318.jpg",
+            "image": "shopify://shop_images/Bridal_Boho_Cape_Poncho_Hand_loomed_by_AYA_Sacred_Wear_7.jpg",
             "image_width": 100,
             "image_shape": "normal",
             "title": "Signature garments",
@@ -181,7 +181,7 @@
             "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
             "text_font_size": "body-medium",
             "button_text": "Shop Collection",
-            "button_url": "shopify://collections/new-collection",
+            "button_url": "shopify://collections/flower-power",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -202,7 +202,7 @@
             "text": "<p>Designed to honor the body and the earth, each piece invites you back to your natural rhythm.</p>",
             "text_font_size": "body-medium",
             "button_text": "Shop Collection",
-            "button_url": "shopify://collections/organic-shawl-coverup",
+            "button_url": "shopify://collections/silk-garments",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
