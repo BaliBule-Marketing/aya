@@ -219,7 +219,7 @@
       "link_title": "Browse our {{ title }} collection",
       "sort": "Sort by",
       "filter_by": "Filter by",
-      "filters": "Filters",
+      "filters": "Filter & Sort",
       "show_filters": "Show Filters",
       "hide_filters": "Hide Filters",
       "clear_filters": "Clear Filters",
