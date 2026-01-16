@@ -683,9 +683,9 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/for_everyday_wear_img_1.jpg",
-            "title": "FOR EVERYDAY WEAR",
+            "title": "ĀNANDA SHAKTI SS 2026",
             "heading_font_size": "heading-medium",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>",
+            "text": "<p>Ananda Shakti is an offering of joy shaped through silk, handwoven textiles, natural stones, and delicate embroidery.</p>",
             "text_font_size": "body-medium",
             "flex_align": "align--bottom-left",
             "show_text_background": false,
