@@ -143,6 +143,60 @@ details.accordion[open="false"] .accordion__toggle-icon-minus,
   display: none;
 }
 
+/* Apply accordion icon styles to filter group headings */
+
+.filter-group__heading {
+  display: flex;
+}
+
+.filter-group__heading .accordion__toggle-icon {
+  --icon-size: 10px;
+  margin-left: auto;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.filter-group__heading .accordion__toggle-icon .icon {
+  --icon-size: 10px;
+  position: static;
+  top: auto;
+  right: auto;
+  transform: none;
+  stroke: none;
+  fill: var(--icons, currentColor);
+}
+
+/* Filter group accordion icon states - closed by default */
+.filter-group__heading .accordion__toggle-icon-minus {
+  display: none;
+}
+
+.filter-group__heading .accordion__toggle-icon-plus {
+  display: block;
+}
+
+/* Filter group accordion icon states - when open */
+details[open] > .filter-group__heading .accordion__toggle-icon-plus,
+.filter-group__heading[aria-expanded="true"] .accordion__toggle-icon-plus {
+  display: none;
+}
+
+details[open] > .filter-group__heading .accordion__toggle-icon-minus,
+.filter-group__heading[aria-expanded="true"] .accordion__toggle-icon-minus {
+  display: block;
+}
+
+/* Guard against buggy open="false" states for filter groups */
+details[open="false"] > .filter-group__heading .accordion__toggle-icon-plus,
+.filter-group__heading[aria-expanded="false"] .accordion__toggle-icon-plus {
+  display: block;
+}
+
+details[open="false"] > .filter-group__heading .accordion__toggle-icon-minus,
+.filter-group__heading[aria-expanded="false"] .accordion__toggle-icon-minus {
+  display: none;
+}
+
 /* Product accordion uses absolute-positioned icons on the right */
 .product__block--accordion .accordion__title .accordion__toggle-icon {
   position: absolute;
