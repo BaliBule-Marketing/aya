@@ -191,7 +191,7 @@
         ".product-item__image-content {margin-top: auto; text-align: left;}",
         ".product-item__image-content p {font-size: 14px;}",
         ".product-item__image-overlay::before {background: linear-gradient( to top, rgba(36, 32, 28, 0.6), rgba(36, 32, 28, 0) );}",
-        ".collection__sidebar {padding-inline: 28px; --inner: 28px;}",
+        ".collection__sidebar {--inner: 28px;}",
         ".collection__sidebar__head {padding-bottom: 4px; border-bottom: none;}",
         ".collection__sidebar__head h3 {display: none;}"
       ],
