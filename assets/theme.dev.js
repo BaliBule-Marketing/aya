@@ -2866,7 +2866,7 @@
             this.setBodyHeight(body, '');
           } else {
             collapsible.setAttribute('disabled', '');
-            collapsible.setAttribute('open', true);
+            collapsible.setAttribute('open', 'true');
             collapsible.querySelector('[data-collapsible-trigger]').setAttribute('tabindex', -1);
           }
         });
@@ -2878,20 +2878,20 @@
         const body = collapsible.querySelector('[data-collapsible-body]');
         const content = collapsible.querySelector('[data-collapsible-content]');
 
-        collapsible.setAttribute('open', true);
+        collapsible.setAttribute('open', 'true');
 
         this.setBodyHeight(body, content.offsetHeight);
       }
 
       close(collapsible) {
-        if (!collapsible.hasAttribute('open')) return;
+        if (collapsible.getAttribute('open') != 'true') return;
 
         const body = collapsible.querySelector('[data-collapsible-body]');
         const content = collapsible.querySelector('[data-collapsible-content]');
 
         this.setBodyHeight(body, content.offsetHeight);
 
-        collapsible.setAttribute('open', false);
+        collapsible.setAttribute('open', 'false');
 
         setTimeout(() => {
           requestAnimationFrame(() => {
@@ -2924,14 +2924,14 @@
       onCollapsibleClick(event) {
         event.preventDefault();
 
-        const trigger = event.target;
+        const trigger = event.currentTarget;
         const collapsible = trigger.closest('[data-collapsible]');
 
         // When we want only one item expanded at the same time
         if (this.single) {
           this.collapsibles.forEach((otherCollapsible) => {
-            // if otherCollapsible has attribute open and it's not the one we clicked on, remove the open attribute
-            if (otherCollapsible.hasAttribute('open') && otherCollapsible != collapsible) {
+            // if otherCollapsible has open="true" and it's not the one we clicked on, close it
+            if (otherCollapsible.getAttribute('open') == 'true' && otherCollapsible != collapsible) {
               requestAnimationFrame(() => {
                 this.close(otherCollapsible);
               });
@@ -2939,7 +2939,7 @@
           });
         }
 
-        if (collapsible.hasAttribute('open')) {
+        if (collapsible.getAttribute('open') == 'true') {
           this.close(collapsible);
         } else {
           this.open(collapsible);

@@ -176,23 +176,23 @@ details.accordion[open="false"] .accordion__toggle-icon-minus,
 }
 
 /* Filter group accordion icon states - when open */
-details[open] > .filter-group__heading .accordion__toggle-icon-plus,
+details[open="true"] > .filter-group__heading .accordion__toggle-icon-plus,
 .filter-group__heading[aria-expanded="true"] .accordion__toggle-icon-plus {
   display: none;
 }
 
-details[open] > .filter-group__heading .accordion__toggle-icon-minus,
+details[open="true"] > .filter-group__heading .accordion__toggle-icon-minus,
 .filter-group__heading[aria-expanded="true"] .accordion__toggle-icon-minus {
   display: block;
 }
 
-/* Guard against buggy open="false" states for filter groups */
-details[open="false"] > .filter-group__heading .accordion__toggle-icon-plus,
+/* Guard against closed states for filter groups (open="false" or no open attribute) */
+details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-plus,
 .filter-group__heading[aria-expanded="false"] .accordion__toggle-icon-plus {
   display: block;
 }
 
-details[open="false"] > .filter-group__heading .accordion__toggle-icon-minus,
+details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-minus,
 .filter-group__heading[aria-expanded="false"] .accordion__toggle-icon-minus {
   display: none;
 }
