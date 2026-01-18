@@ -195,7 +195,7 @@
         ".collection__sidebar__head {padding-bottom: 4px; border-bottom: none;}",
         ".collection__sidebar__head h3 {display: none;}",
         ".filter-group__heading {border-bottom: none;}",
-        ".filter-group__body{border-bottom: 0.5px solid #F5EEE4;}"
+        ".filter-group__body {border-bottom: 0.5px solid #f5eee4;}"
       ],
       "settings": {
         "enable_sort": true,
