@@ -241,18 +241,13 @@ details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-minu
 .collection__sidebar {
   --inner: 28px;
 }
-.collection__sidebar__head {
-  padding-bottom: 4px;
-  border-bottom: none;
-}
-.collection__sidebar__head h3 {
-  display: none;
-}
-.filter-group__heading {
-  border-bottom: none;
-}
+
  .filter-group:not(.filter-group--hidden) ~ .filter-group {
   padding-top: 14px;
    border-top: 0.5px solid #f5eee4;
    margin-top: 14px;
+ }
+
+ .collection__sidebar {
+  padding-block: 14px;
  }
