@@ -256,6 +256,3 @@ details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-minu
    border-top: 0.5px solid #f5eee4;
    margin-top: 14px;
  }
-.filter-group {
-   margin-bottom: 14px;
- }
