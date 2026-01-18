@@ -193,7 +193,8 @@
         ".product-item__image-overlay::before {background: linear-gradient( to top, rgba(36, 32, 28, 0.6), rgba(36, 32, 28, 0) );}",
         ".collection__sidebar {--inner: 28px;}",
         ".collection__sidebar__head {padding-bottom: 4px; border-bottom: none;}",
-        ".collection__sidebar__head h3 {display: none;}"
+        ".collection__sidebar__head h3 {display: none;}",
+        ".filter-group__heading{border-bottom: none;}"
       ],
       "settings": {
         "enable_sort": true,
