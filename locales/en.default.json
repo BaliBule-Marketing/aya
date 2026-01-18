@@ -227,7 +227,7 @@
       "all": "All",
       "reset": "Clear All",
       "view_items_with_count": {
-        "one": "View {{ count }} item",
+        "one": "Show {{ count }} Products",
         "other": "View {{ count }} items"
       },
       "show_more": "More options",
