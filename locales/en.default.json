@@ -225,7 +225,7 @@
       "clear_filters": "Clear Filters",
       "no_filters": "No filters available for this collection",
       "all": "All",
-      "reset": "Reset",
+      "reset": "Clear All",
       "view_items_with_count": {
         "one": "View {{ count }} item",
         "other": "View {{ count }} items"
