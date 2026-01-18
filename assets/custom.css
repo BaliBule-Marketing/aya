@@ -251,3 +251,9 @@ details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-minu
  .collection__sidebar {
   padding-block: 14px;
  }
+
+ .collection__sidebar__buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+ }
