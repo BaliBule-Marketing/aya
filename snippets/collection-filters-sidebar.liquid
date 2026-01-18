@@ -113,14 +113,14 @@
   data-animation-delay="{{ animation_delay }}"
   data-animation-duration="{{ animation_duration }}">
   {%- if filter_count > 0 -%}
-    <a class="btn btn--primary btn--solid btn--full" href="{{ filters_url }}" data-filter-update-url>
+    <a class="btn btn--full" href="{{ filters_url }}" data-filter-update-url>
       <span>{{ 'collections.general.reset' | t }}</span>
     </a>
   {%- endif -%}
 
   {%- if filter_layout == 'slide-out' -%}
     <a
-      class="btn btn--full"
+      class="btn btn--primary btn--solid btn--full"
       href="#filters-group"
       data-collection-sidebar-close
       aria-label="{{ 'collections.general.hide_filters' | t }}"
