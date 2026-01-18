@@ -10,29 +10,31 @@
 
 {%- liquid
   assign products_count = collection.products_count | default: search.results_count
-  assign sort_by_string = ''
   assign filter_layout = section.settings.filter_layout
   assign sort_by = search.sort_by | default: collection.sort_by
-  assign string_connector = '?'
-
-  if sort_by != blank
-    assign sort_by_string = '?sort_by=' | append: sort_by
-    assign string_connector = '&'
-  endif
-
   assign filters_default = search.filters | default: collection.filters
-  assign filters_url = request.path | append: sort_by_string
+  
+  comment
+    URL to reset all filters and sorting - just the base path without parameters
+  endcomment
+  assign filters_url = request.path
 
   if template.name == 'search' and search.performed
     assign option_prefix = 'options[prefix]' | url_encode
-    assign filters_url = filters_url | append: string_connector | append: option_prefix | append: '=last&q=' | append: search.terms
+    assign filters_url = filters_url | append: '?' | append: option_prefix | append: '=last&q=' | append: search.terms
   endif
 
   assign filter_count = 0
   assign filter_active_count = 0
   assign filter_exist = false
-
-  assign default_open = section.settings.default_open
+  
+  comment
+    Check if sorting is explicitly set
+    If sort_by is not blank, sorting is active
+  endcomment
+  if sort_by != blank
+    assign filter_count = filter_count | plus: 1
+  endif
 
   assign animation_name = 'drawer-items-fade'
   assign animation_delay = 0
