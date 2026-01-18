@@ -256,4 +256,7 @@ details:not([open="true"]) > .filter-group__heading .accordion__toggle-icon-minu
   display: flex;
   flex-direction: column-reverse;
   gap: 12px;
+  .btn--text btn--text-underline {
+    text-align:center;
+  }
  }
